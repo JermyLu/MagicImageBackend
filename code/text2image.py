@@ -19,14 +19,19 @@ def get_text2image_result(
     image_name: str,
     save_dir: str = r"../gen_images"
 ):
-    if not os.path.exists(save_dir):
-        os.mkdir(save_dir)
+    try:
+        if not os.path.exists(save_dir):
+            os.mkdir(save_dir)
     
-    output = pipeline(input_dict)
-    save_path = os.path.join(save_dir, "%s_%s%s" % (request_id, image_name, ".png"))
-    cv2.imwrite(save_path, output['output_imgs'][0])
+        output = pipeline(input_dict)
+        save_path = os.path.join(save_dir, "%s_%s%s" % (request_id, image_name, ".png"))
+        cv2.imwrite(save_path, output['output_imgs'][0])
 
-    print("File: %s is saved, done!" % save_path)
+        print("File: %s is saved, done!" % save_path)
+        return save_path
+        
+    except:
+        return None
 
 
 def main(
@@ -69,13 +74,18 @@ def main(
     if negative_prompt in this_config:
         input_dict[negative_prompt] = this_config[negative_prompt]
 
-    get_text2image_result(
+    img_path = get_text2image_result(
         request_id=request_id,
         pipeline=this_pipeline,
         input_dict=input_dict,
         image_name=sequence
     )
-    print("Text2Image Processing is Done!")
+    
+    if img_path is not None:
+        print("Text2Image Processing is Done!")
+    else:
+        print("Text2Image Processing is Done, but it exists erros!")
+    return img_path
 
 
 if __name__=="__main__":

@@ -16,20 +16,25 @@ def get_img2img_result(
     input_image_dict: Dict = None,
     save_dir: str = r"../gen_images"
 ):
-    if not os.path.exists(save_dir):
-        os.mkdir(save_dir)
+    try:
+        if not os.path.exists(save_dir):
+            os.mkdir(save_dir)
     
-    # 优先级: input_image_path > input_image_dict
-    if input_image_path is not None:
-        result = pipeline(input_image_path)
-    elif input_image_dict is not None:
-        result = pipeline(input_image_dict)
-    else:
-        raise ValueError("input_image_path or input_image_dict must have value!!!")
+        # 优先级: input_image_path > input_image_dict
+        if input_image_path is not None:
+            result = pipeline(input_image_path)
+        elif input_image_dict is not None:
+            result = pipeline(input_image_dict)
+        else:
+            raise ValueError("input_image_path or input_image_dict must have value!!!")
 
-    save_path = os.path.join(save_dir, "%s_%s.png" % (request_id, style))
-    cv2.imwrite(save_path, result[OutputKeys.OUTPUT_IMG])
-    print("File: %s is saved, done!" % save_path)
+        save_path = os.path.join(save_dir, "%s_%s.png" % (request_id, style))
+        cv2.imwrite(save_path, result[OutputKeys.OUTPUT_IMG])
+        print("File: %s is saved, done!" % save_path)
+        return save_path
+    
+    except:
+        return None
 
 
 def main(
@@ -47,6 +52,7 @@ def main(
     this_pipeline = image2image.pipeline_dict[style].pipeline
     this_config = image2image.pipeline_dict[style].config
 
+    img_path = None
     # 单图
     if len(image_list) == 1:
         input_image_path = image_list[0]
@@ -57,11 +63,12 @@ def main(
                 input_image_path
             )
         
-        get_img2img_result(
+        img_path = get_img2img_result(
             request_id=request_id,
             style=style,
             pipeline=this_pipeline,
-            input_image_path=input_image_path)
+            input_image_path=input_image_path
+        )
         
     # 多图, 如风格迁移...
     elif len(image_list) == 2 and image_nums in this_config and param_list in this_config:
@@ -78,13 +85,19 @@ def main(
                     img_path
                 )
         
-        get_img2img_result(
+        img_path = get_img2img_result(
             request_id=request_id,
             style=style,
             pipeline=this_pipeline,
-            input_image_dict=input_image_dict)
+            input_image_dict=input_image_dict
+        )
     
-    print("Image2Image Processing is Done!")
+    if img_path is not None:
+        print("Image2Image Processing is Done!")
+    else:
+        print("Image2Image Processing is Done, but it exists erros!")
+    return img_path
+    
 
 if __name__=="__main__":
     

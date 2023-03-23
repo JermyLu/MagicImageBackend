@@ -41,8 +41,9 @@ async def i2i(data: dict):
         request_id = data["request_id"]
         style = data["style"]
         image = data["image"]
+        img_path = None
         if isinstance(image, list):
-            i2i_main(
+            img_path = i2i_main(
                 image2image=image2Image,
                 request_id=request_id, 
                 style=style, 
@@ -56,18 +57,25 @@ async def i2i(data: dict):
             )
             save_image_from_base64(image, output_path=image_save_path)
 
-            i2i_main(
+            img_path = i2i_main(
                 image2image=image2Image,
                 request_id=request_id, 
                 style=style, 
                 image_list=[image_save_path]
             )
 
-        return "Image2Image, successfully"
+        if img_path is not None:
+            return {
+                "text": "Image2Image, successfully",
+                "base64": encode_image_to_base64(img_path),
+                "url": img_path
+            }
+        # None
+        return {"text": "Image2Image, exception"}
     
     except Exception:
         traceback.print_exc()
-        return "Image2Image, error"
+        return {"text": "Image2Image, exception"}
 
 # @app.post("/text2image")
 # async def t2i(item: Text2ImageRequest):
@@ -98,18 +106,26 @@ async def t2i(data: dict):
         style = data.get("style", "太乙通用")
         language = data.get("language", "chinese")
 
-        t2i_main(
+        img_path = t2i_main(
             text2image=text2Image,
             request_id=request_id,
             style=style,
             sequence=sequence,
             language=language
         )
-        return "Text2Image, successfully"
+        
+        if img_path is not None:
+            return {
+                "text": "Text2Image, successfully",
+                "base64": encode_image_to_base64(img_path),
+                "url": img_path
+            }
+        # None
+        return {"text": "Text2Image, exception"}
     
     except Exception:
         traceback.print_exc()
-        return "Image2Image, error"
+        return {"text": "Text2Image, exception"}
 
 @app.post("/status")
 async def status(data: dict):
