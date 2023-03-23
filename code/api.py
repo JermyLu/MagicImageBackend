@@ -68,7 +68,8 @@ async def i2i(data: dict):
             return {
                 "text": "Image2Image, successfully",
                 "base64": encode_image_to_base64(img_path),
-                "url": img_path
+                "url": img_path,
+                "absUrl": os.path.abspath(img_path)
             }
         # None
         return {"text": "Image2Image, exception"}
@@ -118,7 +119,8 @@ async def t2i(data: dict):
             return {
                 "text": "Text2Image, successfully",
                 "base64": encode_image_to_base64(img_path),
-                "url": img_path
+                "url": img_path,
+                "absUrl": os.path.abspath(img_path)
             }
         # None
         return {"text": "Text2Image, exception"}
@@ -130,7 +132,7 @@ async def t2i(data: dict):
 @app.post("/status")
 async def status(data: dict):
     print(data)
-    return "magic image serivce is running, successfully"
+    return {"text": "magic image serivce is running, successfully"}
 
 if __name__ == '__main__':
     # https 
