@@ -1,11 +1,11 @@
 import os
+import io
 import traceback
 import json
 import ssl
 from typing import Optional, List, Any
 from fastapi import FastAPI, UploadFile, File
-from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import HTMLResponse
+from fastapi.responses import FileResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from fastapi.routing import APIRoute
@@ -67,7 +67,7 @@ async def i2i(data: dict):
         if img_path is not None:
             return {
                 "text": "Image2Image, successfully",
-                "base64": encode_image_to_base64(img_path),
+                #"base64": encode_image_to_base64(img_path),
                 "url": img_path,
                 "absUrl": os.path.abspath(img_path)
             }
@@ -118,7 +118,7 @@ async def t2i(data: dict):
         if img_path is not None:
             return {
                 "text": "Text2Image, successfully",
-                "base64": encode_image_to_base64(img_path),
+                #"base64": encode_image_to_base64(img_path),
                 "url": img_path,
                 "absUrl": os.path.abspath(img_path)
             }
@@ -133,6 +133,36 @@ async def t2i(data: dict):
 async def status(data: dict):
     print(data)
     return {"text": "magic image serivce is running, successfully"}
+
+@app.post("/downloadPost")
+async def download_file_byFile(data: dict):
+    if "file_path" not in data:
+        return None
+    if not os.path.exists(data["file_path"]):
+        return None
+    return FileResponse(data["file_path"])
+
+@app.get('/download')
+async def download_file(file_path: str):
+    if not os.path.exists(file_path):
+        return None
+    return FileResponse(file_path)
+
+@app.post('/feedback')
+async def download_file(data: dict):
+    if "star" not in data or "suggestion" not in data or "absUrl" not in data:
+        return "Request Param Error"
+
+    save_dir = r"../feedback"
+    if not os.path.exists(save_dir):
+        os.mkdir(save_dir)
+    file_path = os.path.join(save_dir, data["absUrl"].split("/")[-1] + ".txt")
+    star = str(data["star"])
+    suggestion = data["suggestion"]
+    with open(file_path, "w") as fw:
+        fw.write(f"{star}\t{suggestion}")
+
+    return "Feedback, successfully"
 
 if __name__ == '__main__':
     # https 
