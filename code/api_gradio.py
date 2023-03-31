@@ -64,7 +64,7 @@ def text2image(
         sequence="%s,%s,%s" % (input_text, prompt, t2i_type)
     )
 
-    return cv2.imread(generate_file_path)
+    return generate_file_path
     # return "request_id is %s : style is %s : sequence is %s" % (request_id, t2i_type, "%s,%s" % (input_text, prompt))
 
 def image2image(
@@ -86,7 +86,7 @@ def image2image(
         image_list=[file_path]
     )
 
-    return cv2.imread(generate_file_path)
+    return generate_file_path
 
 with gr.Blocks() as demo:
     gr.Markdown("Do magic image2image and text2image using this demo.")
