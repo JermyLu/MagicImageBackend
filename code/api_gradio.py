@@ -94,7 +94,7 @@ with gr.Blocks() as demo:
         with gr.Row():
             with gr.Column():
                 image_input = gr.Image()
-                i2i_type = gr.Radio(choices=image2image_types, type="value")
+                i2i_type = gr.Radio(choices=image2image_types, type="value", label="风格")
             image_output = gr.Image()#gr.Textbox(lines=2)
         image_button = gr.Button("Image2Image")
 
@@ -104,7 +104,7 @@ with gr.Blocks() as demo:
                 input_text = gr.Textbox(lines=2, placeholder="输入你的创意...", label="Input")
                 prompt = gr.Textbox(lines=2, placeholder="清晰、质感...", label="Prompt")
                 negative_prompt = gr.Textbox(lines=2, placeholder="模糊、粗糙...", label="Negative-Prompt")
-                t2i_type = gr.Radio(choices=text2image_types, type="value")
+                t2i_type = gr.Radio(choices=text2image_types, type="value", label="风格")
             text_output = gr.Image()
         text_button = gr.Button("Text2Image")
 
