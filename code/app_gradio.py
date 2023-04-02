@@ -75,7 +75,9 @@ def image2image(
         r"../input_images",
         request_id + "_" + i2i_type + ".png"
     )
-    cv2.imwrite(file_path, image)
+    # print(image, type(image))
+    # opencv, image is BGR模式
+    cv2.imwrite(file_path, cv2.cvtColor(image, cv2.COLOR_BGR2RGB))
 
     generate_file_path = i2i_main(
         image2image=image2Image,
