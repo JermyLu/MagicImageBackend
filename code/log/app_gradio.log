@@ -1,0 +1,188 @@
+nohup: ignoring input
+2023-03-31 14:14:13,778 - modelscope - INFO - PyTorch version 1.12.1 Found.
+2023-03-31 14:14:13,779 - modelscope - INFO - TensorFlow version 2.11.0 Found.
+2023-03-31 14:14:13,779 - modelscope - INFO - Loading ast index from /root/.cache/modelscope/ast_indexer
+2023-03-31 14:14:13,807 - modelscope - INFO - Loading done! Current index file version is 1.4.1, with md5 1090fa796f772e0fb869a1fd4628d185 and a total number of 842 components indexed
+2023-03-31 14:14:14.179926: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-03-31 14:14:14.375933: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-03-31 14:14:15.044524: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /root/anaconda3/envs/magicImage/lib/python3.10/site-packages/cv2/../../lib64:
+2023-03-31 14:14:15.044611: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /root/anaconda3/envs/magicImage/lib/python3.10/site-packages/cv2/../../lib64:
+2023-03-31 14:14:15.044623: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-03-31 14:14:16,799 - modelscope - INFO - Model revision not specified, use the latest revision: v1.0.0
+2023-03-31 14:14:17,273 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_skin-retouching
+2023-03-31 14:14:17,273 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_skin-retouching.
+2023-03-31 14:14:17,277 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-03-31 14:14:17,277 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-03-31 14:14:17,277 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_skin-retouching'}. trying to build by task and model information.
+2023-03-31 14:14:17,277 - modelscope - WARNING - Find task: skin-retouching, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-03-31 14:14:22,523 - modelscope - INFO - Model revision not specified, use the latest revision: v2.0.2
+2023-03-31 14:14:24,246 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_resnet50_face-detection_retinaface
+2023-03-31 14:14:24,246 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_resnet50_face-detection_retinaface.
+2023-03-31 14:14:24,250 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-03-31 14:14:24,250 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-03-31 14:14:24,250 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_resnet50_face-detection_retinaface'}. trying to build by task and model information.
+2023-03-31 14:14:24,250 - modelscope - WARNING - Find task: face-detection, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-03-31 14:14:24,252 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_resnet50_face-detection_retinaface/pytorch_model.pt
+2023-03-31 14:14:24,767 - modelscope - INFO - load model done
+2023-03-31 14:14:25.682860: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-03-31 14:14:25.684623: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:25.686328: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusolver.so.11'; dlerror: libcusolver.so.11: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /root/anaconda3/envs/magicImage/lib/python3.10/site-packages/cv2/../../lib64:
+2023-03-31 14:14:25.686405: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+WARNING:tensorflow:From /root/anaconda3/envs/magicImage/lib/python3.10/site-packages/modelscope/pipelines/cv/skin_retouching_pipeline.py:84: FastGFile.__init__ (from tensorflow.python.platform.gfile) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.gfile.GFile.
+2023-03-31 14:14:26.409747: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:357] MLIR V1 optimization pass is not enabled
+2023-03-31 14:14:28,172 - modelscope - INFO - Model revision not specified, use the latest revision: v1.0.0
+2023-03-31 14:14:34,247 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_flow-based-body-reshaping_damo
+2023-03-31 14:14:34,248 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_flow-based-body-reshaping_damo.
+2023-03-31 14:14:34,249 - modelscope - INFO - initialize model from /root/.cache/modelscope/hub/damo/cv_flow-based-body-reshaping_damo
+2023-03-31 14:14:35,011 - modelscope - INFO - load body reshaping model done
+2023-03-31 14:14:35,530 - modelscope - INFO - load pose model done
+2023-03-31 14:14:35,534 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-03-31 14:14:35,534 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-03-31 14:14:35,534 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_flow-based-body-reshaping_damo'}. trying to build by task and model information.
+2023-03-31 14:14:35,534 - modelscope - WARNING - No preprocessor key ('image-body-reshaping', 'image-body-reshaping') found in PREPROCESSOR_MAP, skip building preprocessor.
+2023-03-31 14:14:35,538 - modelscope - INFO - body reshaping model init done
+2023-03-31 14:14:36,682 - modelscope - INFO - Model revision not specified, use the latest revision: v1.0.3
+2023-03-31 14:14:39,146 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models
+2023-03-31 14:14:39,146 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models.
+2023-03-31 14:14:39,149 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-03-31 14:14:39,149 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-03-31 14:14:39,149 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models'}. trying to build by task and model information.
+2023-03-31 14:14:39,149 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-03-31 14:14:39.151257: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:39.152658: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:39.266927: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:39.268207: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:39.628023: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:39.629292: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:39,629 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models/cartoon_h.pb
+2023-03-31 14:14:39,675 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models/cartoon_h.pb done.
+2023-03-31 14:14:39.676157: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:39.677448: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:39,677 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models/cartoon_bg.pb
+2023-03-31 14:14:39,735 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models/cartoon_bg.pb done.
+2023-03-31 14:14:41,351 - modelscope - INFO - Model revision not specified, use the latest revision: v1.0.1
+2023-03-31 14:14:43,855 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models
+2023-03-31 14:14:43,855 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models.
+2023-03-31 14:14:43,858 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-03-31 14:14:43,858 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-03-31 14:14:43,858 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models'}. trying to build by task and model information.
+2023-03-31 14:14:43,858 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-03-31 14:14:43.860379: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:43.861789: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:43.976139: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:43.977514: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:44.163376: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:44.164651: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:44,164 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models/cartoon_h.pb
+2023-03-31 14:14:44,210 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models/cartoon_h.pb done.
+2023-03-31 14:14:44.211204: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:44.212490: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:44,212 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models/cartoon_bg.pb
+2023-03-31 14:14:44,270 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models/cartoon_bg.pb done.
+2023-03-31 14:14:45,486 - modelscope - INFO - Model revision not specified, use the latest revision: v1.0.1
+2023-03-31 14:14:47,922 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models
+2023-03-31 14:14:47,922 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models.
+2023-03-31 14:14:47,925 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-03-31 14:14:47,925 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-03-31 14:14:47,925 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models'}. trying to build by task and model information.
+2023-03-31 14:14:47,925 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-03-31 14:14:47.926779: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:47.928162: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:48.041799: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:48.043158: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:48.227347: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:48.228629: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:48,228 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models/cartoon_h.pb
+2023-03-31 14:14:48,274 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models/cartoon_h.pb done.
+2023-03-31 14:14:48.275693: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:48.276987: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:48,277 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models/cartoon_bg.pb
+2023-03-31 14:14:48,335 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models/cartoon_bg.pb done.
+2023-03-31 14:14:49,475 - modelscope - INFO - Model revision not specified, use the latest revision: v1.0.1
+2023-03-31 14:14:52,347 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models
+2023-03-31 14:14:52,347 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models.
+2023-03-31 14:14:52,350 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-03-31 14:14:52,350 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-03-31 14:14:52,350 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models'}. trying to build by task and model information.
+2023-03-31 14:14:52,351 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-03-31 14:14:52.352811: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:52.354187: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:52.471494: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:52.472760: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:52.662153: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:52.663414: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:52,663 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models/cartoon_h.pb
+2023-03-31 14:14:52,708 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models/cartoon_h.pb done.
+2023-03-31 14:14:52.709453: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:52.710748: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:52,710 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models/cartoon_bg.pb
+2023-03-31 14:14:52,767 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models/cartoon_bg.pb done.
+2023-03-31 14:14:53,758 - modelscope - INFO - Use user-specified model revision: v1.0.0
+2023-03-31 14:14:54,218 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models
+2023-03-31 14:14:54,218 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models.
+2023-03-31 14:14:54,220 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-03-31 14:14:54,220 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-03-31 14:14:54,220 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models'}. trying to build by task and model information.
+2023-03-31 14:14:54,220 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-03-31 14:14:54.222478: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:54.223877: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:54.339011: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:54.340281: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:54.716074: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:54.717356: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:54,717 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models/cartoon_h.pb
+2023-03-31 14:14:54,762 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models/cartoon_h.pb done.
+2023-03-31 14:14:54.763499: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:54.764818: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:54,764 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models/cartoon_bg.pb
+2023-03-31 14:14:54,818 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models/cartoon_bg.pb done.
+2023-03-31 14:14:55,858 - modelscope - INFO - Use user-specified model revision: v1.0.0
+2023-03-31 14:14:56,756 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models
+2023-03-31 14:14:56,757 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models.
+2023-03-31 14:14:56,759 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-03-31 14:14:56,759 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-03-31 14:14:56,759 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models'}. trying to build by task and model information.
+2023-03-31 14:14:56,760 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-03-31 14:14:56.761761: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:56.763169: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:56.877946: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:56.879222: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:57.066156: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:57.067527: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:57,067 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models/cartoon_h.pb
+2023-03-31 14:14:57,112 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models/cartoon_h.pb done.
+2023-03-31 14:14:57.113525: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-31 14:14:57.114803: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-31 14:14:57,114 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models/cartoon_bg.pb
+2023-03-31 14:14:57,170 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models/cartoon_bg.pb done.
+2023-03-31 14:14:58,227 - modelscope - INFO - Use user-specified model revision: v1.0.0
+`text_config_dict` is provided which will be used to initialize `CLIPTextConfig`. The value `text_config["id2label"]` will be overriden.

