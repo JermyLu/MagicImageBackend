@@ -7,9 +7,7 @@ from numpy import ndarray
 from typing import List
 from image2image import main as i2i_main
 from text2image import main as t2i_main
-from get_pipeline import Image2Image, Text2Image
-image2Image = Image2Image()
-text2Image = Text2Image()
+from get_pipeline import image2Image, text2Image
 
 def generate_request_id(length_list: List[int] = [8, 4, 4, 8]) -> str:
     """
@@ -111,5 +109,5 @@ with gr.Blocks() as demo:
     image_button.click(image2image, inputs=[image_input, i2i_type], outputs=image_output)
     text_button.click(text2image, inputs=[input_text, prompt, negative_prompt, t2i_type], outputs=text_output)
     
-if __name__=="__main__":    
+if __name__=="__main__": 
     demo.launch(share=True)

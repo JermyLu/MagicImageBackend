@@ -2,22 +2,15 @@ import os
 import io
 import traceback
 import json
-import ssl
 from typing import Optional, List, Any
 from fastapi import FastAPI, UploadFile, File
 from fastapi.responses import FileResponse, StreamingResponse
-from fastapi.staticfiles import StaticFiles
-from fastapi.templating import Jinja2Templates
-from fastapi.routing import APIRoute
 from pydantic import BaseModel
 import uvicorn
 from utils import encode_image_to_base64, save_image_from_base64
-from get_pipeline import Image2Image, Text2Image
+from get_pipeline import image2Image, text2Image
 from image2image import main as i2i_main
 from text2image import main as t2i_main
-
-image2Image = Image2Image()
-text2Image = Text2Image()
 
 class Image2ImageRequest(BaseModel):
     request_id: str
@@ -165,7 +158,6 @@ async def download_file(data: dict):
     return "Feedback, successfully"
 
 if __name__ == '__main__':
-    # https 
-    # uvicorn.run(app, host="0.0.0.0", port=8000, ssl_keyfile= "./www.magicimage.site.key", ssl_certfile="./www.magicimage.site_bundle.crt")
     # http, port is 8000
     uvicorn.run(app, host="0.0.0.0", port=8000)
+    
