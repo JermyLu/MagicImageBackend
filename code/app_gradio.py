@@ -109,5 +109,6 @@ with gr.Blocks() as demo:
     image_button.click(image2image, inputs=[image_input, i2i_type], outputs=image_output)
     text_button.click(text2image, inputs=[input_text, prompt, negative_prompt, t2i_type], outputs=text_output)
     
-if __name__=="__main__": 
+if __name__=="__main__":
+    demo.queue()  # <-- Sets up a queue with default parameters
     demo.launch(share=True)
