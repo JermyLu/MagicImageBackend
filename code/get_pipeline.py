@@ -85,6 +85,6 @@ class Text2Image:
 
         return pipeline_dict
 
-image2image = Image2Image()
-text2image = Text2Image()
+image2Image = Image2Image()
+text2Image = Text2Image()
 
