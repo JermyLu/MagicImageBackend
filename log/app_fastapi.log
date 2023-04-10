@@ -1,0 +1,339 @@
+nohup: ignoring input
+2023-04-02 13:04:32,004 - modelscope - INFO - PyTorch version 1.12.1 Found.
+2023-04-02 13:04:32,004 - modelscope - INFO - TensorFlow version 2.11.0 Found.
+2023-04-02 13:04:32,004 - modelscope - INFO - Loading ast index from /root/.cache/modelscope/ast_indexer
+2023-04-02 13:04:32,055 - modelscope - INFO - Loading done! Current index file version is 1.4.1, with md5 1090fa796f772e0fb869a1fd4628d185 and a total number of 842 components indexed
+2023-04-02 13:04:32.891745: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-04-02 13:04:33.089767: I tensorflow/core/util/port.cc:104] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2023-04-02 13:04:33.730476: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror: libnvinfer.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /root/anaconda3/envs/magicImage/lib/python3.10/site-packages/cv2/../../lib64:
+2023-04-02 13:04:33.730567: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; dlerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /root/anaconda3/envs/magicImage/lib/python3.10/site-packages/cv2/../../lib64:
+2023-04-02 13:04:33.730578: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-04-02 13:04:36,056 - modelscope - INFO - Model revision not specified, use the latest revision: v1.0.0
+2023-04-02 13:04:36,535 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_skin-retouching
+2023-04-02 13:04:36,535 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_skin-retouching.
+2023-04-02 13:04:36,539 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-04-02 13:04:36,539 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-04-02 13:04:36,539 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_skin-retouching'}. trying to build by task and model information.
+2023-04-02 13:04:36,539 - modelscope - WARNING - Find task: skin-retouching, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-04-02 13:04:41,867 - modelscope - INFO - Model revision not specified, use the latest revision: v2.0.2
+2023-04-02 13:04:43,514 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_resnet50_face-detection_retinaface
+2023-04-02 13:04:43,514 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_resnet50_face-detection_retinaface.
+2023-04-02 13:04:43,517 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-04-02 13:04:43,517 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-04-02 13:04:43,517 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_resnet50_face-detection_retinaface'}. trying to build by task and model information.
+2023-04-02 13:04:43,517 - modelscope - WARNING - Find task: face-detection, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-04-02 13:04:43,518 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_resnet50_face-detection_retinaface/pytorch_model.pt
+2023-04-02 13:04:44,057 - modelscope - INFO - load model done
+2023-04-02 13:04:44.973741: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-04-02 13:04:44.975401: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:04:44.977078: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusolver.so.11'; dlerror: libcusolver.so.11: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /root/anaconda3/envs/magicImage/lib/python3.10/site-packages/cv2/../../lib64:
+2023-04-02 13:04:44.977156: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+WARNING:tensorflow:From /root/anaconda3/envs/magicImage/lib/python3.10/site-packages/modelscope/pipelines/cv/skin_retouching_pipeline.py:84: FastGFile.__init__ (from tensorflow.python.platform.gfile) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.gfile.GFile.
+2023-04-02 13:04:45.821344: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:357] MLIR V1 optimization pass is not enabled
+2023-04-02 13:04:47,434 - modelscope - INFO - Model revision not specified, use the latest revision: v1.0.0
+2023-04-02 13:04:53,208 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_flow-based-body-reshaping_damo
+2023-04-02 13:04:53,208 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_flow-based-body-reshaping_damo.
+2023-04-02 13:04:53,209 - modelscope - INFO - initialize model from /root/.cache/modelscope/hub/damo/cv_flow-based-body-reshaping_damo
+2023-04-02 13:04:53,971 - modelscope - INFO - load body reshaping model done
+2023-04-02 13:04:54,481 - modelscope - INFO - load pose model done
+2023-04-02 13:04:54,484 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-04-02 13:04:54,485 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-04-02 13:04:54,485 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_flow-based-body-reshaping_damo'}. trying to build by task and model information.
+2023-04-02 13:04:54,485 - modelscope - WARNING - No preprocessor key ('image-body-reshaping', 'image-body-reshaping') found in PREPROCESSOR_MAP, skip building preprocessor.
+2023-04-02 13:04:54,486 - modelscope - INFO - body reshaping model init done
+2023-04-02 13:04:56,025 - modelscope - INFO - Model revision not specified, use the latest revision: v1.0.3
+2023-04-02 13:04:58,600 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models
+2023-04-02 13:04:58,600 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models.
+2023-04-02 13:04:58,603 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-04-02 13:04:58,603 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-04-02 13:04:58,603 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models'}. trying to build by task and model information.
+2023-04-02 13:04:58,603 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-04-02 13:04:58.605408: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:04:58.606800: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:04:58.721907: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:04:58.723193: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:04:58.911124: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:04:58.912400: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:04:58,912 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models/cartoon_h.pb
+2023-04-02 13:04:58,957 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models/cartoon_h.pb done.
+2023-04-02 13:04:58.958739: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:04:58.960014: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:04:58,960 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models/cartoon_bg.pb
+2023-04-02 13:04:59,017 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models/cartoon_bg.pb done.
+2023-04-02 13:05:00,272 - modelscope - INFO - Model revision not specified, use the latest revision: v1.0.1
+2023-04-02 13:05:02,629 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models
+2023-04-02 13:05:02,629 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models.
+2023-04-02 13:05:02,632 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-04-02 13:05:02,632 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-04-02 13:05:02,632 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models'}. trying to build by task and model information.
+2023-04-02 13:05:02,633 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-04-02 13:05:02.634725: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:05:02.636112: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:05:02.753683: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:05:02.754963: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:05:02.941826: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:05:02.943102: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:05:02,943 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models/cartoon_h.pb
+2023-04-02 13:05:02,987 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models/cartoon_h.pb done.
+2023-04-02 13:05:02.988912: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:05:02.990180: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:05:02,990 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models/cartoon_bg.pb
+2023-04-02 13:05:03,046 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models/cartoon_bg.pb done.
+2023-04-02 13:05:04,689 - modelscope - INFO - Model revision not specified, use the latest revision: v1.0.1
+2023-04-02 13:05:06,992 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models
+2023-04-02 13:05:06,992 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models.
+2023-04-02 13:05:06,995 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-04-02 13:05:06,996 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-04-02 13:05:06,996 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models'}. trying to build by task and model information.
+2023-04-02 13:05:06,996 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-04-02 13:05:06.997814: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:05:06.999194: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:05:07.265447: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:05:07.266860: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:05:07.457078: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:05:07.458353: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:05:07,458 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models/cartoon_h.pb
+2023-04-02 13:05:07,504 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models/cartoon_h.pb done.
+2023-04-02 13:05:07.505287: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:05:07.506549: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:05:07,506 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models/cartoon_bg.pb
+2023-04-02 13:05:07,562 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models/cartoon_bg.pb done.
+2023-04-02 13:05:08,896 - modelscope - INFO - Model revision not specified, use the latest revision: v1.0.1
+2023-04-02 13:05:10,972 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models
+2023-04-02 13:05:10,972 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models.
+2023-04-02 13:05:10,975 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-04-02 13:05:10,975 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-04-02 13:05:10,976 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models'}. trying to build by task and model information.
+2023-04-02 13:05:10,976 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-04-02 13:05:10.977756: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:05:10.979148: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:05:11.093338: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:05:11.094638: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:05:11.279878: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:05:11.281286: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:05:11,281 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models/cartoon_h.pb
+2023-04-02 13:05:11,326 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models/cartoon_h.pb done.
+2023-04-02 13:05:11.327691: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:05:11.329008: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:05:11,329 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models/cartoon_bg.pb
+2023-04-02 13:05:11,384 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models/cartoon_bg.pb done.
+2023-04-02 13:05:12,466 - modelscope - INFO - Use user-specified model revision: v1.0.0
+2023-04-02 13:05:12,882 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models
+2023-04-02 13:05:12,882 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models.
+2023-04-02 13:05:12,886 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-04-02 13:05:12,886 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-04-02 13:05:12,886 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models'}. trying to build by task and model information.
+2023-04-02 13:05:12,886 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-04-02 13:05:12.888007: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:05:12.889380: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:05:13.003161: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:05:13.004445: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:05:13.191335: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:05:13.192665: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:05:13,192 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models/cartoon_h.pb
+2023-04-02 13:05:13,236 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models/cartoon_h.pb done.
+2023-04-02 13:05:13.237250: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:05:13.238606: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:05:13,238 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models/cartoon_bg.pb
+2023-04-02 13:05:13,294 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models/cartoon_bg.pb done.
+2023-04-02 13:05:14,348 - modelscope - INFO - Use user-specified model revision: v1.0.0
+2023-04-02 13:05:14,792 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models
+2023-04-02 13:05:14,792 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models.
+2023-04-02 13:05:14,795 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-04-02 13:05:14,795 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-04-02 13:05:14,795 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models'}. trying to build by task and model information.
+2023-04-02 13:05:14,795 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-04-02 13:05:14.797223: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:05:14.798608: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:05:14.914130: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:05:14.915385: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:05:15.101468: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:05:15.102774: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:05:15,103 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models/cartoon_h.pb
+2023-04-02 13:05:15,147 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models/cartoon_h.pb done.
+2023-04-02 13:05:15.148002: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:05:15.149287: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-04-02 13:05:15,149 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models/cartoon_bg.pb
+2023-04-02 13:05:15,203 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models/cartoon_bg.pb done.
+2023-04-02 13:05:16,303 - modelscope - INFO - Use user-specified model revision: v1.0.0
+`text_config_dict` is provided which will be used to initialize `CLIPTextConfig`. The value `text_config["id2label"]` will be overriden.
+INFO:     Started server process [32548]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     51.222.158.133:0 - "GET /sql/phpmyadmin4/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /sql/sql/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpmy/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /mysql/pma/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin-5.3.0-all-languages/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /db/myadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /mysql/db/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /admin/web/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpmyadmin2015/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /admin/sysadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin-3/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpmyadmin2022/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /PMA/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /shopdb/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin-5.1.1/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin-5.2.0/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /sql/myadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /pma/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /db/phpMyAdmin3/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /mysql-admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /admin/db/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /db/phpmyadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /db/phpmyadmin5/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin-5.1.2/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /sql/phpmyadmin5/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpmyadmin4/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpmyadmin2/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /PMA/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /admin/web/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpmyadmin2015/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin-3/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /db/phpMyAdmin-4/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpmyadmin2018/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /administrator/web/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /mysql/db/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpmyadmin5/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /_phpmyadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpmy-admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /sql/phpmanager/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /_phpmyadmin_/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpmyadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin-5.1.0/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin1/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /mysqladmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpmyadmin2019/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /sql/sqladmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /shopdb/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin2/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /db/phpMyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /mysql/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /admin/sysadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /db/websql/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /admin/sqladmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /sql/sql/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /admin/phpMyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /__phpmyadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /php-myadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpmyadmin2011/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpmyadmin2016/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin5.1/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /1phpmyadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /sql/websql/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /2phpmyadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /sql/phpmyadmin4/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpmy/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin-latest-english/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin5/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /db/db-admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /MyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /mysql/mysqlmanager/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin_/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin-5/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /admin/pma/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin-5.3.0/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phppma/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin3/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin-5.1.3/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /db/phpmyadmin3/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin5.2/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /db/phpMyAdmin-5/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /db/phpMyAdmin-3/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /mysql/admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /sql/webadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /db/webadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /sql/phpmyadmin3/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /db/phpMyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpmyadmin2013/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /db/phpMyAdmin-3/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin-5/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /db/phpmyadmin4/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /sql/phpmanager/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /sql/sql/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /db/webdb/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin-5.1.0/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpmyadmin_/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin-5.1.3/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /admin/sysadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /admin/phpmyadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin-4/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /db/phpmyadmin5/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /sql/sql/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin5.1/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /db/phpMyAdmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin-5.1.2/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /mysql/pma/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin-latest-english/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /db/dbweb/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /administrator/admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpmyadmin2015/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /db/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /dbadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin_/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /wp-content/plugins/portable-phpmyadmin/wp-pma-mod/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpmyadmin2011/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /db/phpmyadmin4/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /sql/php-myadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin5.1/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin-5.1.2/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /1phpmyadmin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /phpMyAdmin-latest-english/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /php-my-admin/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /PMA/index.php?lang=en HTTP/1.0" 404 Not Found
+INFO:     51.222.158.133:0 - "GET /mysql-admin/index.php?lang=en HTTP/1.0" 404 Not Found
+WARNING:tensorflow:From /root/anaconda3/envs/magicImage/lib/python3.10/site-packages/modelscope/utils/device.py:60: is_gpu_available (from tensorflow.python.framework.test_util) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.config.list_physical_devices('GPU')` instead.
+2023-04-02 13:48:16.532616: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-02 13:48:16.534018: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1934] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+original image shape: (854, 640, 3)
+Do not need resize!
+No face detected!
+File: ../gen_images/krsfqoa3s5ix_日漫.png is saved, done!
+Image2Image Processing is Done!
+INFO:     127.0.0.1:40550 - "POST /image2image HTTP/1.0" 200 OK
+INFO:     127.0.0.1:40552 - "GET /download?file_path=/root/MagicImageBackend/gen_images/krsfqoa3s5ix_%E6%97%A5%E6%BC%AB.png HTTP/1.0" 200 OK
+INFO:     127.0.0.1:40554 - "POST /feedback HTTP/1.0" 200 OK
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:04<01:52,  4.70s/it]  8%|▊         | 2/25 [00:05<00:48,  2.12s/it] 12%|█▏        | 3/25 [00:05<00:28,  1.29s/it] 16%|█▌        | 4/25 [00:05<00:19,  1.10it/s] 20%|██        | 5/25 [00:05<00:13,  1.45it/s] 24%|██▍       | 6/25 [00:06<00:10,  1.78it/s] 28%|██▊       | 7/25 [00:06<00:08,  2.08it/s] 32%|███▏      | 8/25 [00:06<00:07,  2.34it/s] 36%|███▌      | 9/25 [00:07<00:06,  2.56it/s] 40%|████      | 10/25 [00:07<00:05,  2.73it/s] 44%|████▍     | 11/25 [00:07<00:04,  2.86it/s] 48%|████▊     | 12/25 [00:08<00:04,  2.96it/s] 52%|█████▏    | 13/25 [00:08<00:03,  3.02it/s] 56%|█████▌    | 14/25 [00:08<00:03,  3.06it/s] 60%|██████    | 15/25 [00:09<00:03,  3.11it/s] 64%|██████▍   | 16/25 [00:09<00:02,  3.13it/s] 68%|██████▊   | 17/25 [00:09<00:02,  3.15it/s] 72%|███████▏  | 18/25 [00:10<00:02,  3.18it/s] 76%|███████▌  | 19/25 [00:10<00:01,  3.18it/s] 80%|████████  | 20/25 [00:10<00:01,  3.19it/s] 84%|████████▍ | 21/25 [00:10<00:01,  3.20it/s] 88%|████████▊ | 22/25 [00:11<00:00,  3.20it/s] 92%|█████████▏| 23/25 [00:11<00:00,  3.20it/s] 96%|█████████▌| 24/25 [00:11<00:00,  3.20it/s]100%|██████████| 25/25 [00:12<00:00,  3.20it/s]100%|██████████| 25/25 [00:12<00:00,  2.05it/s]
+File: ../gen_images/idy01p9jttru_黄河之水天上来,质感,中国画.png is saved, done!
+Text2Image Processing is Done!
+INFO:     127.0.0.1:40556 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     127.0.0.1:40558 - "GET /download?file_path=/root/MagicImageBackend/gen_images/idy01p9jttru_%E9%BB%84%E6%B2%B3%E4%B9%8B%E6%B0%B4%E5%A4%A9%E4%B8%8A%E6%9D%A5,%E8%B4%A8%E6%84%9F,%E4%B8%AD%E5%9B%BD%E7%94%BB.png HTTP/1.0" 200 OK
+INFO:     127.0.0.1:40560 - "POST /feedback HTTP/1.0" 200 OK
