@@ -111,9 +111,9 @@ text2img_model_config_dict = {
 
 img2img_model_config_dict = {
     "人像美肤": {
-        model_name: "damo/cv_unet_skin-retouching",
-        task: Tasks.skin_retouching,
-        image_shape: (5000, 5000)
+       model_name: "damo/cv_unet_skin-retouching",
+       task: Tasks.skin_retouching,
+       image_shape: (5000, 5000)
     },
     "人体美型": {
         model_name: "damo/cv_flow-based-body-reshaping_damo",
@@ -223,6 +223,6 @@ img2img_model_config_dict = {
 }
 
 class DataConfig:
-    input_images = "/data/magic.image/input_images"
-    gen_images = "/data/magic.image/gen_images"
-    feedback = "/data/magic.image/feedback"
+    input_images = "/home/ubuntu/magic.image/input_images"
+    gen_images = "/home/ubuntu/magic.image/gen_images"
+    feedback = "/home/ubuntu/magic.image/feedback"
