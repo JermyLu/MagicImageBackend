@@ -1,6 +1,7 @@
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 import cv2
+import traceback
 from modelscope.pipelines import Pipeline
 from modelscope.outputs import OutputKeys
 from typing import Dict, List
@@ -31,6 +32,7 @@ def get_text2image_result(
         return save_path
         
     except:
+        traceback.print_exc
         return None
 
 
