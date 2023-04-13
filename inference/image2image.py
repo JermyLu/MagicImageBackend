@@ -1,5 +1,5 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"#-1: using cpu inference for img2img
 import cv2
 import traceback
 from modelscope.pipelines import Pipeline

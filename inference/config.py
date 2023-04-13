@@ -223,6 +223,6 @@ img2img_model_config_dict = {
 }
 
 class DataConfig:
-    input_images = "/home/ubuntu/magic.image/input_images"
-    gen_images = "/home/ubuntu/magic.image/gen_images"
-    feedback = "/home/ubuntu/magic.image/feedback"
+    input_images = "/root/magic.image/input_images"
+    gen_images = "/root/magic.image/gen_images"
+    feedback = "/root/magic.image/feedback"
