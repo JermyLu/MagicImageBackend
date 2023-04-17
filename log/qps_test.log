@@ -1,0 +1,22 @@
+Serial & API: http://www.magicimage.site/image2image, the average access timecost is 0.8885726213455201
+并发数: 1, Parallel & API: http://www.magicimage.site/image2image, the average access timecost is 0.3061206340789795
+并发数: 2, Parallel & API: http://www.magicimage.site/image2image, the average access timecost is 0.4570964574813843
+并发数: 3, Parallel & API: http://www.magicimage.site/image2image, the average access timecost is 0.6123740673065186
+并发数: 4, Parallel & API: http://www.magicimage.site/image2image, the average access timecost is 0.7585525512695312
+并发数: 5, Parallel & API: http://www.magicimage.site/image2image, the average access timecost is 0.9107864379882813
+并发数: 6, Parallel & API: http://www.magicimage.site/image2image, the average access timecost is 1.0596144199371338
+并发数: 7, Parallel & API: http://www.magicimage.site/image2image, the average access timecost is 1.2145680018833704
+并发数: 8, Parallel & API: http://www.magicimage.site/image2image, the average access timecost is 1.362156093120575
+并发数: 9, Parallel & API: http://www.magicimage.site/image2image, the average access timecost is 1.512398534350925
+并发数: 10, Parallel & API: http://www.magicimage.site/image2image, the average access timecost is 1.6625864505767822
+Serial & API: http://www.magicimage.site/text2image, the average access timecost is 10.369327163696289
+并发数: 1, Parallel & API: http://www.magicimage.site/text2image, the average access timecost is 9.661914825439453
+并发数: 2, Parallel & API: http://www.magicimage.site/text2image, the average access timecost is 14.552832961082458
+并发数: 3, Parallel & API: http://www.magicimage.site/text2image, the average access timecost is 19.353861331939697
+并发数: 4, Parallel & API: http://www.magicimage.site/text2image, the average access timecost is 24.552176296710968
+并发数: 5, Parallel & API: http://www.magicimage.site/text2image, the average access timecost is 29.640667533874513
+并发数: 6, Parallel & API: http://www.magicimage.site/text2image, the average access timecost is 34.61099441846212
+并发数: 7, Parallel & API: http://www.magicimage.site/text2image, the average access timecost is 39.36619513375418
+并发数: 8, Parallel & API: http://www.magicimage.site/text2image, the average access timecost is 44.10878902673721
+并发数: 9, Parallel & API: http://www.magicimage.site/text2image, the average access timecost is 49.58663132455614
+并发数: 10, Parallel & API: http://www.magicimage.site/text2image, the average access timecost is 55.031629180908205
