@@ -70,6 +70,7 @@ def main(
         else:
             raise ValueError("position muse be begin or end!")
 
+    print("***********: Final sequence is %s **********" % sequence)
     input_dict = {
         "text": sequence,
         "height": 512,
