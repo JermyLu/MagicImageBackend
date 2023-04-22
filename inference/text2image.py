@@ -1,5 +1,6 @@
 import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+import re
 import cv2
 import traceback
 from modelscope.pipelines import Pipeline
@@ -43,6 +44,9 @@ def main(
     sequence: str,
     language: str = "chinese",
 ):
+    # 删除sequence中得任意标点符号
+    sequence = re.sub(r'[^\w\s]', ' ', sequence)
+    
     if language not in ["chinese", "english"]:
         raise ValueError("lanage must be chinese or english")
 
@@ -69,7 +73,7 @@ def main(
     input_dict = {
         "text": sequence,
         "height": 512,
-        "width": 768,
+        "width": 512,
         'num_inference_steps': 25,
         "guidance_scale": 9
     }
