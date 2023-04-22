@@ -115,7 +115,7 @@ img2img_model_config_dict = {
        task: Tasks.skin_retouching,
        image_shape: (5000, 5000)
     },
-    "人体美型": {
+    "人像美型": {
         model_name: "damo/cv_flow-based-body-reshaping_damo",
         task: Tasks.image_body_reshaping,
         image_shape: (3000, 3000)
