@@ -17,3 +17,417 @@ To enable them in other operations, rebuild TensorFlow with the appropriate comp
 2023-04-23 11:15:36,271 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_skin-retouching'}. trying to build by task and model information.
 2023-04-23 11:15:36,271 - modelscope - WARNING - Find task: skin-retouching, model type: None. Insufficient information to build preprocessor, skip building preprocessor
 2023-04-23 11:15:40,342 - modelscope - INFO - Model revision not specified, use the latest revision: v2.0.2
+2023-04-23 11:15:42,123 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_resnet50_face-detection_retinaface
+2023-04-23 11:15:42,123 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_resnet50_face-detection_retinaface.
+2023-04-23 11:15:42,124 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-04-23 11:15:42,124 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-04-23 11:15:42,124 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_resnet50_face-detection_retinaface'}. trying to build by task and model information.
+2023-04-23 11:15:42,125 - modelscope - WARNING - Find task: face-detection, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-04-23 11:15:42,125 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_resnet50_face-detection_retinaface/pytorch_model.pt
+2023-04-23 11:15:42,631 - modelscope - INFO - load model done
+2023-04-23 11:15:43.599250: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 AVX512F AVX512_VNNI FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-04-23 11:15:43.600045: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:43.600972: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:43.601478: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:43.602113: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:43.602606: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:43.603126: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:43.603590: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+WARNING:tensorflow:From /root/anaconda3/envs/magicImage/lib/python3.10/site-packages/modelscope/pipelines/cv/skin_retouching_pipeline.py:84: FastGFile.__init__ (from tensorflow.python.platform.gfile) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use tf.gfile.GFile.
+2023-04-23 11:15:44.469739: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:357] MLIR V1 optimization pass is not enabled
+2023-04-23 11:15:45,119 - modelscope - INFO - Model revision not specified, use the latest revision: v1.0.0
+2023-04-23 11:15:51,846 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_flow-based-body-reshaping_damo
+2023-04-23 11:15:51,846 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_flow-based-body-reshaping_damo.
+2023-04-23 11:15:51,847 - modelscope - INFO - initialize model from /root/.cache/modelscope/hub/damo/cv_flow-based-body-reshaping_damo
+2023-04-23 11:15:52,760 - modelscope - INFO - load body reshaping model done
+2023-04-23 11:15:53,258 - modelscope - INFO - load pose model done
+2023-04-23 11:15:53,264 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-04-23 11:15:53,265 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-04-23 11:15:53,265 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_flow-based-body-reshaping_damo'}. trying to build by task and model information.
+2023-04-23 11:15:53,265 - modelscope - WARNING - No preprocessor key ('image-body-reshaping', 'image-body-reshaping') found in PREPROCESSOR_MAP, skip building preprocessor.
+2023-04-23 11:15:53,265 - modelscope - INFO - body reshaping model init done
+2023-04-23 11:15:53,676 - modelscope - INFO - Model revision not specified, use the latest revision: v1.0.3
+2023-04-23 11:15:56,292 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models
+2023-04-23 11:15:56,292 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models.
+2023-04-23 11:15:56,293 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-04-23 11:15:56,293 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-04-23 11:15:56,293 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models'}. trying to build by task and model information.
+2023-04-23 11:15:56,293 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-04-23 11:15:56.294860: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:56.295521: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:56.295994: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:56.296537: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:56.297015: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:56.297475: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:15:56.410811: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:56.411504: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:56.411978: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:56.412513: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:56.412985: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:56.413432: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:15:56.602011: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:56.602673: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:56.603197: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:56.603730: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:56.604222: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:56.604686: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:15:56,604 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models/cartoon_h.pb
+2023-04-23 11:15:56,651 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models/cartoon_h.pb done.
+2023-04-23 11:15:56.652084: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:56.652712: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:56.653196: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:56.653707: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:56.654182: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:56.654629: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:15:56,654 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models/cartoon_bg.pb
+2023-04-23 11:15:56,711 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon_compound-models/cartoon_bg.pb done.
+2023-04-23 11:15:57,126 - modelscope - INFO - Model revision not specified, use the latest revision: v1.0.1
+2023-04-23 11:15:59,609 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models
+2023-04-23 11:15:59,610 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models.
+2023-04-23 11:15:59,611 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-04-23 11:15:59,611 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-04-23 11:15:59,611 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models'}. trying to build by task and model information.
+2023-04-23 11:15:59,611 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-04-23 11:15:59.612277: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:59.612881: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:59.613343: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:59.613857: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:59.614325: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:59.614761: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:15:59.725683: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:59.726313: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:59.726788: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:59.727355: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:59.727893: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:59.728341: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:15:59.912979: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:59.913647: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:59.914127: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:59.914654: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:59.915175: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:59.915641: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:15:59,915 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models/cartoon_h.pb
+2023-04-23 11:15:59,962 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models/cartoon_h.pb done.
+2023-04-23 11:15:59.962918: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:59.963517: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:59.963986: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:59.964492: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:59.964957: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:15:59.965389: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:15:59,965 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models/cartoon_bg.pb
+2023-04-23 11:16:00,021 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-handdrawn_compound-models/cartoon_bg.pb done.
+2023-04-23 11:16:00,427 - modelscope - INFO - Model revision not specified, use the latest revision: v1.0.1
+2023-04-23 11:16:02,896 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models
+2023-04-23 11:16:02,896 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models.
+2023-04-23 11:16:02,897 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-04-23 11:16:02,897 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-04-23 11:16:02,897 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models'}. trying to build by task and model information.
+2023-04-23 11:16:02,898 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-04-23 11:16:02.899056: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:02.899693: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:02.900163: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:02.900690: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:02.901165: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:02.901605: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:16:03.012062: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:03.012689: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:03.013158: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:03.013669: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:03.014138: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:03.014575: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:16:03.197810: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:03.198450: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:03.198963: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:03.199491: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:03.199965: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:03.200416: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:16:03,200 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models/cartoon_h.pb
+2023-04-23 11:16:03,246 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models/cartoon_h.pb done.
+2023-04-23 11:16:03.247568: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:03.248200: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:03.248693: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:03.249242: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:03.249753: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:03.250199: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:16:03,250 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models/cartoon_bg.pb
+2023-04-23 11:16:03,305 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-3d_compound-models/cartoon_bg.pb done.
+2023-04-23 11:16:03,627 - modelscope - INFO - Model revision not specified, use the latest revision: v1.0.1
+2023-04-23 11:16:05,768 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models
+2023-04-23 11:16:05,768 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models.
+2023-04-23 11:16:05,769 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-04-23 11:16:05,769 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-04-23 11:16:05,769 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models'}. trying to build by task and model information.
+2023-04-23 11:16:05,769 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-04-23 11:16:05.771094: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:05.771753: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:05.772225: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:05.772742: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:05.773214: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:05.773654: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:16:06.036021: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:06.036658: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:06.037124: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:06.037641: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:06.038106: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:06.038539: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:16:06.222288: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:06.222951: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:06.223433: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:06.223949: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:06.224421: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:06.224859: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:16:06,224 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models/cartoon_h.pb
+2023-04-23 11:16:06,270 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models/cartoon_h.pb done.
+2023-04-23 11:16:06.271361: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:06.271955: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:06.272437: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:06.272962: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:06.273456: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:06.273918: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:16:06,274 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models/cartoon_bg.pb
+2023-04-23 11:16:06,328 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-artstyle_compound-models/cartoon_bg.pb done.
+2023-04-23 11:16:06,626 - modelscope - INFO - Use user-specified model revision: v1.0.0
+2023-04-23 11:16:06,969 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models
+2023-04-23 11:16:06,969 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models.
+2023-04-23 11:16:06,971 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-04-23 11:16:06,971 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-04-23 11:16:06,971 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models'}. trying to build by task and model information.
+2023-04-23 11:16:06,971 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-04-23 11:16:06.972219: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:06.972850: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:06.973316: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:06.973824: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:06.974292: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:06.974728: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:16:07.085741: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:07.086369: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:07.086870: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:07.087403: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:07.087886: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:07.088323: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:16:07.271533: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:07.272193: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:07.272672: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:07.273203: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:07.273680: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:07.274125: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:16:07,274 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models/cartoon_h.pb
+2023-04-23 11:16:07,320 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models/cartoon_h.pb done.
+2023-04-23 11:16:07.321402: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:07.322010: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:07.322485: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:07.323048: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:07.323530: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:07.323965: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:16:07,324 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models/cartoon_bg.pb
+2023-04-23 11:16:07,379 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-design_compound-models/cartoon_bg.pb done.
+2023-04-23 11:16:07,777 - modelscope - INFO - Use user-specified model revision: v1.0.0
+2023-04-23 11:16:08,119 - modelscope - INFO - initiate model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models
+2023-04-23 11:16:08,119 - modelscope - INFO - initiate model from location /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models.
+2023-04-23 11:16:08,120 - modelscope - WARNING - No preprocessor field found in cfg.
+2023-04-23 11:16:08,120 - modelscope - WARNING - No val key and type key found in preprocessor domain of configuration.json file.
+2023-04-23 11:16:08,120 - modelscope - WARNING - Cannot find available config to build preprocessor at mode inference, current config: {'model_dir': '/root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models'}. trying to build by task and model information.
+2023-04-23 11:16:08,120 - modelscope - WARNING - Find task: image-portrait-stylization, model type: None. Insufficient information to build preprocessor, skip building preprocessor
+2023-04-23 11:16:08.121703: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:08.122354: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:08.122832: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:08.123355: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:08.123820: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:08.124257: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:16:08.234558: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:08.235238: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:08.235718: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:08.236234: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:08.236702: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:08.237137: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:16:08.420320: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:08.420964: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:08.421445: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:08.421988: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:08.422470: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:08.422931: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:16:08,423 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models/cartoon_h.pb
+2023-04-23 11:16:08,468 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models/cartoon_h.pb done.
+2023-04-23 11:16:08.468957: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:08.469557: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:08.470029: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:08.470532: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:08.471040: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:16:08.471481: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:16:08,471 - modelscope - INFO - loading model from /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models/cartoon_bg.pb
+2023-04-23 11:16:08,529 - modelscope - INFO - load model /root/.cache/modelscope/hub/damo/cv_unet_person-image-cartoon-sd-illustration_compound-models/cartoon_bg.pb done.
+2023-04-23 11:16:08,931 - modelscope - INFO - Use user-specified model revision: v1.0.0
+`text_config_dict` is provided which will be used to initialize `CLIPTextConfig`. The value `text_config["id2label"]` will be overriden.
+INFO:     Started server process [5002]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+WARNING:tensorflow:From /root/anaconda3/envs/magicImage/lib/python3.10/site-packages/modelscope/utils/device.py:60: is_gpu_available (from tensorflow.python.framework.test_util) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.config.list_physical_devices('GPU')` instead.
+2023-04-23 11:18:54.035301: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:18:54.035940: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:18:54.036400: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:18:54.036886: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:18:54.037336: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:18:54.037733: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:18:54.864323: I tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:428] Loaded cuDNN version 8100
+2023-04-23 11:18:55.526267: I tensorflow/tsl/platform/default/subprocess.cc:304] Start cannot spawn child process: No such file or directory
+2023-04-23 11:18:55.527525: W tensorflow/compiler/xla/stream_executor/gpu/asm_compiler.cc:115] *** WARNING *** You are using ptxas 11.0.221, which is older than 11.1. ptxas before 11.1 is known to miscompile XLA code, leading to incorrect results or invalid-address errors.
+
+You may not need to update to CUDA 11.1; cherry-picking the ptxas binary is often sufficient.
+2023-04-23 11:18:56.752713: W tensorflow/tsl/framework/bfc_allocator.cc:360] Garbage collection: deallocate free memory regions (i.e., allocations) so that we can re-allocate a larger region to avoid OOM due to memory fragmentation. If you see this message frequently, you are running near the threshold of the available device memory and re-allocation may incur great performance overhead. You may try smaller batch sizes to observe the performance impact. Set TF_ENABLE_GPU_GARBAGE_COLLECTION=false if you'd like to disable this feature.
+2023-04-23 11:18:57.579221: W tensorflow/tsl/framework/bfc_allocator.cc:290] Allocator (GPU_0_bfc) ran out of memory trying to allocate 4.88GiB with freed_by_count=0. The caller indicates that this is not a failure, but this may mean that there could be performance gains if more memory were available.
+2023-04-23 11:18:57.579267: W tensorflow/tsl/framework/bfc_allocator.cc:290] Allocator (GPU_0_bfc) ran out of memory trying to allocate 4.88GiB with freed_by_count=0. The caller indicates that this is not a failure, but this may mean that there could be performance gains if more memory were available.
+original image shape: (640, 854, 3)
+Do not need resize!
+File: /root/magic.image/gen_images/zjww085x42zs_3D漫画.png is saved, done!
+Image2Image Processing is Done!
+INFO:     223.104.39.44:0 - "POST /image2image HTTP/1.0" 200 OK
+INFO:     223.104.39.44:0 - "GET /download?file_path=/root/magic.image/gen_images/zjww085x42zs_3D%E6%BC%AB%E7%94%BB.png HTTP/1.0" 200 OK
+INFO:     223.104.39.44:0 - "POST /feedback HTTP/1.0" 200 OK
+2023-04-23 11:19:36.366422: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:19:36.367016: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:19:36.367389: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:19:36.367781: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:19:36.368121: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:19:36.368426: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+original image shape: (640, 854, 3)
+Do not need resize!
+File: /root/magic.image/gen_images/u6r3njflbz0v_日漫.png is saved, done!
+Image2Image Processing is Done!
+INFO:     223.104.39.44:0 - "POST /image2image HTTP/1.0" 200 OK
+INFO:     223.104.39.44:0 - "GET /download?file_path=/root/magic.image/gen_images/u6r3njflbz0v_%E6%97%A5%E6%BC%AB.png HTTP/1.0" 200 OK
+INFO:     223.104.39.44:0 - "POST /feedback HTTP/1.0" 200 OK
+2023-04-23 11:20:03.375229: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:20:03.375733: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:20:03.376069: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:20:03.376452: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:20:03.376794: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2023-04-23 11:20:03.377098: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /device:GPU:0 with 4532 MB memory:  -> device: 0, name: Tesla T4, pci bus id: 0000:00:08.0, compute capability: 7.5
+2023-04-23 11:20:04.715337: W tensorflow/tsl/framework/bfc_allocator.cc:290] Allocator (GPU_0_bfc) ran out of memory trying to allocate 4.88GiB with freed_by_count=0. The caller indicates that this is not a failure, but this may mean that there could be performance gains if more memory were available.
+2023-04-23 11:20:04.715392: W tensorflow/tsl/framework/bfc_allocator.cc:290] Allocator (GPU_0_bfc) ran out of memory trying to allocate 4.88GiB with freed_by_count=0. The caller indicates that this is not a failure, but this may mean that there could be performance gains if more memory were available.
+original image shape: (854, 640, 3)
+Do not need resize!
+No face detected!
+File: /root/magic.image/gen_images/k0qqcd13ovjg_手绘.png is saved, done!
+Image2Image Processing is Done!
+INFO:     223.104.39.44:0 - "POST /image2image HTTP/1.0" 200 OK
+INFO:     223.104.39.44:0 - "GET /download?file_path=/root/magic.image/gen_images/k0qqcd13ovjg_%E6%89%8B%E7%BB%98.png HTTP/1.0" 200 OK
+INFO:     223.104.39.44:0 - "POST /feedback HTTP/1.0" 200 OK
+***********: Final sequence is 金毛,阳光,清晰质感,4K壁纸 **********
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:03<01:32,  3.86s/it]  8%|▊         | 2/25 [00:04<00:41,  1.79s/it] 12%|█▏        | 3/25 [00:04<00:25,  1.14s/it] 16%|█▌        | 4/25 [00:04<00:17,  1.22it/s] 20%|██        | 5/25 [00:05<00:12,  1.55it/s] 24%|██▍       | 6/25 [00:05<00:10,  1.83it/s] 28%|██▊       | 7/25 [00:05<00:08,  2.09it/s] 32%|███▏      | 8/25 [00:06<00:07,  2.31it/s] 36%|███▌      | 9/25 [00:06<00:06,  2.45it/s] 40%|████      | 10/25 [00:06<00:05,  2.58it/s] 44%|████▍     | 11/25 [00:07<00:05,  2.68it/s] 48%|████▊     | 12/25 [00:07<00:04,  2.73it/s] 52%|█████▏    | 13/25 [00:07<00:04,  2.79it/s] 56%|█████▌    | 14/25 [00:08<00:03,  2.84it/s] 60%|██████    | 15/25 [00:08<00:03,  2.86it/s] 64%|██████▍   | 16/25 [00:09<00:03,  2.89it/s] 68%|██████▊   | 17/25 [00:09<00:02,  2.91it/s] 72%|███████▏  | 18/25 [00:09<00:02,  2.90it/s] 76%|███████▌  | 19/25 [00:10<00:02,  2.91it/s] 80%|████████  | 20/25 [00:10<00:01,  2.92it/s] 84%|████████▍ | 21/25 [00:10<00:01,  2.91it/s] 88%|████████▊ | 22/25 [00:11<00:01,  2.92it/s] 92%|█████████▏| 23/25 [00:11<00:00,  2.93it/s] 96%|█████████▌| 24/25 [00:11<00:00,  2.93it/s]100%|██████████| 25/25 [00:12<00:00,  2.93it/s]100%|██████████| 25/25 [00:12<00:00,  2.07it/s]
+File: /root/magic.image/gen_images/pve6l8rgcn3s_金毛,阳光,清晰质感,4K壁纸.png is saved, done!
+Text2Image Processing is Done!
+INFO:     223.104.39.44:0 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     223.104.39.44:0 - "GET /download?file_path=/root/magic.image/gen_images/pve6l8rgcn3s_%E9%87%91%E6%AF%9B,%E9%98%B3%E5%85%89,%E6%B8%85%E6%99%B0%E8%B4%A8%E6%84%9F,4K%E5%A3%81%E7%BA%B8.png HTTP/1.0" 200 OK
+INFO:     223.104.39.44:0 - "POST /feedback HTTP/1.0" 200 OK
+***********: Final sequence is 金毛,阳光,清晰质感,4K壁纸 **********
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:18,  1.33it/s]  8%|▊         | 2/25 [00:01<00:11,  1.97it/s] 12%|█▏        | 3/25 [00:01<00:09,  2.27it/s] 16%|█▌        | 4/25 [00:01<00:08,  2.49it/s] 20%|██        | 5/25 [00:02<00:07,  2.64it/s] 24%|██▍       | 6/25 [00:02<00:06,  2.71it/s] 28%|██▊       | 7/25 [00:02<00:06,  2.79it/s] 32%|███▏      | 8/25 [00:03<00:05,  2.84it/s] 36%|███▌      | 9/25 [00:03<00:05,  2.86it/s] 40%|████      | 10/25 [00:03<00:05,  2.88it/s] 44%|████▍     | 11/25 [00:04<00:04,  2.89it/s] 48%|████▊     | 12/25 [00:04<00:04,  2.89it/s] 52%|█████▏    | 13/25 [00:04<00:04,  2.91it/s] 56%|█████▌    | 14/25 [00:05<00:03,  2.91it/s] 60%|██████    | 15/25 [00:05<00:03,  2.89it/s] 64%|██████▍   | 16/25 [00:05<00:03,  2.90it/s] 68%|██████▊   | 17/25 [00:06<00:02,  2.90it/s] 72%|███████▏  | 18/25 [00:06<00:02,  2.90it/s] 76%|███████▌  | 19/25 [00:06<00:02,  2.91it/s] 80%|████████  | 20/25 [00:07<00:01,  2.91it/s] 84%|████████▍ | 21/25 [00:07<00:01,  2.91it/s] 88%|████████▊ | 22/25 [00:07<00:01,  2.91it/s] 92%|█████████▏| 23/25 [00:08<00:00,  2.90it/s] 96%|█████████▌| 24/25 [00:08<00:00,  2.90it/s]100%|██████████| 25/25 [00:08<00:00,  2.91it/s]100%|██████████| 25/25 [00:08<00:00,  2.78it/s]
+File: /root/magic.image/gen_images/wctiacf73ibf_金毛,阳光,清晰质感,4K壁纸.png is saved, done!
+Text2Image Processing is Done!
+INFO:     223.104.39.44:0 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     223.104.39.44:0 - "GET /download?file_path=/root/magic.image/gen_images/wctiacf73ibf_%E9%87%91%E6%AF%9B,%E9%98%B3%E5%85%89,%E6%B8%85%E6%99%B0%E8%B4%A8%E6%84%9F,4K%E5%A3%81%E7%BA%B8.png HTTP/1.0" 200 OK
+INFO:     223.104.39.44:0 - "POST /feedback HTTP/1.0" 200 OK
+***********: Final sequence is 凶猛的狮子,清晰,梵高 **********
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:17,  1.39it/s]  8%|▊         | 2/25 [00:01<00:11,  2.01it/s] 12%|█▏        | 3/25 [00:01<00:09,  2.32it/s] 16%|█▌        | 4/25 [00:01<00:08,  2.53it/s] 20%|██        | 5/25 [00:02<00:07,  2.66it/s] 24%|██▍       | 6/25 [00:02<00:06,  2.73it/s] 28%|██▊       | 7/25 [00:02<00:06,  2.80it/s] 32%|███▏      | 8/25 [00:03<00:05,  2.84it/s] 36%|███▌      | 9/25 [00:03<00:05,  2.86it/s] 40%|████      | 10/25 [00:03<00:05,  2.89it/s] 44%|████▍     | 11/25 [00:04<00:04,  2.90it/s] 48%|████▊     | 12/25 [00:04<00:04,  2.90it/s] 52%|█████▏    | 13/25 [00:04<00:04,  2.90it/s] 56%|█████▌    | 14/25 [00:05<00:03,  2.90it/s] 60%|██████    | 15/25 [00:05<00:03,  2.90it/s] 64%|██████▍   | 16/25 [00:05<00:03,  2.91it/s] 68%|██████▊   | 17/25 [00:06<00:02,  2.91it/s] 72%|███████▏  | 18/25 [00:06<00:02,  2.91it/s] 76%|███████▌  | 19/25 [00:06<00:02,  2.90it/s] 80%|████████  | 20/25 [00:07<00:01,  2.91it/s] 84%|████████▍ | 21/25 [00:07<00:01,  2.90it/s] 88%|████████▊ | 22/25 [00:07<00:01,  2.90it/s] 92%|█████████▏| 23/25 [00:08<00:00,  2.90it/s] 96%|█████████▌| 24/25 [00:08<00:00,  2.89it/s]100%|██████████| 25/25 [00:08<00:00,  2.90it/s]100%|██████████| 25/25 [00:08<00:00,  2.79it/s]
+File: /root/magic.image/gen_images/h2rkku04xr92_凶猛的狮子,清晰,梵高.png is saved, done!
+Text2Image Processing is Done!
+INFO:     223.104.39.44:0 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     223.104.39.44:0 - "GET /download?file_path=/root/magic.image/gen_images/h2rkku04xr92_%E5%87%B6%E7%8C%9B%E7%9A%84%E7%8B%AE%E5%AD%90,%E6%B8%85%E6%99%B0,%E6%A2%B5%E9%AB%98.png HTTP/1.0" 200 OK
+INFO:     223.104.39.44:0 - "POST /feedback HTTP/1.0" 200 OK
+***********: Final sequence is 白日依山尽,黄河入海流,清晰,插画 **********
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:17,  1.39it/s]  8%|▊         | 2/25 [00:01<00:11,  2.01it/s] 12%|█▏        | 3/25 [00:01<00:09,  2.31it/s] 16%|█▌        | 4/25 [00:01<00:08,  2.54it/s] 20%|██        | 5/25 [00:02<00:07,  2.66it/s] 24%|██▍       | 6/25 [00:02<00:06,  2.72it/s] 28%|██▊       | 7/25 [00:02<00:06,  2.79it/s] 32%|███▏      | 8/25 [00:03<00:06,  2.83it/s] 36%|███▌      | 9/25 [00:03<00:05,  2.83it/s] 40%|████      | 10/25 [00:03<00:05,  2.86it/s] 44%|████▍     | 11/25 [00:04<00:04,  2.88it/s] 48%|████▊     | 12/25 [00:04<00:04,  2.87it/s] 52%|█████▏    | 13/25 [00:04<00:04,  2.89it/s] 56%|█████▌    | 14/25 [00:05<00:03,  2.89it/s] 60%|██████    | 15/25 [00:05<00:03,  2.88it/s] 64%|██████▍   | 16/25 [00:05<00:03,  2.90it/s] 68%|██████▊   | 17/25 [00:06<00:02,  2.90it/s] 72%|███████▏  | 18/25 [00:06<00:02,  2.89it/s] 76%|███████▌  | 19/25 [00:06<00:02,  2.91it/s] 80%|████████  | 20/25 [00:07<00:01,  2.91it/s] 84%|████████▍ | 21/25 [00:07<00:01,  2.89it/s] 88%|████████▊ | 22/25 [00:07<00:01,  2.90it/s] 92%|█████████▏| 23/25 [00:08<00:00,  2.91it/s] 96%|█████████▌| 24/25 [00:08<00:00,  2.90it/s]100%|██████████| 25/25 [00:08<00:00,  2.90it/s]100%|██████████| 25/25 [00:08<00:00,  2.78it/s]
+File: /root/magic.image/gen_images/ckgop91gcs08_白日依山尽,黄河入海流,清晰,插画.png is saved, done!
+Text2Image Processing is Done!
+INFO:     223.104.39.44:0 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     223.104.39.44:0 - "GET /download?file_path=/root/magic.image/gen_images/ckgop91gcs08_%E7%99%BD%E6%97%A5%E4%BE%9D%E5%B1%B1%E5%B0%BD,%E9%BB%84%E6%B2%B3%E5%85%A5%E6%B5%B7%E6%B5%81,%E6%B8%85%E6%99%B0,%E6%8F%92%E7%94%BB.png HTTP/1.0" 200 OK
+INFO:     223.104.39.44:0 - "POST /feedback HTTP/1.0" 200 OK
+***********: Final sequence is 白日依山尽,黄河入海流,清晰,水彩 **********
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:18,  1.33it/s]  8%|▊         | 2/25 [00:01<00:11,  1.97it/s] 12%|█▏        | 3/25 [00:01<00:09,  2.29it/s] 16%|█▌        | 4/25 [00:01<00:08,  2.51it/s] 20%|██        | 5/25 [00:02<00:07,  2.65it/s] 24%|██▍       | 6/25 [00:02<00:06,  2.73it/s] 28%|██▊       | 7/25 [00:02<00:06,  2.80it/s] 32%|███▏      | 8/25 [00:03<00:06,  2.83it/s] 36%|███▌      | 9/25 [00:03<00:05,  2.85it/s] 40%|████      | 10/25 [00:03<00:05,  2.88it/s] 44%|████▍     | 11/25 [00:04<00:04,  2.88it/s] 48%|████▊     | 12/25 [00:04<00:04,  2.88it/s] 52%|█████▏    | 13/25 [00:04<00:04,  2.90it/s] 56%|█████▌    | 14/25 [00:05<00:03,  2.90it/s] 60%|██████    | 15/25 [00:05<00:03,  2.89it/s] 64%|██████▍   | 16/25 [00:05<00:03,  2.90it/s] 68%|██████▊   | 17/25 [00:06<00:02,  2.91it/s] 72%|███████▏  | 18/25 [00:06<00:02,  2.90it/s] 76%|███████▌  | 19/25 [00:06<00:02,  2.90it/s] 80%|████████  | 20/25 [00:07<00:01,  2.90it/s] 84%|████████▍ | 21/25 [00:07<00:01,  2.90it/s] 88%|████████▊ | 22/25 [00:07<00:01,  2.91it/s] 92%|█████████▏| 23/25 [00:08<00:00,  2.91it/s] 96%|█████████▌| 24/25 [00:08<00:00,  2.91it/s]100%|██████████| 25/25 [00:08<00:00,  2.91it/s]100%|██████████| 25/25 [00:09<00:00,  2.78it/s]
+File: /root/magic.image/gen_images/grwau21nasx9_白日依山尽,黄河入海流,清晰,水彩.png is saved, done!
+Text2Image Processing is Done!
+INFO:     223.104.39.44:0 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     223.104.39.44:0 - "GET /download?file_path=/root/magic.image/gen_images/grwau21nasx9_%E7%99%BD%E6%97%A5%E4%BE%9D%E5%B1%B1%E5%B0%BD,%E9%BB%84%E6%B2%B3%E5%85%A5%E6%B5%B7%E6%B5%81,%E6%B8%85%E6%99%B0,%E6%B0%B4%E5%BD%A9.png HTTP/1.0" 200 OK
+INFO:     223.104.39.44:0 - "POST /feedback HTTP/1.0" 200 OK
+***********: Final sequence is 飞流直下三千尺,疑是银河落九天,瀑布,清晰,插画 **********
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:17,  1.37it/s]  8%|▊         | 2/25 [00:01<00:11,  2.01it/s] 12%|█▏        | 3/25 [00:01<00:09,  2.32it/s] 16%|█▌        | 4/25 [00:01<00:08,  2.53it/s] 20%|██        | 5/25 [00:02<00:07,  2.67it/s] 24%|██▍       | 6/25 [00:02<00:06,  2.72it/s] 28%|██▊       | 7/25 [00:02<00:06,  2.79it/s] 32%|███▏      | 8/25 [00:03<00:06,  2.82it/s] 36%|███▌      | 9/25 [00:03<00:05,  2.84it/s] 40%|████      | 10/25 [00:03<00:05,  2.86it/s] 44%|████▍     | 11/25 [00:04<00:04,  2.87it/s] 48%|████▊     | 12/25 [00:04<00:04,  2.88it/s] 52%|█████▏    | 13/25 [00:04<00:04,  2.89it/s] 56%|█████▌    | 14/25 [00:05<00:03,  2.89it/s] 60%|██████    | 15/25 [00:05<00:03,  2.89it/s] 64%|██████▍   | 16/25 [00:05<00:03,  2.90it/s] 68%|██████▊   | 17/25 [00:06<00:02,  2.89it/s] 72%|███████▏  | 18/25 [00:06<00:02,  2.89it/s] 76%|███████▌  | 19/25 [00:06<00:02,  2.90it/s] 80%|████████  | 20/25 [00:07<00:01,  2.89it/s] 84%|████████▍ | 21/25 [00:07<00:01,  2.90it/s] 88%|████████▊ | 22/25 [00:07<00:01,  2.90it/s] 92%|█████████▏| 23/25 [00:08<00:00,  2.90it/s] 96%|█████████▌| 24/25 [00:08<00:00,  2.90it/s]100%|██████████| 25/25 [00:08<00:00,  2.91it/s]100%|██████████| 25/25 [00:08<00:00,  2.78it/s]
+File: /root/magic.image/gen_images/nmcnl7y8rzxc_飞流直下三千尺,疑是银河落九天,瀑布,清晰,插画.png is saved, done!
+Text2Image Processing is Done!
+INFO:     223.104.39.44:0 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     223.104.39.44:0 - "GET /download?file_path=/root/magic.image/gen_images/nmcnl7y8rzxc_%E9%A3%9E%E6%B5%81%E7%9B%B4%E4%B8%8B%E4%B8%89%E5%8D%83%E5%B0%BA,%E7%96%91%E6%98%AF%E9%93%B6%E6%B2%B3%E8%90%BD%E4%B9%9D%E5%A4%A9,%E7%80%91%E5%B8%83,%E6%B8%85%E6%99%B0,%E6%8F%92%E7%94%BB.png HTTP/1.0" 200 OK
+INFO:     223.104.39.44:0 - "POST /feedback HTTP/1.0" 200 OK
+***********: Final sequence is 飞流直下三千尺,瀑布,清晰,插画 **********
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:17,  1.37it/s]  8%|▊         | 2/25 [00:01<00:11,  2.00it/s] 12%|█▏        | 3/25 [00:01<00:09,  2.31it/s] 16%|█▌        | 4/25 [00:01<00:08,  2.52it/s] 20%|██        | 5/25 [00:02<00:07,  2.64it/s] 24%|██▍       | 6/25 [00:02<00:06,  2.72it/s] 28%|██▊       | 7/25 [00:02<00:06,  2.79it/s] 32%|███▏      | 8/25 [00:03<00:06,  2.81it/s] 36%|███▌      | 9/25 [00:03<00:05,  2.83it/s] 40%|████      | 10/25 [00:03<00:05,  2.86it/s] 44%|████▍     | 11/25 [00:04<00:04,  2.87it/s] 48%|████▊     | 12/25 [00:04<00:04,  2.88it/s] 52%|█████▏    | 13/25 [00:04<00:04,  2.89it/s] 56%|█████▌    | 14/25 [00:05<00:03,  2.90it/s] 60%|██████    | 15/25 [00:05<00:03,  2.90it/s] 64%|██████▍   | 16/25 [00:05<00:03,  2.90it/s] 68%|██████▊   | 17/25 [00:06<00:02,  2.90it/s] 72%|███████▏  | 18/25 [00:06<00:02,  2.90it/s] 76%|███████▌  | 19/25 [00:06<00:02,  2.90it/s] 80%|████████  | 20/25 [00:07<00:01,  2.90it/s] 84%|████████▍ | 21/25 [00:07<00:01,  2.90it/s] 88%|████████▊ | 22/25 [00:07<00:01,  2.91it/s] 92%|█████████▏| 23/25 [00:08<00:00,  2.91it/s] 96%|█████████▌| 24/25 [00:08<00:00,  2.91it/s]100%|██████████| 25/25 [00:08<00:00,  2.91it/s]100%|██████████| 25/25 [00:08<00:00,  2.78it/s]
+File: /root/magic.image/gen_images/moshqbmqffm3_飞流直下三千尺,瀑布,清晰,插画.png is saved, done!
+Text2Image Processing is Done!
+INFO:     223.104.39.44:0 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     223.104.39.44:0 - "GET /download?file_path=/root/magic.image/gen_images/moshqbmqffm3_%E9%A3%9E%E6%B5%81%E7%9B%B4%E4%B8%8B%E4%B8%89%E5%8D%83%E5%B0%BA,%E7%80%91%E5%B8%83,%E6%B8%85%E6%99%B0,%E6%8F%92%E7%94%BB.png HTTP/1.0" 200 OK
+***********: Final sequence is 飞流直下三千尺,瀑布,清晰,水彩 **********
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:17,  1.33it/s]  8%|▊         | 2/25 [00:01<00:11,  1.96it/s] 12%|█▏        | 3/25 [00:01<00:09,  2.27it/s] 16%|█▌        | 4/25 [00:01<00:08,  2.50it/s] 20%|██        | 5/25 [00:02<00:07,  2.64it/s] 24%|██▍       | 6/25 [00:02<00:07,  2.71it/s] 28%|██▊       | 7/25 [00:02<00:06,  2.78it/s] 32%|███▏      | 8/25 [00:03<00:06,  2.81it/s] 36%|███▌      | 9/25 [00:03<00:05,  2.83it/s] 40%|████      | 10/25 [00:03<00:05,  2.86it/s] 44%|████▍     | 11/25 [00:04<00:04,  2.87it/s] 48%|████▊     | 12/25 [00:04<00:04,  2.88it/s] 52%|█████▏    | 13/25 [00:04<00:04,  2.89it/s] 56%|█████▌    | 14/25 [00:05<00:03,  2.89it/s] 60%|██████    | 15/25 [00:05<00:03,  2.89it/s] 64%|██████▍   | 16/25 [00:05<00:03,  2.91it/s] 68%|██████▊   | 17/25 [00:06<00:02,  2.90it/s] 72%|███████▏  | 18/25 [00:06<00:02,  2.90it/s] 76%|███████▌  | 19/25 [00:06<00:02,  2.90it/s] 80%|████████  | 20/25 [00:07<00:01,  2.90it/s] 84%|████████▍ | 21/25 [00:07<00:01,  2.90it/s] 88%|████████▊ | 22/25 [00:07<00:01,  2.90it/s] 92%|█████████▏| 23/25 [00:08<00:00,  2.90it/s] 96%|█████████▌| 24/25 [00:08<00:00,  2.90it/s]100%|██████████| 25/25 [00:09<00:00,  2.90it/s]100%|██████████| 25/25 [00:09<00:00,  2.77it/s]
+File: /root/magic.image/gen_images/i6194bjzq1s1_飞流直下三千尺,瀑布,清晰,水彩.png is saved, done!
+Text2Image Processing is Done!
+INFO:     223.104.39.44:0 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     223.104.39.44:0 - "GET /download?file_path=/root/magic.image/gen_images/i6194bjzq1s1_%E9%A3%9E%E6%B5%81%E7%9B%B4%E4%B8%8B%E4%B8%89%E5%8D%83%E5%B0%BA,%E7%80%91%E5%B8%83,%E6%B8%85%E6%99%B0,%E6%B0%B4%E5%BD%A9.png HTTP/1.0" 200 OK
+INFO:     223.104.39.44:0 - "POST /feedback HTTP/1.0" 200 OK
+INFO:     223.104.39.44:0 - "POST /feedback HTTP/1.0" 200 OK
+INFO:     127.0.0.1:50924 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:50926 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:50928 - "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:50930 - "GET /xmlrpc.php?rsd HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37558 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37560 - "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37562 - "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37564 - "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37566 - "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37568 - "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37570 - "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37572 - "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37574 - "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37576 - "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37578 - "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37580 - "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37582 - "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:42762 - "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:42764 - "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:42766 - "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56556 - "GET /xmlrpc.php?rsd HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:48112 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34872 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:53672 - "HEAD / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:54346 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     120.24.250.155:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:46416 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     128.14.209.162:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     15.223.42.151:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:43922 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:57530 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:53518 - "POST /boaform/admin/formLogin HTTP/1.0" 404 Not Found
+INFO:     174.138.61.44:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:42400 - "POST /boaform/admin/formLogin HTTP/1.0" 404 Not Found
+INFO:     198.199.111.75:0 - "GET /ecp/Current/exporttool/microsoft.exchange.ediscovery.exporttool.application HTTP/1.0" 404 Not Found
+INFO:     107.170.192.15:0 - "GET /owa/auth/x.js HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:60286 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56902 - "POST /HNAP1/ HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:47684 - "GET /HNAP1/ HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:38806 - "GET /vplayer/111057.html HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:43136 - "GET /HNAP1/ HTTP/1.0" 404 Not Found
+INFO:     45.33.80.243:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56238 - "GET / HTTP/1.0" 404 Not Found
+INFO:     152.89.196.211:0 - "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.0" 404 Not Found
+INFO:     198.235.24.36:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:38166 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:49682 - "GET / HTTP/1.0" 404 Not Found
+INFO:     185.180.143.50:0 - "GET /sugar_version.json HTTP/1.0" 404 Not Found
+INFO:     130.211.82.238:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:45576 - "POST /boaform/admin/formLogin HTTP/1.0" 404 Not Found
+INFO:     152.89.196.211:0 - "GET /actuator/gateway/routes HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36014 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:50306 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:57554 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37700 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34156 - "GET /ip.php?Z77824206831Q1 HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:44472 - "GET /.env HTTP/1.0" 404 Not Found
