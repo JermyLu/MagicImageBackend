@@ -44,9 +44,10 @@ def main(
     sequence: str,
     language: str = "chinese",
 ):
-    # 删除sequence中得任意标点符号
-    sequence = re.sub(r'[^\w\s]', ' ', sequence)
-    
+    # 删除sequence中得任意标点符 & 空白字符
+    sequence = re.sub(r'[^\w]', ',', sequence)
+    # 将多个,替换为一个,
+    sequence = re.sub(r',+', ',', sequence)
     if language not in ["chinese", "english"]:
         raise ValueError("lanage must be chinese or english")
 
@@ -74,7 +75,7 @@ def main(
     input_dict = {
         "text": sequence,
         "height": 512,
-        "width": 512,
+        "width": 768,
         'num_inference_steps': 25,
         "guidance_scale": 9
     }
