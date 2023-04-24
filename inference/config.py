@@ -104,6 +104,9 @@ text2img_model_config_dict = {
             model_name: "Fengshenbang/Taiyi-Stable-Diffusion-1B-Chinese-v0.1",
             model_revision: "v1.0.0",
             negative_prompt: "广告, ，, ！, 。, ；, 资讯, 新闻, 水印"
+        },
+        "天工巧绘": {
+            model_name: "SkyWork/SkyPaint"
         }
     }
 }

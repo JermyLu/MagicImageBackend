@@ -33,7 +33,7 @@ def get_text2image_result(
         return save_path
         
     except:
-        traceback.print_exc
+        traceback.print_exc()
         return None
 
 

