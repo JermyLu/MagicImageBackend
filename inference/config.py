@@ -1,6 +1,7 @@
 from modelscope.utils.constant import Tasks
 
 # 常数变量
+source = "source"
 model_name = "model_name"
 model_revision = "model_revision"
 prompt = "prompt"
@@ -105,9 +106,10 @@ text2img_model_config_dict = {
             model_revision: "v1.0.0",
             negative_prompt: "广告, ，, ！, 。, ；, 资讯, 新闻, 水印"
         },
-        "天工巧绘": {
-            model_name: "SkyWork/SkyPaint"
-        }
+        # "天工巧绘": {
+        #     source: "sd",
+        #    model_name: "SkyWork/SkyPaint"
+        # }
     }
 }
 

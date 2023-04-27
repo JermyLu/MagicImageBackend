@@ -3,6 +3,8 @@ import torch
 from typing import Optional, Dict
 from modelscope.pipelines import pipeline, Pipeline
 from modelscope.utils.constant import Tasks, DEFAULT_MODEL_REVISION
+from diffusers import StableDiffusionPipeline
+from diffusers import StableDiffusionInpaintPipelineLegacy
 from config import *
 
 def get_img2img_pipeline(
@@ -20,6 +22,12 @@ def get_translation_pipeline(model_name: str = "damo/nlp_csanmt_translation_zh2e
         task=Tasks.translation,
         model=model_name)
 
+def get_text2image_sdPipeline(
+    model_name: str,
+    device: str = "cuda"
+):
+    return StableDiffusionPipeline.from_pretrained(model_name).to(device)
+
 def get_text2image_pipeline(
     model_name: str,
     model_revision: Optional[str] = DEFAULT_MODEL_REVISION
@@ -34,11 +42,13 @@ def get_text2image_pipeline(
 class ThisPipeline:
     def __init__(
         self,
-        pipeline: Pipeline,
-        config: Dict
+        pipeline: Pipeline | StableDiffusionInpaintPipelineLegacy,
+        config: Dict,
+        source: str = "modelscope"
     ):
         self.pipeline = pipeline
         self.config = config
+        self.source = source
 
 class Image2Image:
     def __init__(
@@ -75,13 +85,25 @@ class Text2Image:
     def build(self) -> Dict:
         pipeline_dict = {}
         for style, style_config in self.config_dict.items():
-            thisPipeline = ThisPipeline(
-                pipeline=get_text2image_pipeline(model_name=style_config[model_name],
-                                                 model_revision=style_config[model_revision] if model_revision in style_config else DEFAULT_MODEL_REVISION),
-                config=style_config
-            )
-            pipeline_dict[style] = thisPipeline
+            if source not in style_config:
+                thisPipeline = ThisPipeline(
+                    pipeline=get_text2image_pipeline(model_name=style_config[model_name],
+                                                        model_revision=style_config[model_revision] if model_revision in style_config else DEFAULT_MODEL_REVISION),
+                    config=style_config
+                )
+                pipeline_dict[style] = thisPipeline
 
+            # source in style_config
+            elif style_config[source] == "sd":
+                thisPipeline = ThisPipeline(
+                    pipeline=get_text2image_sdPipeline(style_config[model_name]),
+                    config=style_config
+                )
+                pipeline_dict[style] = thisPipeline
+
+            else:
+                pass
+        
         return pipeline_dict
 
 image2Image = Image2Image()
