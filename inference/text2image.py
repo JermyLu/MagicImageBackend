@@ -102,7 +102,7 @@ def main(
             "text": sequence,
             "height": 512,
             "width": 768,
-            'num_inference_steps': 50,
+            'num_inference_steps': 25,
             "guidance_scale": 9
         }
         if negative_prompt in this_config:
