@@ -66,6 +66,23 @@ def generate_request_id(length_list: List[int] = [8, 4, 4, 8]) -> str:
     
     return request_id[:-1]
 
+def judge_list_is_empty(input_list: List):
+    if len(input_list) == 0:
+        return True
+
+    for ele in input_list:
+        if ele:#任一元素有效, 逻辑值为True
+            return False
+
+    return True
+
+def simplify_list(input_list: List):
+    result = []
+    for ele in input_list:
+        if ele:
+            result.append(ele)
+
+    return result
 
 if __name__=="__main__":
     image_path = r"../test/test.jpeg"

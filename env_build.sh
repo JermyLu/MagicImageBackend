@@ -12,7 +12,7 @@ conda activate $env_name
 # conda安装pyTorch
 # 注意: 当前环境cuda最高支持11.0, 可在https://pytorch.org/get-started/previous-versions/查询你的cuda对应的pyTorch版本
 conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 -c pytorch
-packages=(tensorflow==2.11.0 diffusion transformers accelerate diffusers modelscope fastapi uvicorn numba easydict gradio opencv-python)
+packages=(tensorflow==2.11.0 diffusion transformers accelerate diffusers modelscope fastapi uvicorn numba easydict gradio opencv-python CMake face_recognition)
 for package in ${packages[*]}
 do
     pip install $package -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com

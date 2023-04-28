@@ -8,10 +8,12 @@ from fastapi import FastAPI, UploadFile, File
 from fastapi.responses import FileResponse, StreamingResponse
 from pydantic import BaseModel
 import uvicorn
-from utils import encode_image_to_base64, save_image_from_base64
+from utils import encode_image_to_base64, save_image_from_base64, simplify_list
 from get_pipeline import image2Image, text2Image
 from image2image import main as i2i_main
 from text2image import main as t2i_main
+from stylized_face import main as face_main
+
 
 class Image2ImageRequest(BaseModel):
     request_id: str
@@ -72,17 +74,47 @@ async def i2i(data: dict):
         traceback.print_exc()
         return {"text": "Image2Image, exception"}
 
-# @app.post("/text2image")
-# async def t2i(item: Text2ImageRequest):
-#     t2i_main(
-#         text2image=text2Image,
-#         request_id=item.request_id,
-#         style=item.style,
-#         sequence=item.sequence,
-#         language=item.language
-#     )
+@app.post("/style-face")
+async def i2i(data: dict):
+    if "request_id" not in data or "image" not in data:
+        return "Request Param Error"
 
-#     return item
+    try:
+        request_id = data["request_id"]
+        image = data["image"]
+        face_path_list = []
+        if isinstance(image, list):
+            face_path_list = face_main(
+                image2image=image2Image,
+                request_id=request_id,
+                image_list=image)
+
+        else:#base64格式
+            image_save_path = os.path.join(
+                DataConfig.input_images,
+                request_id + ".png"
+            )
+            save_image_from_base64(image, output_path=image_save_path)
+
+            face_path_list = face_main(
+                image2image=image2Image,
+                request_id=request_id,
+                image_list=[image_save_path])
+
+        face_path_list = simplify_list(face_path_list)
+        if face_path_list:
+            return {
+                "text": "Style Face, successfully",
+                #"base64": encode_image_to_base64(img_path),
+                "urls": face_path_list,
+                "absUrls": [os.path.abspath(img_path) for img_path in face_path_list]
+            }
+        # []
+        return {"text": "Style Face, exception"}
+    
+    except Exception:
+        traceback.print_exc()
+        return {"text": "Style Face, exception"}
 
 @app.post("/text2image")
 async def t2i(data: dict):
