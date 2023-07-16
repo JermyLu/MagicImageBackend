@@ -1,4 +1,5 @@
 import os
+import random
 import traceback
 from PIL import Image
 import face_recognition
@@ -125,10 +126,13 @@ def main(
     image2image: Image2Image,
     request_id: str,
     image_list: List[str],
-    styles: List[str] = ["3D漫画", "手绘", "插画"]
+    styles: List[str] = ["3D漫画", "手绘", "插画", "日漫", "艺术"],
+    generate_one: bool = True
 ):
     face_path_list = []
-    for style in styles:
+    if generate_one:
+        # 随机选择一个风格
+        style = random.choice(seq=styles)
         img_path = i2i_main(image2image=image2image, request_id=request_id, style=style, image_list=image_list)
         if img_path is not None:
             (file_name, ext) = os.path.splitext(img_path)
@@ -138,6 +142,17 @@ def main(
                 face_path_list.append(face_path)
             except:
                 traceback.print_exc()
+    else:#False
+        for style in styles:
+            img_path = i2i_main(image2image=image2image, request_id=request_id, style=style, image_list=image_list)
+            if img_path is not None:
+                (file_name, ext) = os.path.splitext(img_path)
+                face_path = file_name + "_face" + ext
+                try:
+                    clip_face(image_path=img_path, face_save_path=face_path)
+                    face_path_list.append(face_path)
+                except:
+                    traceback.print_exc()
 
     return face_path_list
 
@@ -145,7 +160,7 @@ def main(
 if __name__=="__main__":
     from utils import generate_request_id
     image2image = Image2Image()
-    image_list = [r"../test/test2.jpeg"]
+    image_list = [r"../test/pengYuYan.jpeg"]
     face_path_list = main(image2image, generate_request_id(), image_list)
     print(face_path_list)
 

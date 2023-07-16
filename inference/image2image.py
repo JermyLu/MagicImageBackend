@@ -1,5 +1,5 @@
 import os
-os.environ["CUDA_VISIBLE_DEVICES"] = "-1"#-1: using cpu inference for img2img
+# os.environ["CUDA_VISIBLE_DEVICES"] = "-1"#-1: using cpu inference for img2img
 import cv2
 import traceback
 from modelscope.pipelines import Pipeline
@@ -105,7 +105,7 @@ if __name__=="__main__":
     
     image2image = Image2Image()
     styles = img2img_model_config_dict.keys()
-    image_list = [r"../test/test2.jpeg"]
+    image_list = [r"../test/wuYanZu.jpeg"]
 
     for style in styles:
         main(image2image=image2image, request_id=generate_request_id(), style=style, image_list=image_list)
